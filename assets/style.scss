@@ -107,6 +107,12 @@ h1, h2{
 	background-color: hsla(0, 0%, 100%, 0.02);
 	padding: 26px 60px 26px 120px; 
 	font-size: 28px;
+
+	ul, li {
+		margin: 0px; 
+		padding: 0px;
+		list-style-type: none;
+	}
 }
 
 .description-section {
