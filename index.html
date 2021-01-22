@@ -5,8 +5,13 @@
 layout: default
 ---
 
-<h2>Sprit</h2>
+<section class="drink-list-header">
+	<h2>Drinklista</h2>
+</section>
 
-{% for drink in site.drinks %}
-  <a href="{{drink.url}}">{{drink.name}}</a>
-{% endfor %}
+
+<section class="drink-list-content">
+	{% for drink in site.drinks %}
+	  <a href="{{drink.url}}">{{drink.name}}</a>
+	{% endfor %}
+</section>

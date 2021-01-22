@@ -1,9 +1,73 @@
 ---
 ---
 body{
-  background-color: red;
+  background-color: #151515;
+  font-family: aviano, serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #FFF;
 }
 
+.page-container {
+	background-image: url(); 
+	width: 834px;
+	margin: auto;
+}
+
+.drink-list-header {
+	text-align: center;
+	font-size: 50px;
+	font-family: louvette-banner, serif;
+	font-weight: 400;
+	font-style: normal;
+	margin: 54px 0px 77px 0px;
+
+	/*
+	background-image: url('/assets/images/drink-page-eye.svg');
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: 352px;
+	height: px; */
+}
+
+.drink-list-content {
+
+}
+
+
+.drink-page-header {
+	text-align: center;
+	font-size: 50px;
+	font-family: louvette-banner, serif;
+	font-weight: 400;
+	font-style: normal;
+	background-image: url('/assets/images/bg-drinkpage.svg');
+	background-size: 100%;
+	background-position: 0px -46px;
+	height: 446px;
+	width: 100%;
+}
+
+.drink-page-header-text{
+	margin: 35px 0px 0px 0px;
+	padding: 0px;
+}
+
+.drink-page-header-logo {
+	margin-top: 50px;
+}
+
+.ingredients-section {
+	background-color: hsla(0, 0%, 100%, 0.02);
+	padding: 26px 60px 26px 120px; 
+	font-size: 28px;
+}
+
+
+.description-section {
+	padding: 60px 220px 60px 220px; 
+	font-size: 24px;
+}
 
 /*
 font-family: louvette-banner, serif;
