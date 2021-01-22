@@ -1,11 +1,20 @@
 ---
 ---
-body{
+html, body {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
   background-color: #151515;
   font-family: aviano, serif;
   font-weight: 400;
   font-style: normal;
   color: #FFF;
+}
+
+h1, h2{
+	font-weight: normal;
 }
 
 .page-container {
@@ -14,24 +23,61 @@ body{
 	margin: auto;
 }
 
+.drink-list-container{ 
+	background-image: url('/assets/images/list-bg-eye.svg');
+	background-repeat: no-repeat;
+	background-position: center top -120px;
+	background-size: 352px auto;
+
+}
+
 .drink-list-header {
 	text-align: center;
 	font-size: 50px;
 	font-family: louvette-banner, serif;
 	font-weight: 400;
 	font-style: normal;
-	margin: 54px 0px 77px 0px;
+	padding: 54px 0px 77px 0px;
 
-	/*
-	background-image: url('/assets/images/drink-page-eye.svg');
-	background-repeat: no-repeat;
-	background-position: center top;
-	background-size: 352px;
-	height: px; */
+	h2 {
+		margin: 0px;
+	}
 }
 
 .drink-list-content {
+	ul{
+		list-style-type: none;
+	}
 
+	li {
+		a {
+			display: flex;
+			flex-direction: row;
+			align-items: flex-start;
+			color: #FFF;
+			text-decoration: none;
+		
+	
+			span {
+				display: inline-block;
+				width: 54px;
+				min-height: 42px;
+				background-image: url('/assets/images/list-bg-hex.svg');
+				background-repeat: no-repeat;
+				background-size: cover;
+				font-size: 26px;
+				text-align: center;
+				padding-top: 18px;
+				padding-bottom: 6px;
+			}
+			h4 {
+				margin: 0px;
+				padding-top: 18px;
+				margin-left: 15px;
+				font-size: 24px;
+			}
+		}
+	}
 }
 
 
@@ -63,32 +109,31 @@ body{
 	font-size: 28px;
 }
 
-
 .description-section {
-	padding: 60px 220px 60px 220px; 
+	padding: 60px 220px 160px 220px; 
 	font-size: 24px;
 }
 
-/*
-font-family: louvette-banner, serif;
-font-weight: 400;
-font-style: normal;
+.drink-page-number-container {
+	position: fixed;
+	display: block;
+	height: 116px;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	text-align: center;
+	background-image: url('/assets/images/page-number-decorator.svg');
+	background-repeat: no-repeat;
+	background-position: top center;
+	font-size: 30px;
+	font-family: louvette-banner, serif;
+	font-weight: 400;
+	background-color: #151515;
 
-Louvette Banner Italic
+	span {
+		display: inline-block;
+		padding-top: 22px;
+	}
 
-font-family: louvette-banner, serif;
-font-weight: 400;
-font-style: italic;
 
-Louvette Banner Black
-
-font-family: louvette-banner, serif;
-font-weight: 700;
-font-style: normal;
-
-Louvette Banner Black Italic
-
-font-family: louvette-banner, serif;
-font-weight: 700;
-font-style: italic;
-*/
+}
