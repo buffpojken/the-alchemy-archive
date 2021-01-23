@@ -29,10 +29,10 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 collections:
   drinks:
     output: true
+    sort_by: number
     permalink: /:collection/:name:output_ext
 
 # Build settings
-theme: minima
 
 # Exclude from processing.
 # The following items will not be processed, by default.

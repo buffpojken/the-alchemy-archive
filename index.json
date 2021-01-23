@@ -1,0 +1,12 @@
+---
+---
+
+[
+{% for drink in site.drinks %}  
+    {
+      "name"    : "{{ drink.name}}",
+      "objectID": "{{drink.number}}",
+      "url": "{{ site.baseurl }}{{ drink.url }}"
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]

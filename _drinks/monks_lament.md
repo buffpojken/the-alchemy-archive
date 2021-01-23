@@ -4,7 +4,7 @@ name: Monks Lament
 layout: drink
 ingredients: 
   - 4 cl Rom
-  - 2 cl Gul Chatruese 
+  - 2 cl Gul Chartreuse 
   - 2 stänk angostura apelsin bitters 
   - 1 Maraschino körsbär
 ---
