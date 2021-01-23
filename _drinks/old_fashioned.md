@@ -3,13 +3,13 @@ number: 1
 name: Old Fashioned
 layout: drink
 ingredients: 
-  - En gris
-  - Två hekto tjära
+  - 4 cl Burbon
+  - 1 sockerbit / 1 tesked socker
+  - 2 stänk angostura bitters  	
 ---
 
-Blanda ett svin.
 
-Koppla ett grin. 
+Glas: Tumbler
 
-Dansa dig fin!
-
+1) Ta socker och lägg i glaset, blöt sockret med bittern och mosa med sked. <br>
+2) 

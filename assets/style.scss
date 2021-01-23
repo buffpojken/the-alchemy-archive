@@ -105,19 +105,27 @@ h1, h2{
 
 .ingredients-section {
 	background-color: hsla(0, 0%, 100%, 0.02);
-	padding: 26px 60px 26px 120px; 
+	padding: 26px 60px 56px 120px; 
 	font-size: 28px;
+
+	h2 {
+		margin: 0px;
+		padding: 0px 0px 10px 0px;
+	}
 
 	ul, li {
 		margin: 0px; 
 		padding: 0px;
+		padding-bottom: 4px;
 		list-style-type: none;
 	}
+
 }
 
 .description-section {
-	padding: 60px 220px 160px 220px; 
+	padding: 60px 160px 120px 180px; 
 	font-size: 24px;
+	line-height: 32px;
 }
 
 .drink-page-number-container {
