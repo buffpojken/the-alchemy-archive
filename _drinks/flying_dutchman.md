@@ -9,7 +9,7 @@ ingredients:
 
 Glas: Tumbler
 
-1) Fyll glaset med is och ställ åt sidan. 
-2) Rör gin och triple sec med is i ett mixerglas. 
-3) Töm glaset på is
-4) Sila ner i glaset
+1) Fyll glaset med is och ställ åt sidan.  
+2) Rör gin och triple sec med is i ett mixerglas.  
+3) Töm glaset på is  
+4) Sila ner i glaset  
