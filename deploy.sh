@@ -1,0 +1,1 @@
+jekyll build && aws --profile md s3 sync _site s3://drinks.monkeydancers.com
