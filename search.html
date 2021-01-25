@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<section class="drink-list-container">
+  <section class="drink-list-header">
+    <a href="/"><h2>Sökresultat</h2></a>
+  </section>
+
+  <section class="drink-list-content">
+    <ul>
+    </ul>
+  </section>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const client = algoliasearch('DFQ9TOZCS7', '94f06898d9fcaaf8459a1fefbf92bc7d');
+    window.index = client.initIndex('drinks');    
+    let _t = (d) => {return `<li><a href="${d.url}"> <span>${d.objectID} </span><h4>${d.name}<h4></a></li>`}
+    window.index.search(window.location.search.split("=")[1]).then(res => {
+      if(res.hits.length){
+        console.log(res.hits.map(function(t){return _t(t)}).join(""))
+        document.querySelectorAll('.drink-list-content ul')[0].innerHTML = res.hits.map(function(t){return _t(t)}).join("")
+      }else{  
+        document.querySelectorAll('.drink-list-content ul')[0].innerHTML = "<li>No drinks found</li>"
+      }
+    })
+  });
+</script>
+
+
