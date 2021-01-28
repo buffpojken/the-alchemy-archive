@@ -85,6 +85,8 @@ layout: default
       con.classList.toggle('open');
       if(con.classList.contains('open')){
         con.querySelector('input').focus()
+      }else{
+        con.querySelector('input').value = ''        
       }
     })
 
