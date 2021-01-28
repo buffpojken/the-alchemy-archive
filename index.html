@@ -10,19 +10,67 @@ layout: default
 		<h2>Drinklista</h2>
 	</section>
 
-  <section class="drink-search" style="display:none">
-    <form action="/search.html" method="get">
-      <input type="text" name="query" placeholder="Type and hit <enter>" class="search-input-field" />
-    </form>
+  <section class="drink-search" style="display:block">
+    <input type="text" name="query" placeholder="Type to search..." class="search-input-field" />
   </section>
 
 	<section class="drink-list-content">
 		<ul>
 		{% for drink in site.drinks %}
-		  <li><a href="{{drink.url}}"> <span>{{drink.number}} </span><h4>{{drink.name}}<h4></a></li>
+		  <li data-drink-no="{{drink.number}}"><a href="{{drink.url}}"> <span>{{drink.number}} </span><h4>{{drink.name}}<h4></a></li>
 		{% endfor %}
 		<ul>
 	</section>
 </section>
+
+
+<script>
+
+  function debounce(func, wait, immediate) {
+    var timeout;
+    return function() {
+      var context = this, args = arguments;
+      var later = function() {
+        timeout = null;
+        if (!immediate) func.apply(context, args);
+      };
+      var callNow = immediate && !timeout;
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+      if (callNow) func.apply(context, args);
+    };
+  };
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const client = algoliasearch('DFQ9TOZCS7', '94f06898d9fcaaf8459a1fefbf92bc7d');
+    const index = client.initIndex('drinks');    
+
+    let _s = debounce(function(q){
+      index.search(q).then(res => {
+        if(res.hits.length){
+          
+        }else{
+          Array.prototype.slice.call(document.querySelectorAll('.hidden-result')).map((a) => {a.classList.remove('hidden-result')});
+        }
+      })
+    }, 200); 
+
+    document.querySelectorAll('.search-input-field')[0].addEventListener('keyup', function(e){
+      _s(e.target.value)
+    })
+
+
+    // let _t = (d) => {return `<li><a href="${d.url}"> <span>${d.objectID} </span><h4>${d.name}<h4></a></li>`}
+    // index.search(window.location.search.split("=")[1]).then(res => {
+    //   var _l = document.querySelectorAll('.drink-list-content ul')[0];
+    //   if(res.hits.length){
+    //     _l.innerHTML = res.hits.map(function(t){return _t(t)}).join("")
+    //   }else{  
+    //     _l.innerHTML = "<li>No drinks found</li>"
+    //   }
+    // })
+
+  });
+</script>
 
 
