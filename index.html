@@ -19,7 +19,7 @@ layout: default
           <span>?</span>
         </a>
         <div class="field-container">
-        	<input type="text" name="query" placeholder="Type and hit <enter>" class="search-input-field" />
+        	<input type="text" name="query" autocomplete="off" placeholder="Type and hit <enter>" class="search-input-field" />
         </div>
       </li>
 		{% for drink in site.drinks %}
@@ -58,9 +58,9 @@ layout: default
 
     const list = document.querySelector('.drink-list-content ul');
     let _s = debounce(function(q){
+      Array.prototype.slice.call(document.querySelectorAll('.hit')).map((e) => {e.classList.remove('hit')})
       if(!q.length){
         list.classList.remove('search')
-        Array.prototype.slice.call(document.querySelectorAll('.hit')).map((e) => {e.classList.remove('hit')})
       }else{
         index.search(q).then(res => {
           if(res.hits.length){
@@ -68,8 +68,6 @@ layout: default
             res.hits.forEach(function(h){
               document.querySelector(`.drink-list-content ul [data-drink-no='${h.objectID}']`).classList.add('hit')
             })
-          }else{
-            list.classList.remove('search')
           }
         })
       }
