@@ -53,15 +53,17 @@ h1, h2{
 		list-style-type: none;
 	}
 
+
 	li {
+
 		a {
 			display: flex;
 			flex-direction: row;
 			align-items: flex-start;
 			color: #FFF;
-			text-decoration: none;
-		
-	
+			text-decoration: none;	
+
+
 			span {
 				display: inline-block;
 				width: 54px;
@@ -82,6 +84,27 @@ h1, h2{
 			}
 		}
 	}
+	li.search {
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+		margin-block-end: 1.33em;
+		input {
+			display: none;
+			background-color: hsla(0, 0%, 100%, 0.2);
+			border: 2px solid #FFF;
+			border-left: none;
+			height: 59px;
+			width: 485px;
+			margin-left: -28px;
+			padding-left: 34px;
+		  	font-family: aviano, serif;
+  			font-weight: 400;
+  			font-size: 24px;
+  			color: #FFF;
+		} 
+	}
+
 }
 
 
