@@ -5,7 +5,7 @@ layout: drink
 ingredients: 
   - 2 cl Gin (stockholms bränneri)
   - 2 cl Grön Chartreuse 
-  	2 cl Röd Söt Vermuth 
+  - 2 cl Röd Söt Vermuth 
   - 2 stänk angostura apelsin bitters 
   - 1 Maraschino körsbär
 ---

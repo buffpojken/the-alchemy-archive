@@ -5,8 +5,8 @@ layout: drink
 ingredients: 
   - 6 cl Blended Wiskey
   - 2 cl Citron juice
-  	2 cl Ingefärssirap 
-  	0.7 cl Islay wiskey
+  - 2 cl Ingefärssirap 
+  - 0.7 cl Islay wiskey
   - Kanderad Ingefära
 ---
 
