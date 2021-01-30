@@ -13,9 +13,9 @@ ingredients:
 
 Glas: Tumbler
 
-1) Lägg en stor isbit i glaset 
+1) Lägg en stor isbit i glaset  
 2) Fyll ett mixerglas med is  
-3) Häll i de tre första ingridienserna och rör en minut    
-4) Sila ner i glaset
-5) Toppa med Islay wiskey
+3) Häll i de tre första ingridienserna och rör en minut  
+4) Sila ner i glaset  
+5) Toppa med Islay wiskey  
 6) Dekorera med ingefära
