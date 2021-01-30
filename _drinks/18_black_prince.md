@@ -4,7 +4,7 @@ name: The Black Prince
 layout: drink
 ingredients: 
   - 3 cl Zacapa 
-  - 1 cl Punt e Mes
+  - 1 cl Punt e Mes (röd söt vermuth)
   - 0,8 cl Averna
   - 2 stänk apelsinbitter
 ---
