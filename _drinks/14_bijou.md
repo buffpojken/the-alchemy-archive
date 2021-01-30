@@ -17,4 +17,4 @@ Glas: Coupe
 2) Fyll ett mixerglas med is  
 3) Häll i samtliga ingridienser och rör en minut  
 4) Låt stå en minut  
-5) Sila ner i glaset
+5) Sila ner i glaset  
