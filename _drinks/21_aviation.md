@@ -15,5 +15,5 @@ ingredients:
 Glas: Coupe
 
 1) Skaka samtliga ingredienser utom körsbäret med is tills väl kylt.   
-3) Lägg i körsbär i glaset.
-2) Häll försiktigt drinken ovanpå körsbäret.
+2) Lägg i körsbär i glaset.
+3) Häll försiktigt drinken ovanpå körsbäret.
