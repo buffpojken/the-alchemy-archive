@@ -14,7 +14,9 @@ ingredients:
 Glas: Coupe
 
 1) Fyll ett mixerglas med is.  
-2) Häll i samtliga ingredienser utom gin  och rör tills kylt.  
-3) Fyll glaset med is och sila på drinken  
-4) Häll i gin försiktigt som en float  
+
+2) Häll i samtliga ingredienser utom gin och rör tills kylt.  
+3) Fyll glaset med is och sila på drinken.  
+4) Häll i gin försiktigt som en float.  
 5) Dekorera med dehydrerad Bergamot eller färska blommor.  
+
