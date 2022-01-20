@@ -25,13 +25,17 @@
     <link rel="apple-touch-icon" sizes="76x76" href="/assets/images/favico/favicon-76.png">
     <link rel="apple-touch-icon" sizes="152x152" href="/assets/images/favico/favicon-152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favico/favicon-180.png">
-    </head>
+  </head>
   <body class="bg-black">
-    <section class="page-container">
-      {{ content }}
-    </section>
-    <footer>
+    <section class="w-full flex flex-row">
+      <main class="text-white">
+        {{ content }}
+      </main>
 
-    </footer>
+      <nav class="bg-red-200 hidden sm:block">
+        Nav section here
+      </nav>
+    </section>    
+
   </body>
 </html>
