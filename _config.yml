@@ -31,6 +31,13 @@ collections:
     output: true
     sort_by: number
     permalink: /:collection/:name:output_ext
+plugins:
+  - jekyll-postcss
+postcss:
+  cache: false
+keep_files:
+  - assets/css/tailwind.css
+  - assets/css/tailwind.css.map
 
 # Build settings
 
