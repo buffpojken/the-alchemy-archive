@@ -1,6 +1,32 @@
 ---
 ---
 
+.content-container {
+	widht: 400px;
+	padding-top: 45px;
+	.content-list-medalion {
+		position: absolute;
+		width: 100px;
+		height: 100px;
+		border-radius: 80px;
+		border: 3px solid #FFF;
+		z-index: 2;
+		padding: 10px;
+		margin: 0px auto;
+		background-color: #000;
+	}
+	.content-list-outer {
+		border: 2px solid #FFF;
+		padding: 4px;
+		margin:  0px 0px;
+	}
+	.content-list-inner {
+		border: 2px solid #FFF;
+		min-height: 400px;
+	
+	}
+}
+
 
 .menu-container {
 	position: rellative;
@@ -85,6 +111,7 @@
         transform:rotate(-360deg); 
     } 
 }
+
 /* Occult keys */
 
 .occult-keys-container {
@@ -134,10 +161,12 @@
 /* Moon sprites */
 
 .moon-container	{
-	width: 300px;
-	height: 300px;
+	width: 100px;
+	height: 100px;
 	background-color: blue;
 	background: url('/assets/images/moon-sprites.png') 0 0 no-repeat;
+	background-size: 100% auto;
+
   animation: moonwalk 5s steps(23) infinite; /* The Animation */
 }
 
