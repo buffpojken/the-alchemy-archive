@@ -56,8 +56,15 @@
     -moz-animation:spin 12s linear infinite;
     animation:spin 12s linear infinite;
 }
+
+.rotate-12 {
+    -webkit-animation:spin 12s linear infinite;
+    -moz-animation:spin 12s linear infinite;
+    animation:spin 12s linear infinite;
+}
+
  
-.rotate-counter-5 {
+.rotate-counter-16 {
 	-webkit-animation:spin-counter 16s linear infinite;
     -moz-animation:spin-counter 16s linear infinite;
     animation:spin-counter 16s linear infinite;	
@@ -105,10 +112,22 @@
 	}
 
 	.occult-keys-inner {
-		background-size: 28%;
+		background-size: 43%;
 		background-image: url('/assets/images/occult-keys/occult-keys-inner.svg');
 	}
+	.occult-keys-inner-2 {
+		background-size: 43%;
+		background-image: url('/assets/images/occult-keys/occult-keys-inner-2.svg');
+		z-index: 1;
+
+	}
+	.occult-keys-center {
+		background-size: 9%;
+		background-image: url('/assets/images/occult-keys/occult-keys-center.svg');
+	}
 }
+
+
 
 
 
