@@ -51,7 +51,6 @@
 }
 
 
-
 .rotate {
     -webkit-animation:spin 12s linear infinite;
     -moz-animation:spin 12s linear infinite;
@@ -79,5 +78,23 @@
         transform:rotate(-360deg); 
     } 
 }
+
+
+/* Moon sprites */
+
+.moon-container	{
+	width: 300px;
+	height: 300px;
+	background-color: blue;
+	background: url('/assets/images/moon-sprites.png') 0 0 no-repeat;
+  animation: moonwalk 5s steps(23) infinite; /* The Animation */
+}
+
+@keyframes moonwalk {
+  100% { background-position: 0 -6900px ; }
+}
+
+
+
 
 
