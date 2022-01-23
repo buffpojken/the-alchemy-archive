@@ -4,3 +4,33 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
+.menu-1{
+  left: 0px;
+  top: calc(50% - 104px);
+}
+
+.menu-2{
+  left: 150px;
+  top: 0px;
+}
+
+.menu-3{
+  left: 470px;
+  top: 0px;
+}
+
+.menu-4{
+  right: 0px;
+  top: calc(50% - 104px);
+}
+
+.menu-5{
+  left: 470px;
+  bottom: 0px;
+}
+
+.menu-6{
+  left: 150px;
+  bottom: 0px;
+}
