@@ -4,25 +4,66 @@
 
 .menu-container {
 	position: rellative;
-	width: 940px;
-	height: 940px;
+	width: 640px;
+	height: 640px;
 	border: 1px solid red;
-	
-	img {
+	display: flex;
+  	justify-content: center;
+  	position: relative;
+	div {
+		width: 100%;
+		height: 100%;
 		position: absolute;
-        top: 50%;
-        left: 50%;
-        margin-right: -50%;
-        transform: translate(-50%, -50%);
+		background-size: 100%;
+		background-color: transparent;
+		background-position: center center;
+		background-repeat: no-repeat;
+	}
+
+	.menu-outer-6-circles {
+		background-size: 100%;
+		background-image: url('/assets/images/menu/menu-outer-6-circles.svg');
+		z-index: 2;
+	}
+	.menu-outer-hexagon {
+		background-size: 91%;
+		background-image: url('/assets/images/menu/menu-outer-hexagon.svg');
+	}
+	.menu-outer-star {
+		background-size: 91%;
+		background-image: url('/assets/images/menu/menu-outer-star.svg');
+	}
+
+
+	.menu-inner-hexagon {
+		background-size: 45%;
+		background-image: url('/assets/images/menu/menu-inner-hexagon.svg');
+	}
+	.menu-inner-star {
+		background-size: 45%;
+		background-image: url('/assets/images/menu/menu-inner-star.svg');
+	}
+
+	.menu-center-vortex {
+		background-size: 25%;
+		background-image: url('/assets/images/menu/menu-center-vortex.svg');
 	}
 }
 
+
+
 .rotate {
-    -webkit-animation:spin 4s linear infinite;
-    -moz-animation:spin 4s linear infinite;
-    animation:spin 4s linear infinite;
+    -webkit-animation:spin 12s linear infinite;
+    -moz-animation:spin 12s linear infinite;
+    animation:spin 12s linear infinite;
 }
  
+.rotate-counter-5 {
+	-webkit-animation:spin-counter 16s linear infinite;
+    -moz-animation:spin-counter 16s linear infinite;
+    animation:spin-counter 16s linear infinite;	
+}
+
 
 
 @keyframes spin { 
@@ -31,3 +72,12 @@
         transform:rotate(360deg); 
     } 
 }
+
+@keyframes spin-counter { 
+    100% { 
+        -webkit-transform: rotate(-360deg); 
+        transform:rotate(-360deg); 
+    } 
+}
+
+
