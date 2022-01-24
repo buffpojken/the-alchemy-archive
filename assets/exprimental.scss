@@ -2,17 +2,20 @@
 ---
 
 .content-container {
+	position: relative;
 	widht: 400px;
-	padding-top: 45px;
+	margin-top: 80px;
 	.content-list-medalion {
-		position: absolute;
+	    position: absolute;
+	    top: -55px;
+		left:50%;
+    	margin-left:-50px;
 		width: 100px;
 		height: 100px;
 		border-radius: 80px;
 		border: 3px solid #FFF;
 		z-index: 2;
 		padding: 10px;
-		margin: 0px auto;
 		background-color: #000;
 	}
 	.content-list-outer {
