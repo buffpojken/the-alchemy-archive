@@ -5,6 +5,8 @@
 	position: relative;
 	widht: 400px;
 	margin-top: 80px;
+
+
 	.content-list-medalion {
 	    position: absolute;
 	    top: -55px;
@@ -18,6 +20,18 @@
 		padding: 10px;
 		background-color: #000;
 	}
+
+	.content-list-page-selector{
+	    position: absolute;
+	    bottom: 10%;
+		right: -301px;
+		width:  320px;
+		height: 286px;
+		background-size: 100%;
+		background-image: url('/assets/images/selector-ring.svg');
+
+
+	}
 	.content-list-outer {
 		border: 2px solid #FFF;
 		padding: 4px;
@@ -26,7 +40,7 @@
 	.content-list-inner {
 		border: 2px solid #FFF;
 		min-height: 400px;
-	
+
 	}
 }
 
