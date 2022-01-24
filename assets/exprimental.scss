@@ -73,13 +73,12 @@
 
 .menu-container {
 	position: rellative;
-	width: 640px;
-	height: 640px;
 	border: 1px solid red;
 	display: flex;
   	justify-content: center;
   	position: relative;
-	div {
+
+	.menu-bg {
 		width: 100%;
 		height: 100%;
 		position: absolute;

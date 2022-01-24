@@ -35,17 +35,22 @@
         {{ content }}
       </main>
 
-      <nav class="border flex-grow hidden md:block" id="container">
+      <nav class="border flex-grow hidden md:block menu-container overflow-hidden" id="container">
+        <div class="menu-outer-hexagon rotate menu-bg"></div>
+        <div class="menu-outer-star menu-bg"></div>
+        <div class="menu-inner-hexagon rotate-counter-16 menu-bg"></div>
+        <div class="menu-inner-star rotate-counter-16 menu-bg"></div>
+        <div class="menu-center-vortex rotate menu-bg"> </div>
+
         <div class="flex flex-col justify-center w-full h-full">
-          <div class="w-[800px] h-[800px] border border-red-200 relative flex-none" id="rotate">
+          <div class="w-[800px] h-[800px] relative flex-none" id="rotate">
             {% for num in (1..6) %}
-            <div class="absolute rounded-full w-52 border h-52 text-white flex flex-col justify-center items-center text-center menu-{{num}}" :style="{'transform': 'rotate('+$store.nav.angle+'deg)'}">
+            <div class="absolute rounded-full bg-black w-52 border h-52 text-white flex flex-col justify-center items-center text-center menu-{{num}}" :style="{'transform': 'rotate('+$store.nav.angle+'deg)'}">
               Section: {{num}}
             </div>
             {% endfor %}
           </div>
         </div>
-
       </nav>
     </section>    
 
