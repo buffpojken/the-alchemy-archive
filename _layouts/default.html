@@ -37,7 +37,7 @@
         <div class="flex flex-col justify-center w-full h-full">
           <div class="w-[800px] h-[800px] border border-red-200 relative flex-none" id="rotate">
             {% for num in (1..6) %}
-            <div class="absolute rounded-full w-52 border h-52 text-white flex flex-col justify-center items-center text-center menu-{{num}}">
+            <div class="absolute rounded-full w-52 border h-52 text-white flex flex-col justify-center items-center text-center menu-{{num}}" :style="{'transform': 'rotate('+$store.nav.angle+'deg)'}">
               Section: {{num}}
             </div>
             {% endfor %}
@@ -50,7 +50,8 @@
     <script>
       document.addEventListener('alpine:init', function(){
         Alpine.store('nav', {
-          component: 1
+          component: 1, 
+          angle: 0
         })
       })
     </script>
@@ -110,12 +111,14 @@
             y = e.clientY - center.y,
             d = R2D * Math.atan2(y, x);
           rotation = d - startAngle;
+          Alpine.store('nav').angle = -(angle + rotation)
           return rot.style.webkitTransform = "rotate(" + (angle + rotation) + "deg)";
         };
 
         stop = function() {
           angle += rotation;
           defineSection(angle)
+          Alpine.store('nav').angle = -angle
           return active = false;
         };
 
@@ -174,9 +177,10 @@
           if(component){
             Alpine.store('nav').component = component            
           }
-          let d = closestEquivalentAngle(baseAngle, target)
+          let d = closestEquivalentAngle(baseAngle, target)        
           rot.style.webkitTransform = "rotate(" + (d) + "deg)";
           angle = d
+          Alpine.store('nav').angle = -angle
         }
 
         init();
