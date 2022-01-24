@@ -29,9 +29,35 @@
 		height: 286px;
 		background-size: 100%;
 		background-image: url('/assets/images/selector-ring.svg');
-
-
 	}
+	.content-list-page-decorator-1 {
+	    position: absolute;
+	    top: 10%;
+		right: -15px;
+		width:  35px;
+		height: 31px;
+		background-size: 100%;
+		background-image: url('/assets/images/content-area-decorator-1.svg');
+	}
+	.content-list-page-decorator-1 {
+	    position: absolute;
+	    top: 10%;
+		right: -15px;
+		width:  35px;
+		height: 31px;
+		background-size: 100%;
+		background-image: url('/assets/images/content-area-decorator-1.svg');
+	}
+	.content-list-page-decorator-2 {
+	    position: absolute;
+	    bottom: 6%;
+		left: -17px;
+		width:  43px;
+		height: 79px;
+		background-size: 100%;
+		background-image: url('/assets/images/content-area-decorator-2.svg');
+	}
+	
 	.content-list-outer {
 		border: 2px solid #FFF;
 		padding: 4px;
@@ -114,6 +140,12 @@
 }
 
 
+.move-decorator-1-animate {
+	-webkit-animation:move-decorator 8s ease-in-out infinite;
+    -moz-animation:move-decorator 8s ease-in-out infinite;
+    animation:move-decorator 8s ease-in-out infinite;	
+}
+
 
 @keyframes spin { 
     100% { 
@@ -128,6 +160,21 @@
         transform:rotate(-360deg); 
     } 
 }
+
+
+@keyframes move-decorator { 
+ 	0% {
+		top: 10%;
+ 	}
+ 	50% {
+ 		top: 30%;
+ 	}
+ 	100% {
+ 		top: 10%;
+
+ 	}
+}
+
 
 /* Occult keys */
 
