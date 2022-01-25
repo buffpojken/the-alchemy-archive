@@ -125,10 +125,27 @@ function setupMenu(win){
       Alpine.store('nav').angle = -angle
     }
 
+    // goToSection = function(el){
+    //   let index = el.getAttribute('data-index')
+    //   let target = 0
+    //   if(index == 1){
+    //     target = 180
+    //   }
+    //   // if(component){
+    //   //   Alpine.store('nav').component = component            
+    //   // }
+    //   let d = closestEquivalentAngle(angle, target)        
+    //   rot.style.webkitTransform = "rotate(" + (d) + "deg)";
+    //   angle = d
+    //   Alpine.store('nav').angle = -angle
+    // }
+
     let items = document.querySelectorAll('.menu-item')
     for(var i = 0; i < items.length; i++){
+      var j = i
+      let item = items[i]
       items[i].addEventListener('click', function(){
-        
+//        goToSection(item)
       })
     }
 
