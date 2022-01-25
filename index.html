@@ -4,6 +4,53 @@ layout: default
 
 <div class="px-12 mt-12 w-full box-border">
   <div class="border-white border w-full">
-    content <span x-text="$store.nav.component"></span>
+
+    <div class="" x-cloak x-show="$store.nav.component == 1 || $store.nav.component == 4">
+      <ul>
+        {% for drink in site.drinks %}
+          <li class="drink-item" data-drink-no="{{drink.number}}">
+            <a href="{{drink.url}}">
+              <h4>{{drink.name}}<h4>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div class="" x-cloak x-show="$store.nav.component == 3 || $store.nav.component == 5">
+      <ul>
+        {% for drink in site.bases %}
+          <li class="drink-item" data-drink-no="{{drink.number}}">
+            <a href="{{drink.url}}">
+              <h4>{{drink.name}}<h4>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div class="" x-cloak x-show="$store.nav.component == 2">
+      <ul>
+        {% for drink in site.decoctions %}
+          <li class="drink-item" data-drink-no="{{drink.number}}">
+            <a href="{{drink.url}}">
+              <h4>{{drink.name}}<h4>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div class="" x-cloak x-show="$store.nav.component == 6">
+      <ul>
+        {% for drink in site.substantia %}
+          <li class="drink-item" data-drink-no="{{drink.number}}">
+            <a href="{{drink.url}}">
+              <h4>{{drink.name}}<h4>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
   </div>
 </div>

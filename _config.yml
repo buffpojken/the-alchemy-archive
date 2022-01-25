@@ -31,6 +31,18 @@ collections:
     output: true
     sort_by: number
     permalink: /:collection/:name:output_ext
+  bases:
+    output: true
+    sort_by: number
+    permalink: /:collection/:name:output_ext
+  decoctions:
+    output: true
+    sort_by: number
+    permalink: /:collection/:name:output_ext
+  substantia:
+    output: true
+    sort_by: number
+    permalink: /:collection/:name:output_ext
 plugins:
   - jekyll-postcss
 postcss:
@@ -38,6 +50,20 @@ postcss:
 keep_files:
   - assets/css/tailwind.css
   - assets/css/tailwind.css.map
+menu:
+  sections:
+    - key: mixtures
+      label: Mixturer
+    - key: bases
+      label: Baser
+    - key: substantia
+      label: Substantia
+    - key: mixtures
+      label: Mixturer
+    - key: decoctions
+      label: Dekokter
+    - key: bases
+      label: Baser
 
 # Build settings
 
