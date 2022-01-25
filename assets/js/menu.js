@@ -2,6 +2,7 @@ function setupMenu(win){
   (function() {
     var init, rotate, start, stop,
       active = false,
+      hasMoved = false,
       angle = 0,
       rotation = 0,
       startAngle = 0,
@@ -49,6 +50,7 @@ function setupMenu(win){
 
     rotate = function(e) {
       e.preventDefault();
+      hasMoved = true
       var x = e.clientX - center.x,
         y = e.clientY - center.y,
         d = R2D * Math.atan2(y, x);
@@ -59,8 +61,12 @@ function setupMenu(win){
 
     stop = function() {
       angle += rotation;
-      defineSection(angle)
-      Alpine.store('nav').angle = -angle
+      if(hasMoved){
+        console.log("up")
+        defineSection(angle)
+        Alpine.store('nav').angle = -angle        
+      }
+      hasMoved = false
       return active = false;
     };
 
@@ -125,27 +131,38 @@ function setupMenu(win){
       Alpine.store('nav').angle = -angle
     }
 
-    // goToSection = function(el){
-    //   let index = el.getAttribute('data-index')
-    //   let target = 0
-    //   if(index == 1){
-    //     target = 180
-    //   }
-    //   // if(component){
-    //   //   Alpine.store('nav').component = component            
-    //   // }
-    //   let d = closestEquivalentAngle(angle, target)        
-    //   rot.style.webkitTransform = "rotate(" + (d) + "deg)";
-    //   angle = d
-    //   Alpine.store('nav').angle = -angle
-    // }
+    goToSection = function(el){
+      console.log("mep")
+      let index = el.getAttribute('data-index')
+      let target = 0
+      if(index == "1"){
+        target = 180
+      }else if(index == "2"){
+        target = 120
+      }else if(index == "3"){
+        target = 60
+      }else if(index == "4"){
+        target = 0
+      }else if(index == "5"){
+        target = 300
+      }else if(index == "6"){
+        target = 240
+      }
+      if(index){
+        Alpine.store('nav').component = index
+      }
+      let d = closestEquivalentAngle(angle, target)        
+      rot.style.webkitTransform = "rotate(" + (d) + "deg)";
+      angle = d
+      Alpine.store('nav').angle = -angle
+    }
 
     let items = document.querySelectorAll('.menu-item')
     for(var i = 0; i < items.length; i++){
       var j = i
       let item = items[i]
       items[i].addEventListener('click', function(){
-//        goToSection(item)
+  //      goToSection(item)
       })
     }
 
