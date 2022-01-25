@@ -8,10 +8,10 @@
 
 
 	.content-list-medalion {
-	    position: absolute;
-	    top: -55px;
-		left:50%;
-    	margin-left:-50px;
+	 position: absolute;
+	 top: -55px;
+	 left:50%;
+    margin-left:-50px;
 		width: 100px;
 		height: 100px;
 		border-radius: 80px;
@@ -22,8 +22,8 @@
 	}
 
 	.content-list-page-selector{
-	    position: absolute;
-	    bottom: 10%;
+    position: absolute;
+  	 bottom: 10%;
 		right: -301px;
 		width:  320px;
 		height: 286px;
@@ -72,8 +72,6 @@
 
 
 .menu-container {
-	position: rellative;
-	border: 1px solid red;
 	display: flex;
   	justify-content: center;
   	position: relative;
@@ -94,7 +92,7 @@
 		z-index: 2;
 	}
 	.menu-outer-hexagon {
-		background-size: 91%;
+		background-size: 100%;
 		background-image: url('/assets/images/menu/menu-outer-hexagon.svg');
 	}
 	.menu-outer-star {
