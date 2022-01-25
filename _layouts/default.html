@@ -34,21 +34,5 @@
     <section class="w-full flex flex-row items-stretch h-full">
       {{content}}
     </section>    
-
-    <script>
-      document.addEventListener('alpine:init', function(){
-        Alpine.store('nav', {
-          component: 1, 
-          angle: 0
-        })
-      })
-    </script>
-
-    <script>
-      window.addEventListener('DOMContentLoaded', (event) => {
-        setupMenu(window)
-      });
-    </script>
-
   </body>
 </html>

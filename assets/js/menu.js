@@ -125,6 +125,13 @@ function setupMenu(win){
       Alpine.store('nav').angle = -angle
     }
 
+    let items = document.querySelectorAll('.menu-item')
+    for(var i = 0; i < items.length; i++){
+      items[i].addEventListener('click', function(){
+        
+      })
+    }
+
     init();
   }).call(win)
 }
