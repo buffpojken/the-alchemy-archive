@@ -8,10 +8,10 @@
 
 
 	.content-list-medalion {
-	 position: absolute;
-	 top: -55px;
-	 left:50%;
-    margin-left:-50px;
+	 	position: absolute;
+	 	top: -55px;
+	 	left:50%;
+	    margin-left:-50px;
 		width: 100px;
 		height: 100px;
 		border-radius: 80px;
@@ -22,8 +22,8 @@
 	}
 
 	.content-list-page-selector{
-    position: absolute;
-  	 bottom: 10%;
+	    position: absolute;
+  	 	bottom: 10%;
 		right: -301px;
 		width:  320px;
 		height: 286px;
@@ -62,6 +62,12 @@
 		border: 2px solid #FFF;
 		padding: 4px;
 		margin:  0px 0px;
+	}
+	.content-list-middle {
+		border: 2px solid #FFF;
+		padding: 4px;
+		margin:  0px 0px;
+
 	}
 	.content-list-inner {
 		border: 2px solid #FFF;
