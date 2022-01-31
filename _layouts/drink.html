@@ -1,26 +1,37 @@
 ---
 layout: default
 ---
+<main class="text-white w-full md:w-[550px]" >
+<div class="content-container">
+	<a href="/index.html">
+		<div class="content-list-medalion content-list-medalion-mixturer"></div>
+	</a>
+	<div class="content-list-outer">
+		<div class="content-list-middle">
+			<div class="content-list-inner content-mixturer-page">
+			
+				<section class="drink-page-header">
+				
+					<h2 class="drink-page-header-text content-list-header ">{{page.name}}</h2>
+				</section>
 
-<section class="drink-page-header">
-	<a href="/index.html"><img src="/assets/images/drink-page-eye.svg" class="drink-page-header-logo" ></a>
-	<h2 class="drink-page-header-text">{{page.name}}</h2>
-</section>
+				<section class="ingredients-section">
+					<h2>Recept</h2>
+					<ul>
+					  {% for ingredient in page.ingredients %}
+					  <li>{{ingredient}}</li>
+					  {% endfor %}
+					</ul>
+				</section>
 
+				<section class="description-section">
+					{{content}}
+				</section>
 
-<section class="ingredients-section">
-	<h2>Recept</h2>
-	<ul>
-	  {% for ingredient in page.ingredients %}
-	  <li>{{ingredient}}</li>
-	  {% endfor %}
-	</ul>
-</section>
-
-<section class="description-section">
-	{{content}}
-</section>
-
-<div class="drink-page-number-container">
-	<span>{{page.number}}</span>
-</div>
+				<div class="drink-page-number-container">
+					<span>{{page.number}}</span>
+				</div>
+			</div>		
+		</div>
+	</div>
+</main>

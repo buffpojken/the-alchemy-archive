@@ -5,10 +5,13 @@ layout: default
 <main class="text-white w-full md:w-[550px]">
   <div class="px-12 mt-12 w-full box-border">
     <div class="border-white border w-full content-container">
-      <div class="content-list-medalion ">
-        <div class="moon-container"></div>
-      </div>
-      <div class="" x-cloak x-show="$store.nav.component == 1 || $store.nav.component == 4">
+        <div class="" x-cloak x-show="$store.nav.component == 1 || $store.nav.component == 4">
+
+        <div class="content-list-medalion ">
+          <div class="moon-container"></div>
+        </div>
+       <div class="content-list-page-decorator-1 move-decorator-1-animate"></div>
+       <div class="content-list-page-decorator-2 move-decorator-2-animate"></div>
          <div class="content-list-outer">
             <div class="content-list-inner">
               <h1 class="content-list-header">Mixturer</h1>
@@ -16,7 +19,7 @@ layout: default
                 {% for drink in site.drinks %}
                 <li class="drink-item" data-drink-no="{{drink.number}}">
                   <a href="{{drink.url}}">
-                    <h4>{{drink.name}}<h4>
+                    <h4><span>{{drink.number}} </span> {{drink.name}}</h4>
                   </a>
                 </li>
               {% endfor %}
@@ -30,7 +33,7 @@ layout: default
           {% for drink in site.bases %}
             <li class="drink-item" data-drink-no="{{drink.number}}">
               <a href="{{drink.url}}">
-                <h4>{{drink.name}}<h4>
+                <h4> {{drink.number}} - {{drink.name}}</h4>
               </a>
             </li>
           {% endfor %}
