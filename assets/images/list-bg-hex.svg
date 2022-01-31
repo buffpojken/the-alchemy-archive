@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="42" height="51" viewBox="0 0 42 51">
-  <g id="Polygon_18" data-name="Polygon 18" transform="translate(42) rotate(90)" fill="#151515">
+  <g id="Polygon_18" data-name="Polygon 18" transform="translate(42) rotate(90)" >
     <path d="M 37.68725967407227 41 L 13.31274223327637 41 L 1.169885039329529 21 L 13.31274223327637 1 L 37.68725967407227 1 L 49.83011627197266 21 L 37.68725967407227 41 Z" stroke="none"/>
     <path d="M 13.87548446655273 2 L 2.339771270751953 21 L 13.87548446655273 40 L 37.12451553344727 40 L 48.66022872924805 21 L 37.12451553344727 2 L 13.87548446655273 2 M 12.75 0 L 38.25 0 L 51 21 L 38.25 42 L 12.75 42 L 0 21 L 12.75 0 Z" stroke="none" fill="#fff"/>
   </g>
