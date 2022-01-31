@@ -4,18 +4,25 @@ layout: default
 
 <main class="text-white w-full md:w-[550px]">
   <div class="px-12 mt-12 w-full box-border">
-    <div class="border-white border w-full">
-
+    <div class="border-white border w-full content-container">
+      <div class="content-list-medalion ">
+        <div class="moon-container"></div>
+      </div>
       <div class="" x-cloak x-show="$store.nav.component == 1 || $store.nav.component == 4">
-        <ul>
-          {% for drink in site.drinks %}
-            <li class="drink-item" data-drink-no="{{drink.number}}">
-              <a href="{{drink.url}}">
-                <h4>{{drink.name}}<h4>
-              </a>
-            </li>
-          {% endfor %}
-        </ul>
+         <div class="content-list-outer">
+            <div class="content-list-inner">
+              <h1 class="content-list-header">Mixturer !</h1>
+              <ul class="drink-list">
+                {% for drink in site.drinks %}
+                <li class="drink-item" data-drink-no="{{drink.number}}">
+                  <a href="{{drink.url}}">
+                    <h4>{{drink.name}}<h4>
+                  </a>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>    
+        </div>        
       </div>
 
       <div class="" x-cloak x-show="$store.nav.component == 3 || $store.nav.component == 5">
@@ -59,7 +66,7 @@ layout: default
 
 <nav class="flex-grow hidden md:block menu-container relative overflow-hidden" id="container">
   <div class="absolute left-0 top-0">
-    <div class="menu-bg menu-outer-hexagon rotate"></div>
+    <div class="menu-bg menu-outer-hexagon"></div>
     <div class="menu-outer-star menu-bg"></div>
     <div class="menu-inner-hexagon rotate-counter-16 menu-bg"></div>
     <div class="menu-inner-star rotate-counter-16 menu-bg"></div>

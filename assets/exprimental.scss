@@ -1,11 +1,11 @@
 ---
 ---
 
+
 .content-container {
 	position: relative;
 	widht: 400px;
 	margin-top: 80px;
-
 
 	.content-list-medalion {
 	 	position: absolute;
@@ -79,15 +79,26 @@
 	.content-list-inner {
 		border: 2px solid #FFF;
 		min-height: 400px;
-
+	}
+	
+	.content-list-header {
+		font-family: aviano, serif;
+		margin: 50px 0px 30px 0px;
+		text-align: center;
+		font-size: 24px;
+		font-weight: bold;
 	}
 }
 
+.drink-list {
+	
+
+}
 
 .menu-container {
 	display: flex;
-  justify-content: center;
-  position: relative;
+	justify-content: center;
+	  position: relative;
 
 	.menu-bg {
 		width: 100%;
@@ -235,8 +246,7 @@
 /* Moon sprites */
 
 .moon-container	{
-	width: 100px;
-	height: 100px;
+	width: 100%;
 	background-color: blue;
 	background: url('/assets/images/moon-sprites.png') 0 0 no-repeat;
 	background-size: 100% auto;
