@@ -28,7 +28,7 @@ layout: default
         </div>        
       </div>
 
-      <div class="" x-cloak x-show="$store.nav.component == 3 || $store.nav.component == 5">
+      <div class="" x-cloak x-show="$store.nav.component == 2 || $store.nav.component == 6">
         <ul>
           {% for drink in site.bases %}
             <li class="drink-item" data-drink-no="{{drink.number}}">
@@ -40,7 +40,7 @@ layout: default
         </ul>
       </div>
 
-      <div class="" x-cloak x-show="$store.nav.component == 2">
+      <div class="" x-cloak x-show="$store.nav.component == 5">
         <ul>
           {% for drink in site.decoctions %}
             <li class="drink-item" data-drink-no="{{drink.number}}">
@@ -52,7 +52,7 @@ layout: default
         </ul>
       </div>
 
-      <div class="" x-cloak x-show="$store.nav.component == 6">
+      <div class="" x-cloak x-show="$store.nav.component == 3">
         <ul>
           {% for drink in site.substantia %}
             <li class="drink-item" data-drink-no="{{drink.number}}">

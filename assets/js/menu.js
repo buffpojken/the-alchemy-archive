@@ -2,6 +2,7 @@ function setupMenu(win){
   (function() {
     var init, rotate, start, stop,
       active = false,
+      hasClicked = false,
       hasMoved = false,
       angle = 0,
       rotation = 0,
@@ -12,25 +13,27 @@ function setupMenu(win){
       },
       R2D = 180 / Math.PI,
       rot = document.getElementById('rotate');
-
+      rot.addEventListener('transitionend', () => {
+        rot.classList.remove('transition-transform');
+      });
     init = function() {
       rot.addEventListener("mousedown", start, false);
-      document.addEventListener('mousemove', function(event){
+      document.addEventListener('mousemove', function(event){        
         if (active === true) {
           event.preventDefault();
           rotate(event);
-        }            
+        }else if(hasClicked){
+          active = true
+        }
       })
 
       document.addEventListener('mouseup', function(event){
         event.preventDefault();            
         stop(event);            
       })
-
     };
 
     start = function(e) {
-      rot.classList.remove('transition-transform');
       e.preventDefault();
       var bb = this.getBoundingClientRect(),
         t = bb.top,
@@ -45,12 +48,12 @@ function setupMenu(win){
       x = e.clientX - center.x;
       y = e.clientY - center.y;
       startAngle = R2D * Math.atan2(y, x);
-      return active = true;
+      hasClicked = true
+      return;
     };
 
     rotate = function(e) {
       e.preventDefault();
-      hasMoved = true
       var x = e.clientX - center.x,
         y = e.clientY - center.y,
         d = R2D * Math.atan2(y, x);
@@ -59,15 +62,17 @@ function setupMenu(win){
       return rot.style.webkitTransform = "rotate(" + (angle + rotation) + "deg)";
     };
 
-    stop = function() {
+    stop = function(ev) {
+      hasClicked = false
       angle += rotation;
-      if(hasMoved){
-        console.log("up")
+      if(active){
         defineSection(angle)
-        Alpine.store('nav').angle = -angle        
+        Alpine.store('nav').angle = -angle      
+        setTimeout(function(){
+          active = false
+        }, 25)
       }
-      hasMoved = false
-      return active = false;
+      return
     };
 
     closestEquivalentAngle = function(from, to) {
@@ -107,19 +112,19 @@ function setupMenu(win){
           component = 1
         }else if((_angle >= 30 && _angle <= 90)){
           target = 60
-          component = 6
+          component = 2
         }else if(_angle >= 90 && _angle <= 150){
           target = 120
-          component = 5
+          component = 3
         }else if(_angle >= 150 && _angle <= 210){
           target = 180
           component = 4
         }else if(_angle >= 210 && _angle <= 270){
           target = 240
-          component = 3
+          component = 5
         }else if(_angle >= 270 && _angle <= 330){
           target = 300
-          component = 2
+          component = 6
         }
       }
       if(component){
@@ -132,27 +137,28 @@ function setupMenu(win){
     }
 
     goToSection = function(el){
-      console.log("mep")
       let index = el.getAttribute('data-index')
       let target = 0
       if(index == "1"){
-        target = 180
-      }else if(index == "2"){
-        target = 120
-      }else if(index == "3"){
-        target = 60
-      }else if(index == "4"){
         target = 0
+      }else if(index == "2"){
+        target = -60
+      }else if(index == "3"){
+        target = -120
+      }else if(index == "4"){
+        target = 180
       }else if(index == "5"){
-        target = 300
+        target = 120
       }else if(index == "6"){
-        target = 240
-      }
+        target = 60
+      }      
+
       if(index){
         Alpine.store('nav').component = index
       }
-      let d = closestEquivalentAngle(angle, target)        
-      rot.style.webkitTransform = "rotate(" + (d) + "deg)";
+      rot.classList.add('transition-transform');
+      let d = closestEquivalentAngle(angle, target)  
+      rot.style.webkitTransform = "rotate(" + (d) + "deg)";      
       angle = d
       Alpine.store('nav').angle = -angle
     }
@@ -161,8 +167,10 @@ function setupMenu(win){
     for(var i = 0; i < items.length; i++){
       var j = i
       let item = items[i]
-      items[i].addEventListener('click', function(){
-  //      goToSection(item)
+      items[i].addEventListener('click', function(ev){
+        if(!active){
+          goToSection(ev.target)          
+        }
       })
     }
 
