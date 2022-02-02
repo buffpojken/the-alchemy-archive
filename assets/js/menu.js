@@ -20,6 +20,7 @@ function setupMenu(win){
       rot.addEventListener("mousedown", start, false);
       document.addEventListener('mousemove', function(event){        
         if (active === true) {
+          Alpine.store('nav').beingDragged = true
           event.preventDefault();
           rotate(event);
         }else if(hasClicked){
@@ -133,6 +134,7 @@ function setupMenu(win){
       let d = closestEquivalentAngle(baseAngle, target)        
       rot.style.webkitTransform = "rotate(" + (d) + "deg)";
       angle = d
+      Alpine.store('nav').beingDragged = false
       Alpine.store('nav').angle = -angle
     }
 
