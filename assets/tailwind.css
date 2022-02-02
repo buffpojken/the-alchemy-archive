@@ -6,31 +6,31 @@
 @import "tailwindcss/utilities";
 
 .menu-1{
-  left: 622px;
-  top: 312px;
-}
-
-.menu-2{
-  left: 467px;
-  top: 580px;
-}
-
-.menu-3{
-  left: 157px;
-  top: 580px;
-}
-
-.menu-4{
   left: 2px;
   top: 312px;
 }
 
-.menu-5{
+.menu-2{
   left: 156px;
   top: 43px;
 }
 
-.menu-6{
-  left: 467px;
+.menu-3{
+  left: 468px;
   top: 43px;
+}
+
+.menu-4{
+  left:622px;
+  top: 311px;
+}
+
+.menu-5{
+  left: 466px;
+  top: 580px;
+}
+
+.menu-6{
+  left: 157px;
+  top: 580px;
 }

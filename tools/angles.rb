@@ -3,7 +3,7 @@ y = 312
 
 r = 310
 
-start_angle = 0
+start_angle = 180
 step = 60
 6.times do |i|
   angle = start_angle + (step * i)
