@@ -242,12 +242,26 @@
     animation:spin 12s linear infinite;
 }
 
+
+.rotate-60 {
+    -webkit-animation:spin 60s linear infinite;
+    -moz-animation:spin 60s linear infinite;
+    animation:spin 60s linear infinite;
+}
+
  
 .rotate-counter-16 {
 	-webkit-animation:spin-counter 16s linear infinite;
     -moz-animation:spin-counter 16s linear infinite;
     animation:spin-counter 16s linear infinite;	
 }
+
+.rotate-counter-30 {
+	-webkit-animation:spin-counter 30s linear infinite;
+    -moz-animation:spin-counter 30s linear infinite;
+    animation:spin-counter 30s linear infinite;	
+}
+
 
 
 .move-decorator-1-animate {
@@ -334,23 +348,17 @@
 
 
 /* Stars circle */
-/* <div class="stars-container">
-	<div class="stars-inner"></div>
-	<div class="stars-middle"></div>
-	<div class="stars-outer"></div>
-</div>
-width="1047.252" height="982.678"
 
-*/
 
 .stars-container {
 	position: fixed;
-	top:  10px;
+	top: 10px;
 	right:  -400px;
 	width: 1047px;
-	height: 983px;
+	height: 1047px;
 	display: flex;
   	justify-content: center;
+  	opacity: 0.2;
 	div {
 		width: 100%;
 		height: 100%;
