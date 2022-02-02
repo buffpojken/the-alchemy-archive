@@ -78,18 +78,27 @@ layout: default
 
 <nav class="flex-grow hidden md:block menu-container relative overflow-hidden" id="container">
   <div class="fixed left-[500px] -bottom-[150px]">
+<<<<<<< HEAD
     <div class="ml-[50px]">
       <div class="menu-bg menu-outer-hexagon"></div>
       <div class="menu-outer-star menu-bg"></div>
       <div class="menu-inner-hexagon rotate-counter-40 menu-bg"></div>
       <div class="menu-inner-star rotate-counter-40 menu-bg"></div>
       <div class="menu-center-vortex rotate-30 menu-bg"> </div>
+=======
+    <div class="ml-[50px] relative">
+
+      <div class="menu-inner-hexagon rotate-counter-16 menu-bg"></div>
+      <div class="menu-inner-star rotate-counter-16 menu-bg"></div>
+      <div class="menu-center-vortex rotate menu-bg"> </div>
+>>>>>>> c43f3c4a7bf2ebc8674b05be3caf781d4446db67
 
       <div class="flex flex-col justify-center w-full h-full">
+
         <div class="w-[800px] h-[800px] relative flex-none" id="rotate">
-          <div class="absolute w-[644px] h-[644px] left-[78px] top-[78px] border-4 box-border rounded-full">
-            
-          </div>
+          <div class="absolute w-[644px] h-[644px] left-[78px] top-[78px] border-4 box-border rounded-full"></div>
+          <div class="menu-bg menu-outer-hexagon"></div>
+          <div class="menu-outer-star menu-bg"></div>
           {% for section in site.menu.sections %}
           <div class="absolute rounded-full bg-black w-44 border h-44 text-white flex flex-col justify-center items-center text-center menu-{{forloop.index}} menu-item" data-index="{{forloop.index}}" data-section="{{section.key}}" :style="{'transform': 'rotate('+$store.nav.angle+'deg)'}">
             {{section.label}}
