@@ -3,6 +3,7 @@ function setupMenu(win){
     var init, rotate, start, stop,
       active = false,
       hasClicked = false,
+      animationClass = null,
       hasMoved = false,
       angle = 0,
       rotation = 0,
@@ -14,12 +15,13 @@ function setupMenu(win){
       R2D = 180 / Math.PI,
       rot = document.getElementById('rotate');
       rot.addEventListener('transitionend', () => {
-        rot.classList.remove('transition-transform');
+        rot.classList.remove(animationClass);
       });
     init = function() {
       rot.addEventListener("mousedown", start, false);
       document.addEventListener('mousemove', function(event){        
         if (active === true) {
+          Alpine.store('nav').beingDragged = true
           event.preventDefault();
           rotate(event);
         }else if(hasClicked){
@@ -82,7 +84,8 @@ function setupMenu(win){
 
     defineSection = function(baseAngle){
       let _angle = ((baseAngle) % 360)
-      rot.classList.add('transition-transform');
+      animationClass = 'transition-transform'
+      rot.classList.add(animationClass);
       let target = 0
       let component = null
       if(_angle < 0){
@@ -133,6 +136,7 @@ function setupMenu(win){
       let d = closestEquivalentAngle(baseAngle, target)        
       rot.style.webkitTransform = "rotate(" + (d) + "deg)";
       angle = d
+      Alpine.store('nav').beingDragged = false
       Alpine.store('nav').angle = -angle
     }
 
@@ -156,8 +160,17 @@ function setupMenu(win){
       if(index){
         Alpine.store('nav').component = index
       }
-      rot.classList.add('transition-transform');
-      let d = closestEquivalentAngle(angle, target)  
+      let d = closestEquivalentAngle(angle, target)        
+      let diff = Math.abs(d) - Math.abs(Alpine.store('nav').angle) 
+      if(diff == 60){
+        animationClass = 'animation-fast'
+      }else if(diff == 120){
+        animationClass = 'animation-medium'        
+      }else if(diff == 180){
+        animationClass = 'animation-slow'                
+      }
+
+      rot.classList.add(animationClass);
       rot.style.webkitTransform = "rotate(" + (d) + "deg)";      
       angle = d
       Alpine.store('nav').angle = -angle
