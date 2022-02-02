@@ -1,6 +1,19 @@
 ---
 ---
 
+.the-great-eye {
+	display: block;
+	position: absolute;
+	top: 50px;
+	left: 50%;
+	width: 90px;
+	height: 90px;
+	marign-left: -45px
+
+	background-image: url('/assets/images/list-bg-eye.svg');
+	background-repeat: no-repeat;
+	background-size: contain;
+}
 
 .content-container {
 	position: relative;
