@@ -242,6 +242,12 @@
     animation:spin 12s linear infinite;
 }
 
+.rotate-30 {
+    -webkit-animation:spin 30s linear infinite;
+    -moz-animation:spin 30s linear infinite;
+    animation:spin 30s linear infinite;
+}
+
 
 .rotate-60 {
     -webkit-animation:spin 60s linear infinite;
@@ -261,6 +267,13 @@
     -moz-animation:spin-counter 30s linear infinite;
     animation:spin-counter 30s linear infinite;	
 }
+
+.rotate-counter-40 {
+	-webkit-animation:spin-counter 40s linear infinite;
+    -moz-animation:spin-counter 40s linear infinite;
+    animation:spin-counter 40s linear infinite;	
+}
+
 
 
 
