@@ -8,7 +8,7 @@
 	left: 50%;
 	width: 90px;
 	height: 90px;
-	marign-left: -45px
+	marign-left: -45px;
 
 	background-image: url('/assets/images/list-bg-eye.svg');
 	background-repeat: no-repeat;
@@ -331,6 +331,58 @@
 		background-image: url('/assets/images/occult-keys/occult-keys-center.svg');
 	}
 }
+
+
+/* Stars circle */
+/* <div class="stars-container">
+	<div class="stars-inner"></div>
+	<div class="stars-middle"></div>
+	<div class="stars-outer"></div>
+</div>
+width="1047.252" height="982.678"
+
+*/
+
+.stars-container {
+	position: fixed;
+	top:  10px;
+	right:  -400px;
+	width: 1047px;
+	height: 983px;
+	display: flex;
+  	justify-content: center;
+  	position: relative;
+	div {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		background-size: 100%;
+		background-color: transparent;
+		background-position: center center;
+		background-repeat: no-repeat;
+	}
+
+	.stars-outer {
+		background-size: 100%;
+		background-image: url('/assets/images/stars-circle/stars-outmost-star.svg');
+		z-index: 1;
+	}
+
+	.stars-inner {
+		background-size: 50%;	
+		background-image: url('/assets/images/stars-circle/stars-inner-keys.svg');
+		z-index: 3	
+	}
+	.stars-middle {
+		background-size: 59%;
+		background-image: url('/assets/images/stars-circle/stars-middle-circle.svg');
+		z-index: 2;
+
+	}
+
+}
+
+
 
 
 
