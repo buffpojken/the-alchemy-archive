@@ -15,11 +15,14 @@
 	background-size: contain;
 }
 
+.content-enclosure{
+  height:calc(100vh - 80px);
+  overflow: hidden;
+}
+
 .content-container {
 	position: relative;
-	widht: 400px;
-	margin-top: 80px;
-
+  margin: 80px 0px 0px 0px;
 	.content-list-medalion {
 	 	position: absolute;
 	 	top: -55px;

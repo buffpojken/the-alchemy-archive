@@ -12,18 +12,19 @@ layout: default
 </div>
 
 <main class="text-white w-full md:w-[550px]">
-  <div class="px-12 mt-12 w-full box-border h-full">
-    <div class="border-white border w-full content-container">
-        <div class="" x-cloak x-show="$store.nav.component == 1 || $store.nav.component == 4">
+  <div class="px-12 mt-12 w-full box-border content-enclosure">
+    <div class="border-white border w-full content-container h-full">
+        <div class="h-full" x-cloak x-show="$store.nav.component == 1 || $store.nav.component == 4">
 
         <div class="content-list-medalion ">
           <div class="moon-container"></div>
         </div>
        <div class="content-list-page-decorator-1 move-decorator-1-animate"></div>
        <div class="content-list-page-decorator-2 move-decorator-2-animate"></div>
-         <div class="content-list-outer">
-            <div class="content-list-inner">
+         <div class="content-list-outer h-full">
+            <div class="content-list-inner h-full">
               <h1 class="content-list-header">Mixturer</h1>
+              <div class="h-full overflow-y-scroll">
               <ul class="drink-list">
                 {% for drink in site.drinks %}
                 <li class="drink-item" data-drink-no="{{drink.number}}">
@@ -33,6 +34,7 @@ layout: default
                 </li>
               {% endfor %}
             </ul>
+          </div>
           </div>    
         </div>        
       </div>
