@@ -178,7 +178,6 @@ function setupMenu(win){
       }
 
       rot.classList.add(animationClass);
-      console.log("conflict")
       rot.style.webkitTransform = "rotate(" + (d) + "deg)";      
       angle = d
       Alpine.store('nav').angle = -angle
