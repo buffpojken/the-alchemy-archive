@@ -1,6 +1,7 @@
 ---
 title: Gin
-layout: drink
+key: gin
+layout: bases
 ---
 
 Glas: Martini

@@ -1,4 +1,5 @@
 ---
 title: Maraschino
-layout: drink
+key: maraschino
+layout: bases
 ---

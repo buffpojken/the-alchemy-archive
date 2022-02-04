@@ -1,6 +1,7 @@
 ---
 title: Bourbon
-layout: drink
+key: bourbon
+layout: bases
 ---
 
 Glas: Martini

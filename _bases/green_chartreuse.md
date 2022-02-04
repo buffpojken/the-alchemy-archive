@@ -1,4 +1,5 @@
 ---
 title: Grön Chartreuse
-layout: drink
+key: green_chartreuse
+layout: bases
 ---
