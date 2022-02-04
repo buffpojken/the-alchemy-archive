@@ -2,10 +2,17 @@
 number: 14
 title: Bijou 
 layout: drink
+spirits:
+  - key: gin
+    name: Gin (stockholms bränneri)
+    amount: 2 cl 
+  - key: green_chartreuse
+    name: Grön Chartreuse
+    amount: 2 cl
+  - key: sweet_red_vermouth
+    name: Röd Söt Vermuth 
+    amount: 2 cl 
 ingredients: 
-  - 2 cl Gin (stockholms bränneri)
-  - 2 cl Grön Chartreuse 
-  - 2 cl Röd Söt Vermuth 
   - 2 stänk angostura apelsin bitters 
   - 1 Maraschino körsbär
 ---

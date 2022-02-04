@@ -2,11 +2,20 @@
 number: 19
 title: Sir Francis Drake Special
 layout: drink
+spirits: 
+  - key: gin
+    name: Gin
+    amount: 1,5 cl
+  - key: rye
+    name: Rye
+    amount: 1,5 cl
+  - key: triple_sec
+    name: Triple Sec
+    amount: 1,5 cl
+  - key: green_chartreuse
+    name: grön Chartreuse
+    amount: 1,5 cl
 ingredients: 
-  - 1,5 cl gin
-  - 1,5 cl rye
-  - 1,5 cl Triple Sec
-  - 1,5 cl grön Chartreuse
 ---
 
 

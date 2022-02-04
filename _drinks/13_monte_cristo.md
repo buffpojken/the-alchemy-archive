@@ -2,9 +2,14 @@
 number: 13
 title: Monte Cristo
 layout: drink
+spirits: 
+  - key: kahlua
+    name: Kahlúa
+    amount: 2 cl 
+  - key: cointreau
+    name: Cointreau
+    amount: 2 cl
 ingredients: 
-  - 2 cl Kahlúa
-  - 2 cl Cointreau
   - 4 cl starkt kaffe/cold brew  
 ---
 

@@ -2,10 +2,15 @@
 number: 23
 title: Magic is real
 layout: drink
+spirits: 
+  - key: gin
+    name: gin (Illusionist)
+    amount: 5 cl 
+  - key: bergamotte_liqueur
+    name: Bergamotte Liqueur
+    amount: 2 cl
 ingredients: 
-  - 5 cl gin (Illusionist)
   - 2 cl limejuice 
-  - 2 cl Bergamotte Liqueur
   - 1 cl Paragon Timur Berry sirap
 
 ---

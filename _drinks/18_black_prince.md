@@ -2,10 +2,17 @@
 number: 18
 title: The Black Prince
 layout: drink
+spirits: 
+  - key: rum
+    name: Zacapa
+    amount: 3 cl
+  - key: sweet_red_vermouth
+    name: Punt e Mes
+    amount: 1 cl
+  - key: averna
+    name: Averna
+    amount: 0,8 cl
 ingredients: 
-  - 3 cl Zacapa 
-  - 1 cl Punt e Mes (röd söt vermuth)
-  - 0,8 cl Averna
   - 2 stänk apelsinbitter
 ---
 

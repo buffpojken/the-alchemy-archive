@@ -2,9 +2,14 @@
 number: 10
 title: Manhattan
 layout: drink
+spirits:
+  - key: rye
+    name: Rye
+    amount: 3 cl
+  - key: sweet_red_vermouth
+    name: Söt, röd vermouth
+    amount: 1,5 cl
 ingredients: 
-  - 3 cl rye
-  - 1,5 cl söt, röd vermouth
   - 2 stäng Angostura bitters
   - 1 stänk Angostura apelsin bitters 
   - 1 Maraschino körsbär

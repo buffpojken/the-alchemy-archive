@@ -2,11 +2,16 @@
 number: 8
 title: French 75
 layout: drink
+spirits:
+  - key: gin
+    name: Gin
+    amount: 2 cl
+  - key: champagne
+    name: Champagne
+    amount: 1 glas
 ingredients: 
-  - 2 cl gin
   - 2 cl citronjuice
   - 2 cl sockerlag
-  - 1 glas champagne
 ---
 
 Glas: Champagneglas

@@ -1,6 +1,6 @@
 ---
-title: Gin
-key: gin
+title: Rye
+key: rye
 layout: bases
 ---
 

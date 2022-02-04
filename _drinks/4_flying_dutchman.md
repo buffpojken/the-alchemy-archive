@@ -2,9 +2,14 @@
 number: 4
 title: Flying Dutchman
 layout: drink
+spirits:
+  - key: gin
+    name: Gin
+    amount: 4 cl
+  - key: triple_sec
+    name: Triple Sec
+    amount: 2 cl
 ingredients: 
-  - 4 cl gin
-  - 2 cl triple sec
 ---
 
 Glas: Tumbler

@@ -2,8 +2,11 @@
 number: 22
 title: Forest Nymph
 layout: drink
+spirits: 
+  - key: gin
+    name: gin
+    amount: 4 cl
 ingredients: 
-  - 4 cl gin
   - 2 cl limejuice 
   - 2 cl granskottssirap
   - Färsk or inlaggdt granskott, färsk tusensköna om tillgängligt

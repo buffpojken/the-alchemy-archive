@@ -2,13 +2,20 @@
 number: 15
 title: Black Pearl 
 layout: drink
+spirits: 
+  - key: vodka
+    name: Purity Vodka
+    amount: 2 cl
+  - key: kahlua
+    name: Kahlúa
+    amount: 2 cl
+  - key: galliano
+    name: Galliano Vanilla
+    amount: 1 cl
 ingredients: 
-  - 2 cl Purity Vodka 
-  - 2 cl Kahlúa  
   - 4 cl Cold Brew Coffe 
-  - 1 cl Galliano Vanilla
   - 10 cl Vispgrädde  
-  - 3 Chockladdoppade kaffe bönor  
+  - 3 Chokladdoppade kaffe bönor  
   - Rosensalt
 ---
 

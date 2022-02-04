@@ -2,9 +2,14 @@
 number: 17
 title: Cosmopolitan
 layout: drink
+spirits: 
+  - key: vodka
+    name: Vodka
+    amount: 4 cl
+  - key: cointreau
+    name: Cointreau
+    amount: 2 cl
 ingredients: 
-  - 4 cl vodka
-  - 2 cl Cointreau
   - 6 cl transbärsjuice
   - 1,5 cl limejuice
   - Limeskiva

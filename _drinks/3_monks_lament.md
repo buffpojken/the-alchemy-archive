@@ -2,9 +2,14 @@
 number: 3
 title: Monks Lament
 layout: drink
+spirits:
+  - key: rum
+    name: Rom
+    amount: 4 cl
+  - key: yellow_chartreuse
+    name: Gul Chartreuse
+    amount: 2 cl 
 ingredients: 
-  - 4 cl Rom
-  - 2 cl Gul Chartreuse 
   - 2 stänk angostura apelsin bitters 
   - 1 Maraschino körsbär
 ---

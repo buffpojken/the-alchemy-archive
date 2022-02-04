@@ -2,13 +2,20 @@
 number: 5
 title: Sazerac
 layout: drink
+spirits:
+  - key: rye
+    name: Rye
+    amount: 3 cl
+  - key: cognac
+    name: Cognac
+    amount: 3 cl
+  - key: absinth
+    name: Absinth
+    amount: 
 ingredients: 
-  - Absint
   - Sockerbit
   - 3 stänk Peychaud's bitter
   - 2 stänk Angostura
-  - 3 cl rye
-  - 3 cl cognac
   - Citronskal
 ---
 

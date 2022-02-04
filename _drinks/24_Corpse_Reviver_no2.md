@@ -2,12 +2,21 @@
 number: 24
 title: Corpse Reviver no2
 layout: drink
+spirits: 
+  - key: gin
+    name: gin
+    amount: 2 cl
+  - key: triple_sec
+    name: Triple Sec
+    amount: 2 cl 
+  - key: lillet_blanc
+    name: Lillet Blanc
+    amount: 2 cl 
+  - key: absinth
+    name: Absinthe
+    amount: Några droppar
 ingredients: 
-  - 2 cl gin 
   - 2 cl limejuice 
-  - 2 cl Triple Sec
-  - 2 cl Lillet Blanc
-  - Några droppar Absinthe
 
 ---
 

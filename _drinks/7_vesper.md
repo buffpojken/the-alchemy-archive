@@ -2,10 +2,17 @@
 number: 7
 title: Vesper
 layout: drink
+spirits:
+  - key: gin
+    name: Gin
+    amount: 3,5 cl
+  - key: vodka
+    name: Vodka
+    amount: 2 cl
+  - key: cocchi_americano
+    name: Cocchi Americano
+    amount: 0,7 cl
 ingredients: 
-  - 3,5 cl gin
-  - 2 cl vodka
-  - 0,7 cl Cocchi Americano
   - Citronzest
 ---
 

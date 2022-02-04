@@ -2,10 +2,17 @@
 number: 25
 title: Expense Account
 layout: drink
+spirits: 
+  - key: rum
+    name: Mörk rom
+    amount: 3 cl
+  - key: calvados
+    name: Calvados
+    amount: 1,5 cl
+  - key: benedictine
+    name: Bénédictine
+    amount: 1,5 cl
 ingredients: 
-  - 3 cl Mörk rom
-  - 1.5 cl Calvados 
-  - 1.5 cl Bénédictine
   - 0.5 cl Lönnsirap
   - 2 stänk apelsinbitter
   - 1 stänk absinth

@@ -2,8 +2,11 @@
 number: 26
 title: Thyself Known
 layout: drink
+spirits: 
+  - key: bourbon
+    name: Bourbon
+    amount: 6 cl
 ingredients: 
-  - 6 cl bourbon
   - 1.5 cl Chios Mastic Tears & Bay Leaf syrup 
   - 2 stänk Angostura
   - 1 lagerblad

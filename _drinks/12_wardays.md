@@ -2,11 +2,20 @@
 number: 12
 title: Warday's
 layout: drink
+spirits:
+  - key: gin
+    name: London Dry Gin
+    amount: 2 cl
+  - key: calvados
+    name: Calvados
+    amount: 2 cl
+  - key: sweet_red_vermouth
+    name: söt vermouth
+    amount: 2 cl 
+  - key: green_chartreuse
+    name: Chartreuse
+    amount: 1 msk
 ingredients: 
-  - 2 cl London Dry Gin
-  - 2 cl calvados
-  - 2 cl söt vermouth
-  - 1 msk Chartreuse
 ---
 
 Glas: Martini

@@ -2,8 +2,11 @@
 number: 6
 title: Little Pink
 layout: drink
+spirits:
+  - key: gin
+    name: Stockholms Bränneri Pink Gin 
+    amount: 3 cl
 ingredients: 
-  - 3 cl Stockholms bränneri pink gin
   - 20 cl Feaver Tree Pink Tonic
   - Twist på citronskal
 ---

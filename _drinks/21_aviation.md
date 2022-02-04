@@ -2,11 +2,18 @@
 number: 21
 title: Aviation
 layout: drink
+spirits: 
+  - key: gin
+    name: gin
+    amount: 4 cl
+  - key: maraschino
+    name: Maraschino
+    amount: 2 cl
+  - key: creme_de_violette
+    name: Creme de Violette eller violsirap
+    amount: 1 cl
 ingredients: 
-  - 4 cl gin
   - 0.8 cl citron juice 
-  - 2 cl maraschino
-  - 1 cl Creme de Violette eller violsirap
   - Maraschinokörsbär
 
 ---

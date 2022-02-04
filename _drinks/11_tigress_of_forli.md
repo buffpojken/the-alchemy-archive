@@ -2,10 +2,17 @@
 number: 11
 title: Tigress of Forli
 layout: drink
+spirits:
+  - key: light_vermouth
+    name: ljus vermouth
+    amount: 6 cl
+  - key: cynar
+    name: Cynar
+    amount: 1,5 cl
+  - key: st_germain
+    name: St. Germain
+    amount: 0,7 cl
 ingredients: 
-  - 6 cl ljus vermouth
-  - 1,5 cl Cynar
-  - 0,7 cl St. Germain
   - 0,7 cl citronjuice
   - 1 nypa salt
   - Citronzest

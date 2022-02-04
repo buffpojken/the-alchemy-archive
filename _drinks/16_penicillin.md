@@ -2,11 +2,16 @@
 number: 16
 title: Penicillin 
 layout: drink
+spirits: 
+  - key: blended_whiskey
+    name: Blended Wiskey
+    amount: 6 cl
+  - key: scotch
+    name: Islay whiskey
+    amount: 0,7 cl
 ingredients: 
-  - 6 cl Blended Wiskey
   - 2 cl Citron juice
   - 2 cl Ingefärssirap 
-  - 0.7 cl Islay wiskey
   - Kanderad Ingefära
 ---
 
