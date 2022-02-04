@@ -1,6 +1,6 @@
 ---
 number: 17
-name: Cosmopolitan
+title: Cosmopolitan
 layout: drink
 ingredients: 
   - 4 cl vodka

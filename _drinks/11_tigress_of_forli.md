@@ -1,6 +1,6 @@
 ---
 number: 11
-name: Tigress of Forli
+title: Tigress of Forli
 layout: drink
 ingredients: 
   - 6 cl ljus vermouth

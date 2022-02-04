@@ -1,6 +1,6 @@
 ---
 number: 1
-name: Gin
+title: Gin
 layout: drink
 ---
 

@@ -1,6 +1,6 @@
 ---
 number: 18
-name: The Black Prince
+title: The Black Prince
 layout: drink
 ingredients: 
   - 3 cl Zacapa 

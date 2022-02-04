@@ -1,6 +1,6 @@
 ---
 number: 2
-name: Last Word
+title: Last Word
 layout: drink
 ingredients: 
   - 2 cl gin

@@ -1,6 +1,6 @@
 ---
 number: 4
-name: Flying Dutchman
+title: Flying Dutchman
 layout: drink
 ingredients: 
   - 4 cl gin

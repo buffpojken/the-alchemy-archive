@@ -1,6 +1,6 @@
 ---
 number: 12
-name: Warday's
+title: Warday's
 layout: drink
 ingredients: 
   - 2 cl London Dry Gin

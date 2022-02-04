@@ -1,6 +1,6 @@
 ---
 number: 8
-name: French 75
+title: French 75
 layout: drink
 ingredients: 
   - 2 cl gin

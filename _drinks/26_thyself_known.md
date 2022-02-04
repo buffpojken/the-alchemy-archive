@@ -1,6 +1,6 @@
 ---
 number: 26
-name: Thyself Known
+title: Thyself Known
 layout: drink
 ingredients: 
   - 6 cl bourbon

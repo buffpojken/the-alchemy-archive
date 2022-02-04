@@ -1,6 +1,6 @@
 ---
 number: 1
-name: Trollblod
+title: Trollblod
 layout: drink
 ---
 

@@ -1,6 +1,6 @@
 ---
 number: 22
-name: Forest Nymph
+title: Forest Nymph
 layout: drink
 ingredients: 
   - 4 cl gin

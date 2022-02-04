@@ -1,6 +1,6 @@
 ---
 number: 6
-name: Little Pink
+title: Little Pink
 layout: drink
 ingredients: 
   - 3 cl Stockholms bränneri pink gin

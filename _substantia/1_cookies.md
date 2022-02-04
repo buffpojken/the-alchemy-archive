@@ -1,6 +1,6 @@
 ---
 number: 1
-name: Kakor
+title: Kakor
 layout: drink
 ---
 

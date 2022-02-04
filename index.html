@@ -31,7 +31,7 @@ layout: default
                 {% for drink in site.drinks %}
                 <li class="drink-item" data-drink-no="{{drink.number}}">
                   <a href="{{drink.url}}">
-                    <h4><span>{{drink.number}}</span> {{drink.name}}</h4>
+                    <h4><span>{{drink.number}}</span> {{drink.title}}</h4>
                   </a>
                 </li>
                 {% endfor %}
@@ -56,7 +56,7 @@ layout: default
                 {% for base in site.bases %}
                 <li class="drink-item" data-drink-no="{{base.number}}">
                   <a href="{{base.url}}">
-                    <h4><span>{{base.number}}</span> {{base.name}}</h4>
+                    <h4><span>{{base.number}}</span> {{base.title}}</h4>
                   </a>
                 </li>
                 {% endfor %}
@@ -81,7 +81,7 @@ layout: default
                 {% for decoction in site.decoctions %}
                   <li class="drink-item" data-drink-no="{{decoction.number}}">
                     <a href="{{decoction.url}}">
-                      <h4><span>{{decoction.number}}</span> {{decoction.name}}</h4>
+                      <h4><span>{{decoction.number}}</span> {{decoction.title}}</h4>
                     </a>
                   </li>
                 {% endfor %}
@@ -107,7 +107,7 @@ layout: default
                 {% for substantiae in site.substantia %}
                   <li class="drink-item" data-drink-no="{{substantiae.number}}">
                     <a href="{{substantiae.url}}">
-                      <h4><span>{{substantiae.number}}</span> {{substantiae.name}}</h4>
+                      <h4><span>{{substantiae.number}}</span> {{substantiae.title}}</h4>
                     </a>
                   </li>
                 {% endfor %}

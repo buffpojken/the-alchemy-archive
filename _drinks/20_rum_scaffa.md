@@ -1,6 +1,6 @@
 ---
 number: 20
-name: Rum Scaffa
+title: Rum Scaffa
 layout: drink
 ingredients: 
   - 3 cl rom

@@ -1,6 +1,6 @@
 ---
 number: 25
-name: Expense Account
+title: Expense Account
 layout: drink
 ingredients: 
   - 3 cl Mörk rom

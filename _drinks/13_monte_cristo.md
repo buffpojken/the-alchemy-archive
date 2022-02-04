@@ -1,6 +1,6 @@
 ---
 number: 13
-name: Monte Cristo
+title: Monte Cristo
 layout: drink
 ingredients: 
   - 2 cl Kahlúa

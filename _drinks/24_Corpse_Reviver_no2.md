@@ -1,6 +1,6 @@
 ---
 number: 24
-name: Corpse Reviver no2
+title: Corpse Reviver no2
 layout: drink
 ingredients: 
   - 2 cl gin 

@@ -4,7 +4,7 @@
 [
 {% for drink in site.drinks %}  
     {
-      "name"    : "{{ drink.name}}",
+      "name"    : "{{ drink.title}}",
       "objectID": "{{drink.number}}",
       "url": "{{ site.baseurl }}{{ drink.url }}", 
       "ingredients": [

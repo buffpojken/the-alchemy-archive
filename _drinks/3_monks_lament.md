@@ -1,6 +1,6 @@
 ---
 number: 3
-name: Monks Lament
+title: Monks Lament
 layout: drink
 ingredients: 
   - 4 cl Rom

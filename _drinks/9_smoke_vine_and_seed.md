@@ -1,6 +1,6 @@
 ---
 number: 9
-name: Smoke, Vine and Seed
+title: Smoke, Vine and Seed
 layout: drink
 ingredients: 
   - 4 cl tawny port

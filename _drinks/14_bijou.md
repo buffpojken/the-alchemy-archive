@@ -1,6 +1,6 @@
 ---
 number: 14
-name: Bijou 
+title: Bijou 
 layout: drink
 ingredients: 
   - 2 cl Gin (stockholms bränneri)

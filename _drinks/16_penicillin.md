@@ -1,6 +1,6 @@
 ---
 number: 16
-name: Penicillin 
+title: Penicillin 
 layout: drink
 ingredients: 
   - 6 cl Blended Wiskey

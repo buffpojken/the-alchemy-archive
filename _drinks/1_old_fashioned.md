@@ -1,9 +1,9 @@
 ---
 number: 1
-name: Old Fashioned
+title: Old Fashioned
 layout: drink
 ingredients: 
-  - 4 cl Burbon
+  - 4 cl Bourbon
   - 1 sockerbit / 1 tesked socker
   - 2 stänk angostura bitters  	
 ---

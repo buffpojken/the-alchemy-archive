@@ -1,6 +1,6 @@
 ---
 number: 21
-name: Aviation
+title: Aviation
 layout: drink
 ingredients: 
   - 4 cl gin

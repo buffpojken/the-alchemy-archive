@@ -1,6 +1,6 @@
 ---
 number: 19
-name: Sir Francis Drake Special
+title: Sir Francis Drake Special
 layout: drink
 ingredients: 
   - 1,5 cl gin

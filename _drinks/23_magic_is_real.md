@@ -1,6 +1,6 @@
 ---
 number: 23
-name: Magic is real
+title: Magic is real
 layout: drink
 ingredients: 
   - 5 cl gin (Illusionist)

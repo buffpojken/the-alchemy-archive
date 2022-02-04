@@ -1,6 +1,6 @@
 ---
 number: 7
-name: Vesper
+title: Vesper
 layout: drink
 ingredients: 
   - 3,5 cl gin

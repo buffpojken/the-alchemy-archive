@@ -1,6 +1,6 @@
 ---
 number: 10
-name: Manhattan
+title: Manhattan
 layout: drink
 ingredients: 
   - 3 cl rye
