@@ -16,6 +16,9 @@
 				      <section class="ingredients-section">
                 <h2>Recept</h2>
                   <ul>
+                    {% for spirit in page.spirits %}
+                    <li>{{spirit.amount}} <a href="{% link _bases/{{spirit.key}}.md %}">{{spirit.name}}</a></li>
+                    {% endfor %}
                     {% for ingredient in page.ingredients %}
                     <li>{{ingredient}}</li>
                     {% endfor %}

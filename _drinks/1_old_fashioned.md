@@ -2,8 +2,11 @@
 number: 1
 title: Old Fashioned
 layout: drink
+spirits:
+  - key: bourbon
+    name: Bourbon
+    amount: 4cl
 ingredients: 
-  - 4 cl Bourbon
   - 1 sockerbit / 1 tesked socker
   - 2 stänk angostura bitters  	
 ---

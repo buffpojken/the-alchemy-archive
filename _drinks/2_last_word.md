@@ -2,10 +2,17 @@
 number: 2
 title: Last Word
 layout: drink
+spirits:
+  - key: gin
+    name: Gin
+    amount: 2 cl
+  - key: green_chartreuse
+    name: grön Chartreuse
+    amount: 2 cl
+  - key: maraschino
+    name: Maraschino
+    amount: 2 cl
 ingredients: 
-  - 2 cl gin
-  - 2 cl grön Chartreuse
-  - 2 cl maraschino
   - 2 cl limejuice
   - Maraschinokörsbär
 ---

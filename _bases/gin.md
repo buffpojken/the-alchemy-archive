@@ -1,5 +1,4 @@
 ---
-number: 1
 title: Gin
 layout: drink
 ---
