@@ -3,6 +3,7 @@ function setupMenu(win){
     var init, rotate, start, stop,
       active = false,
       hasClicked = false,
+      hasCommited = false,
       animationClass = null,
       hasMoved = false,
       angle = 0,
@@ -56,6 +57,7 @@ function setupMenu(win){
 
     rotate = function(e) {
       e.preventDefault();
+      if(hasCommited){return}
       var x = e.clientX - center.x,
         y = e.clientY - center.y,
         d = R2D * Math.atan2(y, x);
@@ -67,11 +69,13 @@ function setupMenu(win){
     stop = function(ev) {
       hasClicked = false
       angle += rotation;
+      hasCommited = true
       if(active){
         defineSection(angle)
-        Alpine.store('nav').angle = -angle      
+        Alpine.store('nav').angle = -angle     
         setTimeout(function(){
           active = false
+          hasCommited = false
         }, 25)
       }
       return
@@ -130,14 +134,17 @@ function setupMenu(win){
           component = 6
         }
       }
+
       if(component){
         Alpine.store('nav').component = component            
       }
-      let d = closestEquivalentAngle(baseAngle, target)        
-      rot.style.webkitTransform = "rotate(" + (d) + "deg)";
-      angle = d
-      Alpine.store('nav').beingDragged = false
-      Alpine.store('nav').angle = -angle
+
+        let d = closestEquivalentAngle(baseAngle, target)     
+        rot.style.webkitTransform = "rotate(" + (d) + "deg)";      
+        angle = d
+
+        Alpine.store('nav').beingDragged = false
+        Alpine.store('nav').angle = -angle        
     }
 
     goToSection = function(el){
@@ -171,6 +178,7 @@ function setupMenu(win){
       }
 
       rot.classList.add(animationClass);
+      console.log("conflict")
       rot.style.webkitTransform = "rotate(" + (d) + "deg)";      
       angle = d
       Alpine.store('nav').angle = -angle
