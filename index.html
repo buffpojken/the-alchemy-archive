@@ -139,7 +139,9 @@ layout: default
           <div class="menu-outer-star menu-bg"></div>
           {% for section in site.menu.sections %}
           <div class="absolute rounded-full bg-black w-44 border h-44 text-white flex flex-col justify-center items-center text-center menu-{{forloop.index}} menu-item" data-index="{{forloop.index}}" data-section="{{section.key}}" :style="{'transform': 'rotate('+$store.nav.angle+'deg)'}">
-            {{section.label}}
+            <div class="w-full h-full flex flex-col justify-end bg-center bg-no-repeat {{section.icon}}">
+              <h4 class="louvette text-1_5xl mb-6">{{section.label}}</h4>
+            </div>
           </div>
           {% endfor %}
         </div>

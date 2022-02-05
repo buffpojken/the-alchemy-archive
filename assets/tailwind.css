@@ -74,3 +74,24 @@
   transition-duration: 350ms;
 }
 
+.icon-mixturer{
+  @apply bg-icon-mixturer;
+  background-position: center top 30px;
+}
+
+.icon-baser{
+  @apply bg-icon-baser;
+  background-position: center top 30px;
+}
+
+.icon-substantia{
+  @apply bg-icon-substantia;
+  background-position: center top 30px;
+}
+
+.icon-dekokter{
+  @apply bg-icon-dekokter;
+  background-position: center top 20px;
+}
+
+
