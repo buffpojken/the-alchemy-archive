@@ -50,6 +50,9 @@ postcss:
 keep_files:
   - assets/css/tailwind.css
   - assets/css/tailwind.css.map
+exclude: 
+  - infrastructure
+  - tools
 menu:
   sections:
     - key: mixtures
