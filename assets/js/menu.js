@@ -23,9 +23,8 @@ function setupMenu(win){
         rot.classList.remove(animationClass);
       });
     init = function() {
-
       rot.addEventListener((isTouchScreen() ? "touchstart" : "mousedown"), start, false);
-      document.addEventListener((isTouchScreen() ? "touchmove" : "mousemove"), function(event){        
+      document.addEventListener((isTouchScreen() ? "touchmove" : "mousemove"), function(event){                
         if (active === true) {
           Alpine.store('nav').beingDragged = true
           event.preventDefault();
@@ -53,8 +52,13 @@ function setupMenu(win){
         x: l + (w / 2),
         y: t + (h / 2)
       };
-      x = e.clientX - center.x;
-      y = e.clientY - center.y;
+      if(e.clientX){
+        x = e.clientX - center.x;
+        y = e.clientY - center.y;        
+      }else{
+        x = e.touches[0].clientX - center.x
+        y = e.touches[0].clientY - center.y      
+      }
       startAngle = R2D * Math.atan2(y, x);
       hasClicked = true
       return;
@@ -63,9 +67,16 @@ function setupMenu(win){
     rotate = function(e) {
       e.preventDefault();
       if(hasCommited){return}
-      var x = e.clientX - center.x,
-        y = e.clientY - center.y,
-        d = R2D * Math.atan2(y, x);
+      var x,y;
+      if(e.clientX){
+        x = e.clientX - center.x
+          y = e.clientY - center.y      
+      }else{
+        x = e.touches[0].clientX - center.x
+        y = e.touches[0].clientY - center.y      
+      }
+    
+      var d = R2D * Math.atan2(y, x);
       rotation = d - startAngle;
       Alpine.store('nav').angle = -(angle + rotation)
       return rot.style.webkitTransform = "rotate(" + (angle + rotation) + "deg)";
