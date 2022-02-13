@@ -1,1 +1,1 @@
-bundle exec jekyll build && aws --profile md s3 sync _site s3://drinks.monkeydancers.com && ./tools/indexer.rb
+bundle exec jekyll build && aws --profile md s3 sync _site s3://v2.drinks.monkeydancers.com

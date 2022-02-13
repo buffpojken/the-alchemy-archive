@@ -1,0 +1,63 @@
+{
+  "Resources": {    
+    "HostingBucket": {
+      "Type": "AWS::S3::Bucket", 
+      "Properties": {
+        "BucketName": {"Fn::Sub": "${AppHostName}"}, 
+        "WebsiteConfiguration": {
+          "IndexDocument": "index.html"          
+        }
+      }
+    }, 
+    "CloudfrontDistribution": {
+      "Type": "AWS::CloudFront::Distribution", 
+      "Properties": {
+        "DistributionConfig": {
+          "Aliases": [{"Fn::Sub": "${AppHostName}"}], 
+          "Enabled": true,
+          "DefaultCacheBehavior": {
+            "CachePolicyId": "4135ea2d-6df8-44a3-9df3-4b5a84be39ad", 
+            "TargetOriginId": "s3-bucket", 
+            "ViewerProtocolPolicy": "redirect-to-https"            
+          },
+          "CacheBehaviors": [
+            {
+              "CachePolicyId": "4135ea2d-6df8-44a3-9df3-4b5a84be39ad",
+              "PathPattern": "*",
+              "TargetOriginId": "s3-bucket", 
+              "ViewerProtocolPolicy": "redirect-to-https"
+            }
+          ], 
+          "Origins": [
+            {
+              "CustomOriginConfig": {
+                "OriginProtocolPolicy": "http-only"
+              }, 
+              "Id": "s3-bucket",               
+              "DomainName": {"Fn::Sub": ["${Name}.s3-website.${AWS::Region}.amazonaws.com", {"Name": {"Ref": "HostingBucket"}}]}
+            }
+          ], 
+          "ViewerCertificate": {
+            "AcmCertificateArn": {"Fn::Sub": "${CertificateArn}"}, 
+            "MinimumProtocolVersion": "TLSv1.2_2019", 
+            "SslSupportMethod": "sni-only"
+          }
+        }
+      }
+    }
+  }, 
+  "Parameters": {
+    "AppName": {
+      "Type": "String", 
+      "Default": "alchemy-archive-v2"
+    },
+    "CertificateArn": {
+      "Type": "String", 
+      "Default": "arn:aws:acm:us-east-1:464636671766:certificate/b597b79d-5797-442b-b957-cd7909e9f087"
+    },
+    "AppHostName": {
+      "Type": "String", 
+      "Default": "v2.drinks.monkeydancers.com"
+    }
+  }
+}

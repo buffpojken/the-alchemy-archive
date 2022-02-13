@@ -1,3 +1,7 @@
+function isTouchScreen() {
+    return window.matchMedia('(hover: none)').matches;
+}
+
 function setupMenu(win){
   (function() {
     var init, rotate, start, stop,
@@ -19,8 +23,9 @@ function setupMenu(win){
         rot.classList.remove(animationClass);
       });
     init = function() {
-      rot.addEventListener("mousedown", start, false);
-      document.addEventListener('mousemove', function(event){        
+
+      rot.addEventListener((isTouchScreen() ? "touchstart" : "mousedown"), start, false);
+      document.addEventListener((isTouchScreen() ? "touchmove" : "mousemove"), function(event){        
         if (active === true) {
           Alpine.store('nav').beingDragged = true
           event.preventDefault();
@@ -30,7 +35,7 @@ function setupMenu(win){
         }
       })
 
-      document.addEventListener('mouseup', function(event){
+      document.addEventListener((isTouchScreen() ? "touchend" : "mouseup"), function(event){
         event.preventDefault();            
         stop(event);            
       })
