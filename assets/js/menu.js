@@ -205,7 +205,7 @@ function setupMenu(win){
       let item = items[i]
       items[i].addEventListener('click', function(ev){
         if(!active){
-          goToSection(ev.target)          
+          goToSection(ev.currentTarget)          
         }
       })
     }
