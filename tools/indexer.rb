@@ -8,6 +8,6 @@ client = Algolia::Search::Client.create('DFQ9TOZCS7', '1b904ef14bda33aa7d3f85cec
 content = File.read('_site/index.json')
 drinks  = JSON.parse(content)
 
-index = client.init_index('drinks')
+index = client.init_index('drinks_alpha')
 drinks = drinks.map{|d| d.transform_keys(&:to_sym) }
 index.save_objects(drinks)
