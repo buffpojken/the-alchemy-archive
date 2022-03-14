@@ -77,9 +77,9 @@ layout: default
               </div>
               <h1 class="content-list-header">Dekokter</h1>
               <div class="flex-grow w-full overflow-hidden overflow-y-scroll">
-              <ul class="drink-list">
+              <ul class="decoction-list">
                 {% for decoction in site.decoctions %}
-                  <li class="drink-item" data-drink-no="{{decoction.number}}">
+                  <li class="decoction-item" data-drink-no="{{decoction.number}}">
                     <a href="{{decoction.url}}">
                       <h4><span>{{decoction.number}}</span> {{decoction.title}}</h4>
                     </a>
@@ -103,9 +103,9 @@ layout: default
               </div>
               <h1 class="content-list-header">Substantia</h1>
               <div class="flex-grow w-full overflow-hidden overflow-y-scroll">
-              <ul class="drink-list">
+              <ul class="substantiae-list">
                 {% for substantiae in site.substantia %}
-                  <li class="drink-item" data-drink-no="{{substantiae.number}}">
+                  <li class="substantiae-item" data-drink-no="{{substantiae.number}}">
                     <a href="{{substantiae.url}}">
                       <h4><span>{{substantiae.number}}</span> {{substantiae.title}}</h4>
                     </a>

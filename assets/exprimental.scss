@@ -216,6 +216,71 @@
 	}
 }
 
+.decoction-list {
+	font-family: aviano, serif;
+	margin: 0px 10% 80px 10%;
+	.decoction-item {
+		padding-bottom: 9px;
+		h4 {
+		 	font-size: 16px;
+		 	padding: 5px 0px;
+		}
+		span {
+			display: inline-block;
+			box-sizing: border-box;
+			width: 32px;
+			height: 42px;
+			line-height: 65px;
+			background-image: url('/assets/images/list-bg-ekolv.svg');
+			background-repeat: no-repeat;
+			background-size: contain;
+			font-size: 14px;
+			text-align: center;
+			margin-right: 10px;
+			margin-left: 4px;
+		}
+		h4:hover span {
+			background-image: url('/assets/images/list-bg-ekolv-filled.svg');
+			color: #000;
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
+	}
+}
+
+.substantiae-list {
+	font-family: aviano, serif;
+	margin: 0px 10% 80px 10%;
+	.substantiae-item {
+		padding-bottom: 9px;
+		h4 {
+		 	font-size: 16px;
+		 	padding: 5px 0px;
+		}
+		span {
+			display: inline-block;
+			box-sizing: border-box;
+			width: 27px;
+			height: 37px;
+			line-height: 50px;
+			background-image: url('/assets/images/list-bg-round-bottle.svg');
+			background-repeat: no-repeat;
+			background-size: contain;
+			font-size: 16px;
+			text-align: center;
+			margin-right: 10px;
+			margin-left: 4px;
+		}
+		h4:hover span {
+			background-image: url('/assets/images/list-bg-round-bottle-filled.svg');
+			color: #000;
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
+	}
+}
+
+
 
 
 .menu-container {
