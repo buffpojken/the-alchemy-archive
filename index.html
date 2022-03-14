@@ -12,7 +12,8 @@ layout: default
   <div class="stars-outer  rotate-60" ></div>
 </div>
 
-<main class="text-white relative w-full md:w-[550px]">
+<div class="relative h-full w-double-screen md:w-full flex flex-row-reverse md:block" x-cloak>
+<main class="text-white relative h-full w-screen md:w-[550px]">
   <div class="px-12 mt-12 w-full box-border content-enclosure">
     <div class="box-border border w-full content-container h-full">
     <div class="content-list-page-decorator-1 move-decorator-1-animate"></div>
@@ -22,7 +23,7 @@ layout: default
       <div class="content-list-outer h-full">
         <div class="content-list-inner h-full">
           <div class="h-full flex flex-col w-full">
-            <div class="content-list-medalion">
+            <div class="content-list-medalion" x-on:click="$store.nav.displayMenu = true">
               <div class="moon-container"></div>
             </div>
             <h1 class="content-list-header">Mixturer</h1>
@@ -47,7 +48,7 @@ layout: default
       <div class="content-list-outer h-full">
         <div class="content-list-inner h-full">
           <div class="h-full flex flex-col w-full">
-            <div class="content-list-medalion">
+            <div class="content-list-medalion" x-on:click="$store.nav.displayMenu = true">
               <div class="moon-container"></div>
             </div>
             <h1 class="content-list-header">Baser</h1>
@@ -72,7 +73,7 @@ layout: default
         <div class="content-list-outer h-full">
           <div class="content-list-inner h-full">
             <div class="h-full flex flex-col w-full">
-              <div class="content-list-medalion">
+              <div class="content-list-medalion" x-on:click="$store.nav.displayMenu = true">
                 <div class="moon-container"></div>
               </div>
               <h1 class="content-list-header">Dekokter</h1>
@@ -98,7 +99,7 @@ layout: default
         <div class="content-list-outer h-full">
           <div class="content-list-inner h-full">
             <div class="h-full flex flex-col w-full">
-              <div class="content-list-medalion">
+              <div class="content-list-medalion" x-on:click="$store.nav.displayMenu = true">
                 <div class="moon-container"></div>
               </div>
               <h1 class="content-list-header">Substantia</h1>
@@ -119,20 +120,17 @@ layout: default
 
     </div> <!-- End .content-container -->
 
-
   </div>
 </main>
 
-<nav class="flex-grow hidden md:flex menu-container relative overflow-hidden" id="container">
-  <div class="fixed left-[500px] -bottom-[150px]">
-    <div class="ml-[50px] relative">
+<nav class="flex-grow md:flex md:flex-row flex-col justify-center menu-container w-screen relative overflow-hidden" id="container">
+  <div class="md:fixed left-0 md:left-[500px] md:-bottom-[150px] h-full flex flex-col justify-center">
+    <div class="ml-[50px] md:relative md:block">
       <div class="menu-inner-hexagon rotate-counter-40 menu-bg"></div>
       <div class="menu-inner-star rotate-counter-40 menu-bg"></div>
       <div class="menu-center-vortex rotate-30 menu-bg"> </div>
 
-
       <div class="flex flex-col justify-center w-full h-full">
-
         <div class="w-[800px] h-[800px] relative flex-none" id="rotate">
           <div class="absolute w-[644px] h-[644px] left-[78px] top-[78px] border-4 box-border rounded-full"></div>
           <div class="menu-bg menu-outer-hexagon"></div>
@@ -149,17 +147,40 @@ layout: default
     </div>
     <div class="looking-glass left-[44px] rounded-full absolute z-10 pointer-events-none"></div>
     <div :class="{'faded': $store.nav.beingDragged}" class="looking-glass-outer left-[36px] rounded-full absolute z-10 pointer-events-none"></div>
-    <div class="absolute w-[52px] top-1/2 h-1 border bg-white pointer-events-none z-10"></div>
+    <div class="absolute w-[52px] top-1/2 h-1 border bg-white pointer-events-none z-10 hidden md:block"></div>
   </div>
 </nav>
 
+</div>
 
     <script>
       document.addEventListener('alpine:init', function(){
-        Alpine.store('nav', {
-          component: 1, 
-          angle: 0
+        Alpine.data('mobileMenu', () => {
+          return {
+            init: function(){
+              Alpine.effect(() => {
+                if(Alpine.store('nav').displayMenu){
+                  this.$el.scrollTo({left: 0, behavior: 'smooth'})    
+                }else{
+                  this.$el.scrollTo({left: 2000, behavior: 'smooth'})              
+                }
+              })
+            }           
+          }
         })
+
+        if(window.matchMedia('(min-width: 768px)').matches){
+          Alpine.store('nav', {
+            component: 1, 
+            angle: 0
+          })
+        }else{
+          Alpine.store('nav', {
+            displayMenu: true,
+            component: 1, 
+            angle: 0
+          })
+        }
       })
     </script>
 

@@ -1,6 +1,6 @@
 {% include header.html %}
 <body class="bg-black h-screen transition-transform" x-init="">
-  <section class="w-full flex flex-row items-stretch h-full">
+  <section class="w-full flex flex-row items-stretch h-full md:overflow-auto scroll-smooth overflow-x-hidden" id="mobile-scroll-container"  x-data="mobileMenu">
     {{content}}
   </section>    
 </body>

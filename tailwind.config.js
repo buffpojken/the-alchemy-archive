@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      spacing: {
+        'double-screen' : '200vw'
+      },
       fontFamily: {
         'louvette': 'louvette-banner, serif'
       },

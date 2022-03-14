@@ -2,6 +2,10 @@ function isTouchScreen() {
     return window.matchMedia('(hover: none)').matches;
 }
 
+function mobileMenu(){
+
+}
+
 function setupMenu(win){
   (function() {
     var init, rotate, start, stop,
@@ -161,6 +165,7 @@ function setupMenu(win){
 
         Alpine.store('nav').beingDragged = false
         Alpine.store('nav').angle = -angle        
+        Alpine.store('nav').displayMenu = false
     }
 
     goToSection = function(el){
@@ -197,6 +202,7 @@ function setupMenu(win){
       rot.style.webkitTransform = "rotate(" + (d) + "deg)";      
       angle = d
       Alpine.store('nav').angle = -angle
+      Alpine.store('nav').displayMenu = false
     }
 
     let items = document.querySelectorAll('.menu-item')
@@ -209,6 +215,7 @@ function setupMenu(win){
         }
       })
     }
+
 
     init();
   }).call(win)
