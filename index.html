@@ -52,11 +52,11 @@ layout: default
             </div>
             <h1 class="content-list-header">Baser</h1>
             <div class="flex-grow w-full overflow-hidden overflow-y-scroll">
-              <ul class="drink-list">
+              <ul class="bases-list">
                 {% for base in site.bases %}
-                <li class="drink-item" data-drink-no="{{base.number}}">
+                <li class="base-item" data-drink-no="{{base.number}}">
                   <a href="{{base.url}}">
-                    <h4>{{base.title}}</h4>
+                    <h4><span>1</span> {{base.title}}</h4>
                   </a>
                 </li>
                 {% endfor %}

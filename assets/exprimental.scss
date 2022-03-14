@@ -23,7 +23,7 @@
 
 .content-container {
 	position: relative;
-  margin: 0px 0px 0px 0px;
+  	margin: 0px 0px 0px 0px;
 	.content-list-medalion {
 	 	position: absolute;
 	 	top: -55px;
@@ -184,6 +184,39 @@
 		}
 	}
 }
+.bases-list {
+	font-family: aviano, serif;
+	margin: 0px 10% 80px 10%;
+	.base-item {
+		padding-bottom: 9px;
+		h4 {
+		 	font-size: 16px;
+		 	padding: 5px 0px;
+		}
+		span {
+			display: inline-block;
+			box-sizing: border-box;
+			width: 24px;
+			height: 37px;
+			line-height: 50px;
+			background-image: url('/assets/images/list-bg-bottle.svg');
+			background-repeat: no-repeat;
+			background-size: contain;
+			font-size: 16px;
+			text-align: center;
+			margin-right: 10px;
+			margin-left: 4px;
+		}
+		h4:hover span {
+			background-image: url('/assets/images/list-bg-bottle-filled.svg');
+			color: #000;
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
+	}
+}
+
+
 
 .menu-container {
 	justify-content: center;
