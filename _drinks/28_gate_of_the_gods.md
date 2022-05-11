@@ -9,8 +9,8 @@ spirits:
   - key: st_germain
     name: St. Germain
     amount: 15ml
-  - key: mint_and_motherworh_infusion
-    name: Mynta och Hjärtstilla infuserad vodka 
+  - key: vodka
+    name: Mynta och Hjärtstilla-infuserad vodka 
     amount: 15ml 
 
 ingredients: 

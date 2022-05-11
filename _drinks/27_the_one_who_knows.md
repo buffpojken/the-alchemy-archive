@@ -3,7 +3,7 @@ number: 27
 title: The one who knows
 layout: drink
 spirits: 
-  - key: hasselnotssnapps
+  - key: hasselnotsschnapps
     name: Hasselnötssnaps 
     amount: 7.5 ml
   - key: vodka
