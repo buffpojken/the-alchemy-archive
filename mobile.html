@@ -1,0 +1,37 @@
+---
+title: The Alchemy Archive
+layout: default
+---
+
+
+<div class="overflow-hidden w-screen max-h-screen flex flex-col">
+
+  <div id="scroll-window" class="transition-transform">
+    <div class="py-3 px-3 w-screen h-screen box-border bg-green-200">
+      <nav class="border border-white h-full w-full flex flex-col">
+        <a href="#" class="text-white" id="mix">Mixtures</a>
+        <a href="#" class="text-white">Bases</a>
+        <a href="#" class="text-white">Dekokter</a>
+        <a href="#" class="text-white">Substantia</a>
+      </nav>
+    </div>
+
+    <div class="w-screen h-screen box-border bg-red-200">
+      <a href="#" id="mungo">mungo</a>
+    </div>
+
+  </div>
+
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function(e){
+    var _s = document.getElementById('scroll-window')
+    document.getElementById('mungo').addEventListener('click', function(){
+      _s.style.transform = "translateY(0vh)"
+    })
+    document.getElementById('mix').addEventListener('click', function(){
+      _s.style.transform = "translateY(-100vh)"
+    })
+  })
+</script>
