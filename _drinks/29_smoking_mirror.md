@@ -1,17 +1,15 @@
 ---
 number: 29
-title: Smoking mirror
+title: Smoking Mirror
 layout: drink
 spirits: 
-  - key: Mescal
+  - key: mescal
     name: Tier Espadín
     amount: 60 ml
-  - key: Mole bitter
-    name: Dashfire Mole Cacao and Spice
-    amount: 4 stänk
 
 
 ingredients: 
+  - 4 stänk Mole Bitters 
   - 15 ml Vanilj Agave
 ---
 

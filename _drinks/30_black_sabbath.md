@@ -6,7 +6,7 @@ spirits:
   - key: rum
     name: XXX 
     amount: 30 ml
-  - key: amaro
+  - key: averna
     name: Averna
     amount: 30ml
 
