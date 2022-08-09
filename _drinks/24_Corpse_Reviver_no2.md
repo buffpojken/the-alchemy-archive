@@ -16,7 +16,7 @@ spirits:
     name: Absinthe
     amount: Några droppar
 ingredients: 
-  - 2 cl limejuice 
+  - 20 ml limejuice 
 
 ---
 

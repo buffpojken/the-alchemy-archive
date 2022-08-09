@@ -1,10 +1,10 @@
 ---
-number: 30
-title: Black Sabbath
+number: 31
+title: The Great Pretender
 layout: drink
 spirits: 
-  - key: rum
-    name: Ron Abuelo 12 Años Gran Reserva
+  - key: scotch
+    name: Monkey Shoulder 
     amount: 30 ml
   - key: averna
     name: Averna
