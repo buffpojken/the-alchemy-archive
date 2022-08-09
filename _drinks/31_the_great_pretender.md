@@ -6,19 +6,18 @@ spirits:
   - key: scotch
     name: Monkey Shoulder 
     amount: 30 ml
-  - key: averna
-    name: Averna
-    amount: 30ml
+  - key: green_chartreuse
+    name: Grön Chartreuse
+    amount: 30 ml
 
 ingredients: 
-  - 7.5ml Kamomil sirap
-  - 1 stänk The Bitter Truth Root dropps and dashes
-  - 1 stänk Absinthe - Devils Bottany
+  - 30ml Citronjuice
+  - 3 barskedar Päron och Lavendelsylt
+  - 3 stänk Absinthe - Devils Bottany
 ---
 
 Glas: Coupe
 
-1) Rör samtliga ingredienser med is 60 sekunder 
-2) Lägg i en stor rund isbit i glaset
-3) Sila i glaset över issfären 
-4) Dekorera med stjärn anis ovanpå isen
+1) Häll alla ingridienser i en shaker och skaka i minst 40 sekunder
+2) Dubbelsila i glaset 
+3) Dekorera med ett spelkort
