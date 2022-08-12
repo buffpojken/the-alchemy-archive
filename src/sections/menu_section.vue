@@ -23,9 +23,11 @@
   import {mapState} from 'vuex'
   import MixtureItem from './../components/list_items/mixture.vue'
   import BaseItem from './../components/list_items/base.vue'
+  import DecoctionItem from './../components/list_items/decoction.vue'
+  import SubstantiaItem from './../components/list_items/substantia.vue'
 
   export default {
-    components: {'mixtures': MixtureItem, 'bases': BaseItem},
+    components: {'mixtures': MixtureItem, 'bases': BaseItem, 'decoctions': DecoctionItem, 'substantia': SubstantiaItem},
     data: function(){
       return {}
     }, 
@@ -42,8 +44,12 @@
             return this.mixtures
           case 'bases': 
             return this.bases
+          case 'decoctions': 
+            return this.decoctions
+          case 'substantia':
+            return this.substantia
           default: 
-            return [4,5]
+            return []
         }
       }
     }

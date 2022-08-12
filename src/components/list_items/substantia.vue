@@ -1,5 +1,5 @@
 <template>
-  <li class="text-white" @click="$router.push(`/drinks/`+item.slug)">
+  <li class="text-white">
     {{item.name}}
   </li>
 </template>

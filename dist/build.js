@@ -150,6 +150,26 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/components/list_items/decoction.vue":
+/*!*************************************************!*\
+  !*** ./src/components/list_items/decoction.vue ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _decoction_vue_vue_type_template_id_5df7f96c__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./decoction.vue?vue&type=template&id=5df7f96c */ \"./src/components/list_items/decoction.vue?vue&type=template&id=5df7f96c\");\n/* harmony import */ var _decoction_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./decoction.vue?vue&type=script&lang=js */ \"./src/components/list_items/decoction.vue?vue&type=script&lang=js\");\n/* harmony import */ var _Users_buffpojken_projects_html_the_alchemy_archive_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ \"./node_modules/vue-loader/dist/exportHelper.js\");\n\n\n\n\n;\nconst __exports__ = /*#__PURE__*/(0,_Users_buffpojken_projects_html_the_alchemy_archive_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"])(_decoction_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"], [['render',_decoction_vue_vue_type_template_id_5df7f96c__WEBPACK_IMPORTED_MODULE_0__.render],['__file',\"src/components/list_items/decoction.vue\"]])\n/* hot reload */\nif (false) {}\n\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__exports__);\n\n//# sourceURL=webpack:///./src/components/list_items/decoction.vue?");
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/dist/index.js??ruleSet[0]!./src/components/list_items/decoction.vue?vue&type=script&lang=js":
+/*!*****************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/dist/index.js??ruleSet[0]!./src/components/list_items/decoction.vue?vue&type=script&lang=js ***!
+  \*****************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n\n  /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n    props: ['item'],\n    data: function(){\n      return {}\n    }\n  });\n\n\n//# sourceURL=webpack:///./src/components/list_items/decoction.vue?./node_modules/vue-loader/dist/index.js??ruleSet%5B0%5D");
+
+/***/ }),
+
 /***/ "./src/components/list_items/mixture.vue":
 /*!***********************************************!*\
   !*** ./src/components/list_items/mixture.vue ***!
@@ -170,6 +190,26 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/components/list_items/substantia.vue":
+/*!**************************************************!*\
+  !*** ./src/components/list_items/substantia.vue ***!
+  \**************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _substantia_vue_vue_type_template_id_0163d18e__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./substantia.vue?vue&type=template&id=0163d18e */ \"./src/components/list_items/substantia.vue?vue&type=template&id=0163d18e\");\n/* harmony import */ var _substantia_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./substantia.vue?vue&type=script&lang=js */ \"./src/components/list_items/substantia.vue?vue&type=script&lang=js\");\n/* harmony import */ var _Users_buffpojken_projects_html_the_alchemy_archive_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ \"./node_modules/vue-loader/dist/exportHelper.js\");\n\n\n\n\n;\nconst __exports__ = /*#__PURE__*/(0,_Users_buffpojken_projects_html_the_alchemy_archive_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"])(_substantia_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"], [['render',_substantia_vue_vue_type_template_id_0163d18e__WEBPACK_IMPORTED_MODULE_0__.render],['__file',\"src/components/list_items/substantia.vue\"]])\n/* hot reload */\nif (false) {}\n\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__exports__);\n\n//# sourceURL=webpack:///./src/components/list_items/substantia.vue?");
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/dist/index.js??ruleSet[0]!./src/components/list_items/substantia.vue?vue&type=script&lang=js":
+/*!******************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/dist/index.js??ruleSet[0]!./src/components/list_items/substantia.vue?vue&type=script&lang=js ***!
+  \******************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n\n  /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n    props: ['item'],\n    data: function(){\n      return {}\n    }\n  });\n\n\n//# sourceURL=webpack:///./src/components/list_items/substantia.vue?./node_modules/vue-loader/dist/index.js??ruleSet%5B0%5D");
+
+/***/ }),
+
 /***/ "./src/menu.vue":
 /*!**********************!*\
   !*** ./src/menu.vue ***!
@@ -187,6 +227,26 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n\n  /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n    data: function(){\n      return {}\n    }\n  });\n\n\n//# sourceURL=webpack:///./src/menu.vue?./node_modules/vue-loader/dist/index.js??ruleSet%5B0%5D");
+
+/***/ }),
+
+/***/ "./src/sections/drink_view.vue":
+/*!*************************************!*\
+  !*** ./src/sections/drink_view.vue ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _drink_view_vue_vue_type_template_id_52814fa4__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./drink_view.vue?vue&type=template&id=52814fa4 */ \"./src/sections/drink_view.vue?vue&type=template&id=52814fa4\");\n/* harmony import */ var _drink_view_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./drink_view.vue?vue&type=script&lang=js */ \"./src/sections/drink_view.vue?vue&type=script&lang=js\");\n/* harmony import */ var _Users_buffpojken_projects_html_the_alchemy_archive_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ \"./node_modules/vue-loader/dist/exportHelper.js\");\n\n\n\n\n;\nconst __exports__ = /*#__PURE__*/(0,_Users_buffpojken_projects_html_the_alchemy_archive_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"])(_drink_view_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"], [['render',_drink_view_vue_vue_type_template_id_52814fa4__WEBPACK_IMPORTED_MODULE_0__.render],['__file',\"src/sections/drink_view.vue\"]])\n/* hot reload */\nif (false) {}\n\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__exports__);\n\n//# sourceURL=webpack:///./src/sections/drink_view.vue?");
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/dist/index.js??ruleSet[0]!./src/sections/drink_view.vue?vue&type=script&lang=js":
+/*!*****************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/dist/index.js??ruleSet[0]!./src/sections/drink_view.vue?vue&type=script&lang=js ***!
+  \*****************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n\n  /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n    props: ['slug'],\n    data: function(){\n      return {}\n    }\n  });\n\n\n//# sourceURL=webpack:///./src/sections/drink_view.vue?./node_modules/vue-loader/dist/index.js??ruleSet%5B0%5D");
 
 /***/ }),
 
@@ -226,7 +286,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*******************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vuex */ \"./node_modules/vuex/dist/vuex.esm-bundler.js\");\n/* harmony import */ var _components_list_items_mixture_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../components/list_items/mixture.vue */ \"./src/components/list_items/mixture.vue\");\n/* harmony import */ var _components_list_items_base_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../components/list_items/base.vue */ \"./src/components/list_items/base.vue\");\n\n\n  \n  \n  \n\n  /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n    components: {'mixtures': _components_list_items_mixture_vue__WEBPACK_IMPORTED_MODULE_0__[\"default\"], 'bases': _components_list_items_base_vue__WEBPACK_IMPORTED_MODULE_1__[\"default\"]},\n    data: function(){\n      return {}\n    }, \n    computed: {\n      ...(0,vuex__WEBPACK_IMPORTED_MODULE_2__.mapState)(['mixtures', 'bases', 'decoctions', 'substantia']), \n      iconClass: function(){\n        if(this.$route.meta.key){\n          return `bg-icon-black-${this.$route.meta.key}`\n        }\n      }, \n      itemList: function(){\n        switch(this.$route.meta.key){\n          case 'mixtures': \n            return this.mixtures\n          case 'bases': \n            return this.bases\n          default: \n            return [4,5]\n        }\n      }\n    }\n  });\n\n\n//# sourceURL=webpack:///./src/sections/menu_section.vue?./node_modules/vue-loader/dist/index.js??ruleSet%5B0%5D");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! vuex */ \"./node_modules/vuex/dist/vuex.esm-bundler.js\");\n/* harmony import */ var _components_list_items_mixture_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../components/list_items/mixture.vue */ \"./src/components/list_items/mixture.vue\");\n/* harmony import */ var _components_list_items_base_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../components/list_items/base.vue */ \"./src/components/list_items/base.vue\");\n/* harmony import */ var _components_list_items_decoction_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../components/list_items/decoction.vue */ \"./src/components/list_items/decoction.vue\");\n/* harmony import */ var _components_list_items_substantia_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./../components/list_items/substantia.vue */ \"./src/components/list_items/substantia.vue\");\n\n\n  \n  \n  \n  \n  \n\n  /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({\n    components: {'mixtures': _components_list_items_mixture_vue__WEBPACK_IMPORTED_MODULE_0__[\"default\"], 'bases': _components_list_items_base_vue__WEBPACK_IMPORTED_MODULE_1__[\"default\"], 'decoctions': _components_list_items_decoction_vue__WEBPACK_IMPORTED_MODULE_2__[\"default\"], 'substantia': _components_list_items_substantia_vue__WEBPACK_IMPORTED_MODULE_3__[\"default\"]},\n    data: function(){\n      return {}\n    }, \n    computed: {\n      ...(0,vuex__WEBPACK_IMPORTED_MODULE_4__.mapState)(['mixtures', 'bases', 'decoctions', 'substantia']), \n      iconClass: function(){\n        if(this.$route.meta.key){\n          return `bg-icon-black-${this.$route.meta.key}`\n        }\n      }, \n      itemList: function(){\n        switch(this.$route.meta.key){\n          case 'mixtures': \n            return this.mixtures\n          case 'bases': \n            return this.bases\n          case 'decoctions': \n            return this.decoctions\n          case 'substantia':\n            return this.substantia\n          default: \n            return []\n        }\n      }\n    }\n  });\n\n\n//# sourceURL=webpack:///./src/sections/menu_section.vue?./node_modules/vue-loader/dist/index.js??ruleSet%5B0%5D");
 
 /***/ }),
 
@@ -250,6 +310,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/components/list_items/decoction.vue?vue&type=script&lang=js":
+/*!*************************************************************************!*\
+  !*** ./src/components/list_items/decoction.vue?vue&type=script&lang=js ***!
+  \*************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* reexport safe */ _node_modules_vue_loader_dist_index_js_ruleSet_0_decoction_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])\n/* harmony export */ });\n/* harmony import */ var _node_modules_vue_loader_dist_index_js_ruleSet_0_decoction_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/dist/index.js??ruleSet[0]!./decoction.vue?vue&type=script&lang=js */ \"./node_modules/vue-loader/dist/index.js??ruleSet[0]!./src/components/list_items/decoction.vue?vue&type=script&lang=js\");\n \n\n//# sourceURL=webpack:///./src/components/list_items/decoction.vue?");
+
+/***/ }),
+
 /***/ "./src/components/list_items/mixture.vue?vue&type=script&lang=js":
 /*!***********************************************************************!*\
   !*** ./src/components/list_items/mixture.vue?vue&type=script&lang=js ***!
@@ -260,6 +330,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/components/list_items/substantia.vue?vue&type=script&lang=js":
+/*!**************************************************************************!*\
+  !*** ./src/components/list_items/substantia.vue?vue&type=script&lang=js ***!
+  \**************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* reexport safe */ _node_modules_vue_loader_dist_index_js_ruleSet_0_substantia_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])\n/* harmony export */ });\n/* harmony import */ var _node_modules_vue_loader_dist_index_js_ruleSet_0_substantia_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/dist/index.js??ruleSet[0]!./substantia.vue?vue&type=script&lang=js */ \"./node_modules/vue-loader/dist/index.js??ruleSet[0]!./src/components/list_items/substantia.vue?vue&type=script&lang=js\");\n \n\n//# sourceURL=webpack:///./src/components/list_items/substantia.vue?");
+
+/***/ }),
+
 /***/ "./src/menu.vue?vue&type=script&lang=js":
 /*!**********************************************!*\
   !*** ./src/menu.vue?vue&type=script&lang=js ***!
@@ -267,6 +347,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* reexport safe */ _node_modules_vue_loader_dist_index_js_ruleSet_0_menu_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])\n/* harmony export */ });\n/* harmony import */ var _node_modules_vue_loader_dist_index_js_ruleSet_0_menu_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../node_modules/vue-loader/dist/index.js??ruleSet[0]!./menu.vue?vue&type=script&lang=js */ \"./node_modules/vue-loader/dist/index.js??ruleSet[0]!./src/menu.vue?vue&type=script&lang=js\");\n \n\n//# sourceURL=webpack:///./src/menu.vue?");
+
+/***/ }),
+
+/***/ "./src/sections/drink_view.vue?vue&type=script&lang=js":
+/*!*************************************************************!*\
+  !*** ./src/sections/drink_view.vue?vue&type=script&lang=js ***!
+  \*************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* reexport safe */ _node_modules_vue_loader_dist_index_js_ruleSet_0_drink_view_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])\n/* harmony export */ });\n/* harmony import */ var _node_modules_vue_loader_dist_index_js_ruleSet_0_drink_view_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../node_modules/vue-loader/dist/index.js??ruleSet[0]!./drink_view.vue?vue&type=script&lang=js */ \"./node_modules/vue-loader/dist/index.js??ruleSet[0]!./src/sections/drink_view.vue?vue&type=script&lang=js\");\n \n\n//# sourceURL=webpack:///./src/sections/drink_view.vue?");
 
 /***/ }),
 
@@ -310,6 +400,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/components/list_items/decoction.vue?vue&type=template&id=5df7f96c":
+/*!*******************************************************************************!*\
+  !*** ./src/components/list_items/decoction.vue?vue&type=template&id=5df7f96c ***!
+  \*******************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"render\": () => (/* reexport safe */ _node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_1_node_modules_vue_loader_dist_index_js_ruleSet_0_decoction_vue_vue_type_template_id_5df7f96c__WEBPACK_IMPORTED_MODULE_0__.render)\n/* harmony export */ });\n/* harmony import */ var _node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_1_node_modules_vue_loader_dist_index_js_ruleSet_0_decoction_vue_vue_type_template_id_5df7f96c__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[1]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0]!./decoction.vue?vue&type=template&id=5df7f96c */ \"./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[1]!./node_modules/vue-loader/dist/index.js??ruleSet[0]!./src/components/list_items/decoction.vue?vue&type=template&id=5df7f96c\");\n\n\n//# sourceURL=webpack:///./src/components/list_items/decoction.vue?");
+
+/***/ }),
+
 /***/ "./src/components/list_items/mixture.vue?vue&type=template&id=609ccca0":
 /*!*****************************************************************************!*\
   !*** ./src/components/list_items/mixture.vue?vue&type=template&id=609ccca0 ***!
@@ -320,6 +420,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/components/list_items/substantia.vue?vue&type=template&id=0163d18e":
+/*!********************************************************************************!*\
+  !*** ./src/components/list_items/substantia.vue?vue&type=template&id=0163d18e ***!
+  \********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"render\": () => (/* reexport safe */ _node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_1_node_modules_vue_loader_dist_index_js_ruleSet_0_substantia_vue_vue_type_template_id_0163d18e__WEBPACK_IMPORTED_MODULE_0__.render)\n/* harmony export */ });\n/* harmony import */ var _node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_1_node_modules_vue_loader_dist_index_js_ruleSet_0_substantia_vue_vue_type_template_id_0163d18e__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[1]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0]!./substantia.vue?vue&type=template&id=0163d18e */ \"./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[1]!./node_modules/vue-loader/dist/index.js??ruleSet[0]!./src/components/list_items/substantia.vue?vue&type=template&id=0163d18e\");\n\n\n//# sourceURL=webpack:///./src/components/list_items/substantia.vue?");
+
+/***/ }),
+
 /***/ "./src/menu.vue?vue&type=template&id=18a44f38":
 /*!****************************************************!*\
   !*** ./src/menu.vue?vue&type=template&id=18a44f38 ***!
@@ -327,6 +437,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"render\": () => (/* reexport safe */ _node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_1_node_modules_vue_loader_dist_index_js_ruleSet_0_menu_vue_vue_type_template_id_18a44f38__WEBPACK_IMPORTED_MODULE_0__.render)\n/* harmony export */ });\n/* harmony import */ var _node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_1_node_modules_vue_loader_dist_index_js_ruleSet_0_menu_vue_vue_type_template_id_18a44f38__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[1]!../node_modules/vue-loader/dist/index.js??ruleSet[0]!./menu.vue?vue&type=template&id=18a44f38 */ \"./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[1]!./node_modules/vue-loader/dist/index.js??ruleSet[0]!./src/menu.vue?vue&type=template&id=18a44f38\");\n\n\n//# sourceURL=webpack:///./src/menu.vue?");
+
+/***/ }),
+
+/***/ "./src/sections/drink_view.vue?vue&type=template&id=52814fa4":
+/*!*******************************************************************!*\
+  !*** ./src/sections/drink_view.vue?vue&type=template&id=52814fa4 ***!
+  \*******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"render\": () => (/* reexport safe */ _node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_1_node_modules_vue_loader_dist_index_js_ruleSet_0_drink_view_vue_vue_type_template_id_52814fa4__WEBPACK_IMPORTED_MODULE_0__.render)\n/* harmony export */ });\n/* harmony import */ var _node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_1_node_modules_vue_loader_dist_index_js_ruleSet_0_drink_view_vue_vue_type_template_id_52814fa4__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[1]!../../node_modules/vue-loader/dist/index.js??ruleSet[0]!./drink_view.vue?vue&type=template&id=52814fa4 */ \"./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[1]!./node_modules/vue-loader/dist/index.js??ruleSet[0]!./src/sections/drink_view.vue?vue&type=template&id=52814fa4\");\n\n\n//# sourceURL=webpack:///./src/sections/drink_view.vue?");
 
 /***/ }),
 
@@ -370,13 +490,33 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[1]!./node_modules/vue-loader/dist/index.js??ruleSet[0]!./src/components/list_items/decoction.vue?vue&type=template&id=5df7f96c":
+/*!*********************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[1]!./node_modules/vue-loader/dist/index.js??ruleSet[0]!./src/components/list_items/decoction.vue?vue&type=template&id=5df7f96c ***!
+  \*********************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"render\": () => (/* binding */ render)\n/* harmony export */ });\n/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ \"./node_modules/vue/dist/vue.runtime.esm-bundler.js\");\n\n\nconst _hoisted_1 = { class: \"text-white\" }\n\nfunction render(_ctx, _cache, $props, $setup, $data, $options) {\n  return ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(\"li\", _hoisted_1, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.item.name), 1 /* TEXT */))\n}\n\n//# sourceURL=webpack:///./src/components/list_items/decoction.vue?./node_modules/vue-loader/dist/templateLoader.js??ruleSet%5B1%5D.rules%5B1%5D!./node_modules/vue-loader/dist/index.js??ruleSet%5B0%5D");
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[1]!./node_modules/vue-loader/dist/index.js??ruleSet[0]!./src/components/list_items/mixture.vue?vue&type=template&id=609ccca0":
 /*!*******************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[1]!./node_modules/vue-loader/dist/index.js??ruleSet[0]!./src/components/list_items/mixture.vue?vue&type=template&id=609ccca0 ***!
   \*******************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"render\": () => (/* binding */ render)\n/* harmony export */ });\n/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ \"./node_modules/vue/dist/vue.runtime.esm-bundler.js\");\n\n\nconst _hoisted_1 = { class: \"text-white\" }\n\nfunction render(_ctx, _cache, $props, $setup, $data, $options) {\n  return ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(\"li\", _hoisted_1, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.item.name), 1 /* TEXT */))\n}\n\n//# sourceURL=webpack:///./src/components/list_items/mixture.vue?./node_modules/vue-loader/dist/templateLoader.js??ruleSet%5B1%5D.rules%5B1%5D!./node_modules/vue-loader/dist/index.js??ruleSet%5B0%5D");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"render\": () => (/* binding */ render)\n/* harmony export */ });\n/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ \"./node_modules/vue/dist/vue.runtime.esm-bundler.js\");\n\n\nfunction render(_ctx, _cache, $props, $setup, $data, $options) {\n  return ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(\"li\", {\n    class: \"text-white\",\n    onClick: _cache[0] || (_cache[0] = $event => (_ctx.$router.push(`/drinks/`+$props.item.slug)))\n  }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.item.name), 1 /* TEXT */))\n}\n\n//# sourceURL=webpack:///./src/components/list_items/mixture.vue?./node_modules/vue-loader/dist/templateLoader.js??ruleSet%5B1%5D.rules%5B1%5D!./node_modules/vue-loader/dist/index.js??ruleSet%5B0%5D");
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[1]!./node_modules/vue-loader/dist/index.js??ruleSet[0]!./src/components/list_items/substantia.vue?vue&type=template&id=0163d18e":
+/*!**********************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[1]!./node_modules/vue-loader/dist/index.js??ruleSet[0]!./src/components/list_items/substantia.vue?vue&type=template&id=0163d18e ***!
+  \**********************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"render\": () => (/* binding */ render)\n/* harmony export */ });\n/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ \"./node_modules/vue/dist/vue.runtime.esm-bundler.js\");\n\n\nconst _hoisted_1 = { class: \"text-white\" }\n\nfunction render(_ctx, _cache, $props, $setup, $data, $options) {\n  return ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(\"li\", _hoisted_1, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.item.name), 1 /* TEXT */))\n}\n\n//# sourceURL=webpack:///./src/components/list_items/substantia.vue?./node_modules/vue-loader/dist/templateLoader.js??ruleSet%5B1%5D.rules%5B1%5D!./node_modules/vue-loader/dist/index.js??ruleSet%5B0%5D");
 
 /***/ }),
 
@@ -387,6 +527,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"render\": () => (/* binding */ render)\n/* harmony export */ });\n/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ \"./node_modules/vue/dist/vue.runtime.esm-bundler.js\");\n\n\nconst _hoisted_1 = {\n  id: \"scroll-window\",\n  class: \"transition-transform mobile-menu-main-container\"\n}\n\nfunction render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_router_view = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)(\"router-view\")\n\n  return ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(\"div\", _hoisted_1, [\n    (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_view, null, {\n      default: (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(({Component, route}) => [\n        (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(vue__WEBPACK_IMPORTED_MODULE_0__.Transition, {\n          name: route.meta.animation,\n          mode: \"out-in\"\n        }, {\n          default: (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(() => [\n            ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)((0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveDynamicComponent)(Component)))\n          ]),\n          _: 2 /* DYNAMIC */\n        }, 1032 /* PROPS, DYNAMIC_SLOTS */, [\"name\"])\n      ]),\n      _: 1 /* STABLE */\n    })\n  ]))\n}\n\n//# sourceURL=webpack:///./src/menu.vue?./node_modules/vue-loader/dist/templateLoader.js??ruleSet%5B1%5D.rules%5B1%5D!./node_modules/vue-loader/dist/index.js??ruleSet%5B0%5D");
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[1]!./node_modules/vue-loader/dist/index.js??ruleSet[0]!./src/sections/drink_view.vue?vue&type=template&id=52814fa4":
+/*!*********************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[1]!./node_modules/vue-loader/dist/index.js??ruleSet[0]!./src/sections/drink_view.vue?vue&type=template&id=52814fa4 ***!
+  \*********************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"render\": () => (/* binding */ render)\n/* harmony export */ });\n/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ \"./node_modules/vue/dist/vue.runtime.esm-bundler.js\");\n\n\nconst _hoisted_1 = { class: \"text-white\" }\n\nfunction render(_ctx, _cache, $props, $setup, $data, $options) {\n  return ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(\"div\", _hoisted_1, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.slug), 1 /* TEXT */))\n}\n\n//# sourceURL=webpack:///./src/sections/drink_view.vue?./node_modules/vue-loader/dist/templateLoader.js??ruleSet%5B1%5D.rules%5B1%5D!./node_modules/vue-loader/dist/index.js??ruleSet%5B0%5D");
 
 /***/ }),
 
@@ -446,7 +596,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var vue_
   \***********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"router\": () => (/* binding */ router)\n/* harmony export */ });\n/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! vue-router */ \"./node_modules/vue-router/dist/vue-router.mjs\");\n/* harmony import */ var _menu_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./menu.vue */ \"./src/menu.vue\");\n/* harmony import */ var _sections_main_menu_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./sections/main_menu.vue */ \"./src/sections/main_menu.vue\");\n/* harmony import */ var _sections_menu_section_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./sections/menu_section.vue */ \"./src/sections/menu_section.vue\");\n\n\n\n\n\n\nconst routes = [\n  {\n    path: '/', \n    component: _menu_vue__WEBPACK_IMPORTED_MODULE_0__[\"default\"], \n    children: [\n      {\n        path: '', \n        component: _sections_main_menu_vue__WEBPACK_IMPORTED_MODULE_1__[\"default\"], \n        meta: {animation: 'slide-down'}\n      }, \n      {\n        path: '/mixtures', \n        component: _sections_menu_section_vue__WEBPACK_IMPORTED_MODULE_2__[\"default\"], \n        meta: {key: 'mixtures', animation: 'slide-up'}\n      },\n      {\n        path: '/bases', \n        component: _sections_menu_section_vue__WEBPACK_IMPORTED_MODULE_2__[\"default\"], \n        props: true, \n        meta: {key: 'bases', animation: 'slide-up'}\n      },\n      {\n        path: '/decoctions', \n        component: _sections_menu_section_vue__WEBPACK_IMPORTED_MODULE_2__[\"default\"], \n        props: true, \n        meta: {key: 'decoctions', animation: 'slide-up'}\n      },\n      {\n        path: '/substantia', \n        component: _sections_menu_section_vue__WEBPACK_IMPORTED_MODULE_2__[\"default\"], \n        props: true, \n        meta: {key: 'substantia', animation: 'slide-up'}\n      }\n    ]\n  }\n]\n\nconst router = (0,vue_router__WEBPACK_IMPORTED_MODULE_3__.createRouter)({\n  history: (0,vue_router__WEBPACK_IMPORTED_MODULE_3__.createWebHashHistory)(),\n  routes,\n  base: \"/\"\n})\n\n\n\n//# sourceURL=webpack:///./src/router.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"router\": () => (/* binding */ router)\n/* harmony export */ });\n/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! vue-router */ \"./node_modules/vue-router/dist/vue-router.mjs\");\n/* harmony import */ var _menu_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./menu.vue */ \"./src/menu.vue\");\n/* harmony import */ var _sections_main_menu_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./sections/main_menu.vue */ \"./src/sections/main_menu.vue\");\n/* harmony import */ var _sections_menu_section_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./sections/menu_section.vue */ \"./src/sections/menu_section.vue\");\n/* harmony import */ var _sections_drink_view_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./sections/drink_view.vue */ \"./src/sections/drink_view.vue\");\n\n\n\n\n\n\n\n\nconst routes = [\n  {\n    path: '/', \n    component: _menu_vue__WEBPACK_IMPORTED_MODULE_0__[\"default\"], \n    children: [\n      {\n        path: '', \n        component: _sections_main_menu_vue__WEBPACK_IMPORTED_MODULE_1__[\"default\"], \n        meta: {animation: 'slide-down'}\n      }, \n      {\n        path: '/mixtures', \n        component: _sections_menu_section_vue__WEBPACK_IMPORTED_MODULE_2__[\"default\"], \n        meta: {key: 'mixtures', animation: 'slide-up'}\n      },\n      {\n        path: '/bases', \n        component: _sections_menu_section_vue__WEBPACK_IMPORTED_MODULE_2__[\"default\"], \n        props: true, \n        meta: {key: 'bases', animation: 'slide-up'}\n      },\n      {\n        path: '/decoctions', \n        component: _sections_menu_section_vue__WEBPACK_IMPORTED_MODULE_2__[\"default\"], \n        props: true, \n        meta: {key: 'decoctions', animation: 'slide-up'}\n      },\n      {\n        path: '/substantia', \n        component: _sections_menu_section_vue__WEBPACK_IMPORTED_MODULE_2__[\"default\"], \n        props: true, \n        meta: {key: 'substantia', animation: 'slide-up'}\n      }\n    ]\n  }, \n  {\n    path: '/drinks/:slug', \n    component: _sections_drink_view_vue__WEBPACK_IMPORTED_MODULE_3__[\"default\"], \n    props: true\n  }\n]\n\nconst router = (0,vue_router__WEBPACK_IMPORTED_MODULE_4__.createRouter)({\n  history: (0,vue_router__WEBPACK_IMPORTED_MODULE_4__.createWebHashHistory)(),\n  routes,\n  base: \"/\"\n})\n\n\n\n//# sourceURL=webpack:///./src/router.js?");
 
 /***/ }),
 

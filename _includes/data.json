@@ -4,6 +4,7 @@ window.siteData = {
     {
       "name"    : "{{ drink.title}}",
       "objectID": "{{drink.number}}",
+      "slug": "{{drink.slug}}",
       "url": "{{ site.baseurl }}{{ drink.url }}", 
       "spirits": [
         {% for spi in drink.spirits %}

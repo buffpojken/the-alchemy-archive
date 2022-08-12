@@ -4,6 +4,8 @@ import MainMenu from './sections/main_menu.vue'
 
 import SectionMenu from './sections/menu_section.vue'
 
+import DrinkView from './sections/drink_view.vue'
+
 const routes = [
   {
     path: '/', 
@@ -38,6 +40,11 @@ const routes = [
         meta: {key: 'substantia', animation: 'slide-up'}
       }
     ]
+  }, 
+  {
+    path: '/drinks/:slug', 
+    component: DrinkView, 
+    props: true
   }
 ]
 
