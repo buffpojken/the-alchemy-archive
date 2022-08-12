@@ -44,7 +44,7 @@
 }
 
 .mobile-menu-item{
-  border:1px solid white;
+  border:3px solid white;
   border-radius:500px;
   position:absolute;
   width: 140px;
@@ -52,6 +52,31 @@
   box-sizing:border-box;
   cursor: pointer;
   background-color:black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items:center;
+  background-repeat:no-repeat;
+
+  &.bg-icon-mixturer{
+    background-size:62px 71px;
+    background-position:center top 18px;
+  }
+
+  &.bg-icon-baser{
+    background-size:76px 73px;    
+    background-position:center top 22px;
+  }
+
+  &.bg-icon-dekokter{
+    background-size:89px 89px;     
+    background-position:center top 18px;
+  }
+
+  &.bg-icon-substantia{
+    background-size:61px 70px;   
+    background-position:center top 18px; 
+  }
 
   &:first-child{
     top: 40px;

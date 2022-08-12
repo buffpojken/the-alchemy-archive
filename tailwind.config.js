@@ -20,6 +20,9 @@ module.exports = {
         'icon-dekokter': '89px 89px',
         'icon-substantia': '61px 70px'
       },
+      colors: {
+        'background': '#151515'
+      },      
       backgroundImage: theme => ({
         'icon-mixturer': "url(images/icons/icon-mixturer.svg)",
         'icon-baser': 'url(images/icons/icon-baser.svg)',
