@@ -1,0 +1,44 @@
+window.siteData = {
+  "drinks": [
+{% for drink in site.drinks %}  
+    {
+      "name"    : "{{ drink.title}}",
+      "objectID": "{{drink.number}}",
+      "url": "{{ site.baseurl }}{{ drink.url }}", 
+      "spirits": [
+        {% for spi in drink.spirits %}
+          "{{spi.name | strip}}"
+        {% unless forloop.last %},{% endunless %}
+        {% endfor %}
+      ],
+      "ingredients": [
+        {% for ing in drink.ingredients %}
+          "{{ing | strip}}"
+        {% unless forloop.last %},{% endunless %}
+        {% endfor %}
+      ]
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+], 
+  "bases": [
+    {% for base in site.bases %}
+      {
+        "name": "{{base.title}}"
+      }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ], 
+  "decoctions": [
+    {% for decoction in site.decoctions %}
+      {
+        "name": "{{decoction.title}}"
+      }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ], 
+  "substantia": [
+    {% for sub in site.substantia %}
+      {
+        "name": "{{sub.title}}"
+      }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}
