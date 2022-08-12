@@ -75,12 +75,12 @@
 }
 
 .icon-mixturer{
-  @apply bg-icon-mixturer;
+  @apply bg-icon-mixtures;
   background-position: center top 30px;
 }
 
 .icon-baser{
-  @apply bg-icon-baser;
+  @apply bg-icon-bases;
   background-position: center top 30px;
 }
 
@@ -90,7 +90,7 @@
 }
 
 .icon-dekokter{
-  @apply bg-icon-dekokter;
+  @apply bg-icon-decoctions;
   background-position: center top 20px;
 }
 

@@ -28,18 +28,41 @@
 }
 
 .mobile-menu-section-header{
-  position: relative;
-  width:100%;
+  @apply pt-6 relative w-full;
   background-color:black;
 
   &:before{
     content: ' '; 
-    border:2px solid white;
+    border:2px solid rgba(255, 255, 255, 0.4);
     height:50%;
     left:calc(50% - 1px);
     top:0px;
     position:absolute;
     width:0px;
+  }
+
+  .icon-container{
+    @apply w-full flex flex-row justify-center items-center relative mb-3.5;
+
+    &:before{
+      content:' '; 
+      width:100%;
+      height:0px;
+      border-top:2px solid white;
+      top:calc(50% - 4px);
+      position:absolute;
+      z-index: 0;
+    }
+
+    &:after{
+      content:' '; 
+      width:100%;
+      height:0px;
+      border-top:2px solid white;
+      top:calc(50% + 4px);
+      position:absolute;
+      z-index: 0;
+    }
   }
 }
 
@@ -58,17 +81,17 @@
   align-items:center;
   background-repeat:no-repeat;
 
-  &.bg-icon-mixturer{
+  &.bg-icon-mixtures{
     background-size:62px 71px;
     background-position:center top 18px;
   }
 
-  &.bg-icon-baser{
+  &.bg-icon-bases{
     background-size:76px 73px;    
     background-position:center top 22px;
   }
 
-  &.bg-icon-dekokter{
+  &.bg-icon-decoctions{
     background-size:89px 89px;     
     background-position:center top 18px;
   }

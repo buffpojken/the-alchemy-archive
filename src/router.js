@@ -17,25 +17,25 @@ const routes = [
       {
         path: '/mixtures', 
         component: SectionMenu, 
-        meta: {sectionName: 'mixturer', animation: 'slide-up'}
+        meta: {key: 'mixtures', animation: 'slide-up'}
       },
       {
         path: '/bases', 
         component: SectionMenu, 
         props: true, 
-        meta: {sectionName: 'bases', animation: 'slide-up'}
+        meta: {key: 'bases', animation: 'slide-up'}
       },
       {
         path: '/decoctions', 
         component: SectionMenu, 
         props: true, 
-        meta: {sectionName: 'decoctions', animation: 'slide-up'}
+        meta: {key: 'decoctions', animation: 'slide-up'}
       },
       {
         path: '/substantia', 
         component: SectionMenu, 
         props: true, 
-        meta: {sectionName: 'substantia', animation: 'slide-up'}
+        meta: {key: 'substantia', animation: 'slide-up'}
       }
     ]
   }
