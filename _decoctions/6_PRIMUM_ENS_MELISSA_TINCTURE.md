@@ -1,6 +1,6 @@
 ---
 number: 6
-title: PRIMUM ENS MELISSA TINCTURE
+title: Primum Ens Melissa Tincture
 layout: drink
 ingredients: 
   - 5 Citronmeliss färsk
