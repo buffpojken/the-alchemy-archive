@@ -5,10 +5,15 @@ window.siteData = {
       "name"    : "{{ drink.title}}",
       "objectID": "{{drink.number}}",
       "slug": "{{drink.slug}}",
+      "description": `{{drink.content}}`,
       "url": "{{ site.baseurl }}{{ drink.url }}", 
       "spirits": [
         {% for spi in drink.spirits %}
-          "{{spi.name | strip}}"
+          {
+            "name":  "{{spi.name | strip}}",
+            "key": "{{spi.key}}", 
+            "amount": "{{spi.amount}}"
+          }        
         {% unless forloop.last %},{% endunless %}
         {% endfor %}
       ],

@@ -1,19 +1,33 @@
 <template>
-  <div class="w-screen h-screen box-border bg-black transition-transform flex flex-col">
-    <header class="mobile-menu-section-header">
-      <div class="icon-container">
-        <div class="w-[94px] h-[94px] bg-white bg-no-repeat bg-center rounded-full cursor-pointer z-10" :class="iconClass" @click.prevent="$router.push('/')"></div>
+  <div class="w-screen h-screen box-border bg-black transition-transform flex flex-col px-4 pt-20 menu-page pb-4">
+    <div class="header-icon" :class="iconClass" @click.prevent="$router.push('/')"></div>
+
+    <div class="section-container h-full flex flex-col">
+
+      <div class="menu-section-scroll-wrapper h-full">
+        <div class="border-2 border-white flex flex-col h-full justify-start">
+
+          <h4 class="mt-14 text-3xl text-white font-louvette text-center">
+            Mungo
+          </h4>
+
+          <div class="menu-section-scroll-container h-full mt-10">
+            <ul class="px-3 pb-10">
+              <component :is="$route.meta.key" v-for="item in itemList" :item="item" />
+            </ul>
+          </div>
+
+
+        </div>
       </div>
 
-      <h4 class="text-3xl font-louvette text-white text-center">
-        {{$route.meta.key}}
-      </h4>
-    </header>
 
-    <div class="h-full overflow-auto">
-      <ul class="">
-        <component :is="$route.meta.key" v-for="item in itemList" :item="item" />
-      </ul>
+
+
+
+
+
+
     </div>
   </div>
 </template>

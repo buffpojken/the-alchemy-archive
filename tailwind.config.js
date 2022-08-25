@@ -14,7 +14,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'louvette': 'louvette-banner, serif'
+        'louvette': 'louvette-banner, serif', 
+        'aviano': 'aviano, serif'
       },
       fontSize: {        
         '1_5xl': '1.37rem', 

@@ -6,7 +6,8 @@ const store = createStore({
       mixtures: [], 
       bases: [],
       decoctions: [], 
-      substantia: []
+      substantia: [], 
+      currentCocktail: null
     }
   },
   mutations: {
@@ -15,13 +16,17 @@ const store = createStore({
       ctx.bases       = data.bases
       ctx.decoctions  = data.decoctions
       ctx.substantia  = data.substantia
+    }, 
+    CURRENT_MIXTURE: function(ctx, slug){
+      let idx = ctx.mixtures.findIndex((m) => {return m.slug == slug})
+      ctx.currentCocktail = ctx.mixtures[idx]
     }
   }, 
   actions: { 
    
   }, 
   getters: {
-    
+
   }, 
   plugins: [
 

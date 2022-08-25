@@ -27,44 +27,50 @@
   }
 }
 
-.mobile-menu-section-header{
-  @apply pt-6 relative w-full;
-  background-color:black;
+.menu-page{
+
+  position:relative;
 
   &:before{
     content: ' '; 
     border:2px solid rgba(255, 255, 255, 0.4);
-    height:50%;
+    height:40px;
     left:calc(50% - 1px);
     top:0px;
     position:absolute;
     width:0px;
+    z-index:1;
   }
 
-  .icon-container{
-    @apply w-full flex flex-row justify-center items-center relative mb-3.5;
-
-    &:before{
-      content:' '; 
-      width:100%;
-      height:0px;
-      border-top:2px solid white;
-      top:calc(50% - 4px);
-      position:absolute;
-      z-index: 0;
-    }
-
-    &:after{
-      content:' '; 
-      width:100%;
-      height:0px;
-      border-top:2px solid white;
-      top:calc(50% + 4px);
-      position:absolute;
-      z-index: 0;
-    }
+  .header-icon{
+    top:40px;
+    left:calc(50% - 47px);
+    width:94px;
+    height: 94px;
+    background-color:white;
+    background-repeat: no-repeat;
+    background-position:center center;
+    border-radius:99999px;
+    cursor: pointer;
+    z-index:10;
+    position:absolute;;
   }
 }
+
+.section-container{
+
+}
+
+.menu-section-scroll-wrapper{
+  @apply p-2 flex flex-col box-border;
+
+  border:2px solid white;
+
+  .menu-section-scroll-container{
+    @apply overflow-auto relative;
+  }
+}
+
 
 .mobile-menu-item{
   border:3px solid white;
@@ -120,4 +126,66 @@
     top:calc(50% + 40px);
     left:calc(50% - 70px)
   }
+}
+
+.item-page-header{
+  width: 100%;
+  height: 143px;
+
+  .main-icon{
+    border-radius:9999px;
+    width:100px;
+    height: 100px;
+    z-index: 1;  
+    background-color: white;
+    top:43px;
+    left:calc(50% - 50px);
+    position:absolute;
+  }
+
+  .minor-icon{
+    border-radius:9999px;
+    width:80px;
+    height: 80px;
+    border:3px solid white;
+    position:absolute;
+    left:calc(50% - 40px);
+    top:-20px;
+    z-index: 10;
+  }
+
+  .border-holder{
+    position:absolute;
+    width: 100%;
+    height: 20px;
+    top:80px;
+    border-bottom:3px solid white;
+
+
+    &:before{
+      content: ' '; 
+      width:100%;
+      height:0px;
+      border-bottom:1px solid white;
+      position:absolute;
+      bottom:12px;
+      left:0px;
+    }
+
+
+    &:after{
+      content: ' '; 
+      width:100%;
+      height:0px;
+      border-bottom:2px solid white;
+      position:absolute;
+      bottom:5px;
+      left:0px;
+    }
+
+
+  }
+
+
+
 }
