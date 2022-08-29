@@ -7,9 +7,9 @@
         <div class="border-holder"></div>
       </header>
       <h2 class="text-5xl text-white font-louvette text-center">{{currentCocktail.name}}</h2>
-      <div class="overflow-auto h-full">
+      <div class="overflow-auto h-full mb-6">
 
-        <ul>
+        <ul class="px-6 font-aviano text-lg md:text-2xl mt-6 mb-8">
           <li v-for="spi in currentCocktail.spirits">
             {{spi.amount}} {{spi.name}}
           </li>
@@ -18,10 +18,12 @@
           </li>
         </ul>
 
-        <div class="" v-html="currentCocktail.description">
+        <div class="px-6 font-aviano text-lg md:text-2xl mb-8" v-html="currentCocktail.description">
 
         </div>
       </div>
+
+      <div class="border-holder mb-3.5"></div>
     </div>
   </div>
 </template>
