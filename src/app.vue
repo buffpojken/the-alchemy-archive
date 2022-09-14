@@ -1,7 +1,5 @@
 <template>
-  <MediaQueryProvider :queries="{mobile: '(max-width: 760px)'}">
-    <Layout />
-  </MediaQueryProvider>
+  <Layout />
 </template>
 
 <script>
