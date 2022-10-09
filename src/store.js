@@ -1,4 +1,5 @@
 import {createStore} from 'vuex'
+import { useMq } from "vue3-mq";
 
 const store = createStore({
   state(){
@@ -60,7 +61,14 @@ const store = createStore({
   getters: {
     isTouchScreen: function(){
       return window.matchMedia('(hover: none)').matches
-    }    
+    }, 
+    getBreakpoint: function(ctx){
+//      const mq = useMq();
+      return function(){
+        console.log(store)
+  //      console.log(mq)        
+      }
+    }   
   }, 
   plugins: [
 

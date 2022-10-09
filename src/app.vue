@@ -11,8 +11,5 @@
     }, 
     inject: ["mq"],
     components: {Layout},
-    mounted: function(){
-      console.log(this.mq)
-    }
   }
 </script>

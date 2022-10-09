@@ -1,45 +1,67 @@
 import {createRouter, createWebHashHistory} from 'vue-router'
+import {store} from './store.js'
 import Menu from './menu.vue'
 import MainMenu from './sections/main_menu.vue'
 
 import SectionMenu from './sections/menu_section.vue'
+import TabletSectionMenu from './sections/ipad_menu_section.vue'
 
 import DrinkView from './sections/drink_view.vue'
+
+function getMenuWrapper(){
+  if(router.$mq.smMinus){
+    return Menu    
+  }else{
+    return TabletSectionMenu
+  }
+}
+
+function getMenuComponent(){
+  if(router.$mq.smMinus){
+    return MainMenu    
+  }else{
+    return TabletSectionMenu
+  }
+}
+
+function getMenuSectionComponent(){
+  if(router.$mq.smMinus){
+    return SectionMenu    
+  }else{
+    return TabletSectionMenu
+  }
+}
 
 const routes = [
   {
     path: '/', 
-    component: Menu, 
+    component: getMenuWrapper, 
     children: [
       {
         path: '', 
-        components: {
-          default: MainMenu
-        }, 
+        component: getMenuComponent, 
         meta: {animation: 'slide-down'}
       }, 
       {
         path: '/mixtures', 
-        components: {
-          default: SectionMenu
-        }, 
+        component: getMenuSectionComponent, 
         meta: {key: 'mixtures', animation: 'slide-up'}
       },
       {
         path: '/bases', 
-        component: SectionMenu, 
+        component: getMenuSectionComponent, 
         props: true, 
         meta: {key: 'bases', animation: 'slide-up'}
       },
       {
         path: '/decoctions', 
-        component: SectionMenu, 
+        component: getMenuSectionComponent, 
         props: true, 
         meta: {key: 'decoctions', animation: 'slide-up'}
       },
       {
         path: '/substantia', 
-        component: SectionMenu, 
+        component: getMenuSectionComponent, 
         props: true, 
         meta: {key: 'substantia', animation: 'slide-up'}
       }
@@ -58,6 +80,11 @@ const router = createRouter({
   base: "/"
 })
 
+function fetchRouter(app){
+  router.$mq = app._context.provides.mq
+  return router
+}
+
 export {
-  router
+  fetchRouter
 }

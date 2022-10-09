@@ -188,8 +188,15 @@
         }
 
         if(component){
-//          Alpine.store('nav').component = component            
-          console.log(component)
+          if(component == 1 || component == 4){
+            this.$router.push("/mixtures")
+          }else if(component == 2 || component == 6){
+            this.$router.push("/bases")
+          }else if(component == 5){
+            this.$router.push("/decoctions")
+          }else if(component == 3){
+            this.$router.push("/substantia")
+          }
         }
 
           let d = this.closestEquivalentAngle(baseAngle, target)     

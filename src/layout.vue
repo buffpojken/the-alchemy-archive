@@ -5,8 +5,7 @@
         <router-view></router-view>
       </div>
     </MqResponsive>
-    <MqResponsive target="md+">
-
+    <MqResponsive target="md+" class="w-full flex flex-row items-stretch h-full">
       <a href="why.html" class="the-great-eye">&nbsp;</a>
 
 
@@ -23,7 +22,7 @@
             <div class="content-list-page-decorator-1 move-decorator-1-animate"></div>
             <div class="content-list-page-decorator-2 move-decorator-2-animate"></div>
 
-            <router-view name="ipad"></router-view>
+            <router-view></router-view>
 
           </div> <!-- End .content-container -->
 
