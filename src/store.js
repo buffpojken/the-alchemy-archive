@@ -58,7 +58,9 @@ const store = createStore({
    
   }, 
   getters: {
-
+    isTouchScreen: function(){
+      return window.matchMedia('(hover: none)').matches
+    }    
   }, 
   plugins: [
 
