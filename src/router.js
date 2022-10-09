@@ -13,12 +13,16 @@ const routes = [
     children: [
       {
         path: '', 
-        component: MainMenu, 
+        components: {
+          default: MainMenu
+        }, 
         meta: {animation: 'slide-down'}
       }, 
       {
         path: '/mixtures', 
-        component: SectionMenu, 
+        components: {
+          default: SectionMenu
+        }, 
         meta: {key: 'mixtures', animation: 'slide-up'}
       },
       {

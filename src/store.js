@@ -7,7 +7,39 @@ const store = createStore({
       bases: [],
       decoctions: [], 
       substantia: [], 
-      currentCocktail: null
+      currentCocktail: null, 
+      menuSections: [
+        {
+          key: 'mixtures', 
+          label: 'Mixturer', 
+          icon: 'icon-mixturer'
+        }, 
+        {
+          key: 'bases', 
+          label: 'Baser', 
+          icon: 'icon-baser'
+        }, 
+        {
+          key: 'substantia', 
+          label: 'Substantia', 
+          icon: 'icon-substantia'
+        },
+        {
+          key: 'mixtures', 
+          label: 'Mixturer', 
+          icon: 'icon-mixturer'
+        }, 
+        {
+          key: 'decoctions', 
+          label: 'Dekokter', 
+          icon: 'icon-dekokter'
+        }, 
+        {
+          key: 'bases', 
+          label: 'Baser', 
+          icon: 'icon-baser'
+        }
+      ]
     }
   },
   mutations: {
