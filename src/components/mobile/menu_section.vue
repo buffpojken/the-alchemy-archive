@@ -8,7 +8,7 @@
         <div class="border-2 border-white flex flex-col h-full justify-start">
 
           <h4 class="mt-14 text-3xl text-white font-louvette text-center">
-            {{$route.meta.key}}
+            {{t('sections.titles.'+$route.meta.key)}}
           </h4>
 
           <div class="menu-section-scroll-container h-full mt-10">

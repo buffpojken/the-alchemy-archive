@@ -21,10 +21,10 @@
                 <div class="content-list-medalion">
                   <div class="moon-container"></div>
                 </div>
-                <h1 class="content-list-header">Mixturer</h1>
+                <h1 class="content-list-header">{{t('sections.titles.'+routeMetaKey)}}</h1>
                 <div class="flex-grow w-full overflow-hidden overflow-y-scroll">
                   <ul class="drink-list">
-                    <component :is="$route.meta.key" v-for="item in itemList" :item="item" />
+                    <component :is="routeMetaKey" v-for="item in itemList" :item="item" />
                   </ul>
                 </div>
               </div>
@@ -61,13 +61,20 @@
     }, 
     computed: {
       ...mapState(['mixtures', 'bases', 'decoctions', 'substantia']), 
+      routeMetaKey: function(){
+        if(this.$route.meta.key){
+          return this.$route.meta.key
+        }else{
+          return 'mixtures'
+        }
+      },
       iconClass: function(){
         if(this.$route.meta.key){
-          return `bg-icon-black-${this.$route.meta.key}`
+          return `bg-icon-black-${this.routeMetaKey}`
         }
       }, 
       itemList: function(){
-        switch(this.$route.meta.key){
+        switch(this.routeMetaKey){
           case 'mixtures': 
             return this.mixtures
           case 'bases': 

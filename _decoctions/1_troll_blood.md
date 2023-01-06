@@ -1,6 +1,7 @@
 ---
 number: 1
 title: Trollblod
+slug: trollblod
 layout: drink
 ingredients: 
   - 5cl blod

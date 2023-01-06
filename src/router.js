@@ -7,7 +7,7 @@ import MainMenu from './components/mobile/main_menu.vue'
 
 import TabletMenu from './components/tablet/menu.vue'
 
-import DrinkView from './sections/drink_view.vue'
+import ItemView from './sections/item_view.vue'
 
 function getMenuWrapper(){
   if(router.$mq.smMinus){
@@ -70,9 +70,20 @@ const routes = [
   }, 
   {
     path: '/drinks/:slug', 
-    component: DrinkView, 
-    props: true
+    component: ItemView, 
+    props: (route) => {return {type: 'mixtures', slug: route.params.slug}}
+  }, 
+  {
+    path: '/decoctions/:slug', 
+    component: ItemView, 
+    props: (route) => {return {type: 'decoctions', slug: route.params.slug}}
+  },
+  {
+    path: '/substantia/:slug', 
+    component: ItemView, 
+    props: (route) => {return {type: 'substantia', slug: route.params.slug}}
   }
+
 ]
 
 const router = createRouter({

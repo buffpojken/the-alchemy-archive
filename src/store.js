@@ -9,6 +9,7 @@ const store = createStore({
       decoctions: [], 
       substantia: [], 
       currentCocktail: null, 
+      currentItem: null,
       menuSections: [
         {
           key: 'mixtures', 
@@ -53,6 +54,26 @@ const store = createStore({
     CURRENT_MIXTURE: function(ctx, slug){
       let idx = ctx.mixtures.findIndex((m) => {return m.slug == slug})
       ctx.currentCocktail = ctx.mixtures[idx]
+    }, 
+    CURRENT_ITEM: function(ctx, {slug, type}){
+      switch(type){
+        case 'mixtures': 
+          var idx = ctx.mixtures.findIndex((m) => {return m.slug == slug})
+          ctx.currentItem = ctx.mixtures[idx]
+          break;
+        case 'decoctions': 
+          var idx = ctx.decoctions.findIndex((m) => {return m.slug == slug})
+          ctx.currentItem = ctx.decoctions[idx]
+          break;
+        case 'bases': 
+          var idx = ctx.bases.findIndex((m) => {return m.slug == slug})
+          ctx.currentItem = ctx.bases[idx]
+          break;
+        case 'substantia':
+          var idx = ctx.substantia.findIndex((m) => {return m.slug == slug})
+          ctx.currentItem = ctx.substantia[idx]
+          break;
+      }
     }
   }, 
   actions: { 
@@ -61,14 +82,7 @@ const store = createStore({
   getters: {
     isTouchScreen: function(){
       return window.matchMedia('(hover: none)').matches
-    }, 
-    getBreakpoint: function(ctx){
-//      const mq = useMq();
-      return function(){
-        console.log(store)
-  //      console.log(mq)        
-      }
-    }   
+    } 
   }, 
   plugins: [
 

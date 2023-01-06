@@ -36,14 +36,18 @@ window.siteData = {
   "decoctions": [
     {% for decoction in site.decoctions %}
       {
-        "name": "{{decoction.title}}"
+        "name": "{{decoction.title}}", 
+        "slug": "{{decoction.slug}}", 
+        "description": `{{decoction.content}}`,
       }{% unless forloop.last %},{% endunless %}
     {% endfor %}
   ], 
   "substantia": [
     {% for sub in site.substantia %}
       {
-        "name": "{{sub.title}}"
+        "name": "{{sub.title}}",
+        "slug": "{{sub.slug}}", 
+        "description": `{{sub.content}}`,
       }{% unless forloop.last %},{% endunless %}
     {% endfor %}
   ]
