@@ -1,4 +1,4 @@
 #!/bin/sh
 
 bundle exec jekyll serve --livereload
-npm run watch
+./node_modules/.bin/webpack-dev-server
