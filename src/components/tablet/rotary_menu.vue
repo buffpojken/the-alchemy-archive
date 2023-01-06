@@ -55,7 +55,6 @@
       ...mapState(['menuSections'])
     }, 
     mounted: function(){
-      console.log(this.$store.getters.isTouchScreen)
       this.$refs.rotator.addEventListener('transitionend', () => {
         this.$refs.rotator.classList.remove(this.animationClass);
       });
