@@ -11,6 +11,17 @@
     width:1px;
     top:20%;
   }
+
+  &:after{
+    content: ' '; 
+    height:4px;
+    position: absolute;
+    width:calc(100% - 40px);
+    left:20px;
+    background-color:#fff;
+    top:calc(50% - 52px);
+    z-index: 0;
+  }
 }
 
 .mobile-menu-main-container{
@@ -84,27 +95,7 @@
   justify-content: flex-start;
   align-items:center;
   background-repeat:no-repeat;
-
-  &.bg-icon-mixtures{
-    background-size:62px 71px;
-    background-position:center top 18px;
-  }
-
-  &.bg-icon-bases{
-    background-size:76px 73px;    
-    background-position:center top 22px;
-  }
-
-  &.bg-icon-decoctions{
-    background-size:89px 89px;     
-    background-position:center top 18px;
-  }
-
-  &.bg-icon-substantia{
-    background-size:61px 70px;   
-    background-position:center top 18px; 
-  }
-
+  z-index: 1;
   &:first-child{
     top: 40px;
     left: calc(50% - 70px);
