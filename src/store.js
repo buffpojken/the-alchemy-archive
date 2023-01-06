@@ -66,7 +66,7 @@ const store = createStore({
           ctx.currentItem = ctx.decoctions[idx]
           break;
         case 'bases': 
-          var idx = ctx.bases.findIndex((m) => {return m.slug == slug})
+          var idx = ctx.bases.findIndex((m) => {return m.key == slug})
           ctx.currentItem = ctx.bases[idx]
           break;
         case 'substantia':

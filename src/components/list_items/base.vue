@@ -1,5 +1,5 @@
 <template>
-  <li class="text-white">
+  <li class="text-white cursor-pointer" @click="$router.push(`/bases/`+item.key)">
     {{item.name}}
   </li>
 </template>

@@ -6,12 +6,12 @@
         <MobileItemPageHeader />
       </MqResponsive>
       <MqResponsive target="md+">
-        <ItemPageHeader />
+        <ItemPageHeader :type="type" />
       </MqResponsive>
 
       <h2 class="text-5xl text-white font-louvette text-center">{{currentItem.name}}</h2>
 
-      <component :is="recipeViewType" :currentItem="currentItem" />
+      <component :is="recipeViewType" :currentItem="currentItem"/>
 
     </div>
   </div>
@@ -28,7 +28,7 @@
   import MixtureView from './../components/recipe_views/mixtures.vue';
   import DecoctionView from './../components/recipe_views/decoctions.vue';
   import SubstantiaView from './../components/recipe_views/substantia.vue';
-  import BaseView from './../components/recipe_views/mixtures.vue';
+  import BasesView from './../components/recipe_views/bases.vue';
 
   export default {
     props: ['slug', 'type'],
@@ -43,7 +43,17 @@
             return SubstantiaView
           case 'decoctions':
             return DecoctionView
+          case 'bases':
+            return BasesView
         }
+      }
+    },
+    watch: {
+      slug: function(){
+        this.$store.commit('CURRENT_ITEM', {slug: this.slug, type: this.type})        
+      }, 
+      type: function(){
+        this.$store.commit('CURRENT_ITEM', {slug: this.slug, type: this.type})
       }
     },
     mounted: function(){

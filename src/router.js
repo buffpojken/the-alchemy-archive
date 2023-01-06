@@ -82,8 +82,12 @@ const routes = [
     path: '/substantia/:slug', 
     component: ItemView, 
     props: (route) => {return {type: 'substantia', slug: route.params.slug}}
+  },
+  {
+    path: '/bases/:slug', 
+    component: ItemView, 
+    props: (route) => {return {type: 'bases', slug: route.params.slug}}
   }
-
 ]
 
 const router = createRouter({

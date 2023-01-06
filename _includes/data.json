@@ -29,7 +29,20 @@ window.siteData = {
   "bases": [
     {% for base in site.bases %}
       {
-        "name": "{{base.title}}"
+        "name": "{{base.title}}", 
+        "key": "{{base.key}}",
+        "drinks": [
+          {% for drink in site.drinks %}
+            {% for item in drink.spirits %}
+              {% if item.key == base.key %}
+                {
+                  "name": "{{drink.title}}", 
+                  "slug": "{{drink.slug}}"
+                },
+              {% endif %}
+            {% endfor %}
+          {% endfor %} 
+        ]
       }{% unless forloop.last %},{% endunless %}
     {% endfor %}
   ], 
