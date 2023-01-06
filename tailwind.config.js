@@ -30,6 +30,9 @@ module.exports = {
       colors: {
         'background': '#151515'
       },      
+      borderWidth: {
+        '3': '3px'
+      },
       backgroundImage: theme => ({
         'icon-mixtures': "url(images/icons/icon-mixturer.svg)",
         'icon-black-mixtures': "url(images/icons/icon-black-mixtures.svg)",

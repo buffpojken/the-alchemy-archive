@@ -62,9 +62,7 @@
 }
 
 .menu-section-scroll-wrapper{
-  @apply p-2 flex flex-col box-border;
-
-  border:2px solid white;
+  @apply p-2 flex flex-col box-border border border-2;
 
   .menu-section-scroll-container{
     @apply overflow-auto relative;
