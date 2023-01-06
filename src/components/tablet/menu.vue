@@ -40,11 +40,11 @@
 <script>
   import {mapState} from 'vuex'
 
-  import RotaryMenu from './../components/rotary_menu.vue'
-  import MixtureItem from './../components/list_items/mixture.vue'
-  import BaseItem from './../components/list_items/base.vue'
-  import DecoctionItem from './../components/list_items/decoction.vue'
-  import SubstantiaItem from './../components/list_items/substantia.vue'
+  import RotaryMenu from './rotary_menu.vue'
+  import MixtureItem from './../list_items/mixture.vue'
+  import BaseItem from './../list_items/base.vue'
+  import DecoctionItem from './../list_items/decoction.vue'
+  import SubstantiaItem from './../list_items/substantia.vue'
 
   export default {
     components: {

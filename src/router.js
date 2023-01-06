@@ -1,18 +1,19 @@
 import {createRouter, createWebHashHistory} from 'vue-router'
 import {store} from './store.js'
-import Menu from './menu.vue'
-import MainMenu from './sections/main_menu.vue'
+import MobileMenu from './components/mobile/menu_wrapper.vue'
+import SectionMenu from './components/mobile/menu_section.vue'
 
-import SectionMenu from './sections/menu_section.vue'
-import TabletSectionMenu from './sections/ipad_menu_section.vue'
+import MainMenu from './components/mobile/main_menu.vue'
+
+import TabletMenu from './components/tablet/menu.vue'
 
 import DrinkView from './sections/drink_view.vue'
 
 function getMenuWrapper(){
   if(router.$mq.smMinus){
-    return Menu    
+    return MobileMenu    
   }else{
-    return TabletSectionMenu
+    return TabletMenu
   }
 }
 
@@ -20,7 +21,7 @@ function getMenuComponent(){
   if(router.$mq.smMinus){
     return MainMenu    
   }else{
-    return TabletSectionMenu
+    return TabletMenu
   }
 }
 
@@ -28,7 +29,7 @@ function getMenuSectionComponent(){
   if(router.$mq.smMinus){
     return SectionMenu    
   }else{
-    return TabletSectionMenu
+    return TabletMenu
   }
 }
 
