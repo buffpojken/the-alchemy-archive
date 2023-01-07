@@ -10,7 +10,6 @@
       </MqResponsive>
 
       <h2 class="text-5xl text-white font-louvette text-center">{{currentItem.name}}</h2>
-
       <component :is="recipeViewType" :currentItem="currentItem"/>
 
     </div>

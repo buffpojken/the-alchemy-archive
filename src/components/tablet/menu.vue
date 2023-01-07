@@ -34,7 +34,7 @@
       </div>
     </div>
   </main>
-  <RotaryMenu />
+  <RotaryMenu :startValue="routeMetaKey" />
 </template>
 
 <script>

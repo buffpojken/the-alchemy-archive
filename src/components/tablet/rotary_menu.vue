@@ -35,6 +35,11 @@
   var R2D = 180 / Math.PI
 
   export default {
+    props: {
+      startValue: {
+        type: String
+      }
+    },
     data: function(){
       return {
         beingDragged: false, 
@@ -55,6 +60,8 @@
       ...mapState(['menuSections'])
     }, 
     mounted: function(){
+      console.log(this.startValue)
+
       this.$refs.rotator.addEventListener('transitionend', () => {
         this.$refs.rotator.classList.remove(this.animationClass);
       });
