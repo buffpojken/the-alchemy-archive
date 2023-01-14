@@ -60,8 +60,6 @@
       ...mapState(['menuSections'])
     }, 
     mounted: function(){
-      console.log(this.startValue)
-
       this.$refs.rotator.addEventListener('transitionend', () => {
         this.$refs.rotator.classList.remove(this.animationClass);
       });
@@ -87,16 +85,16 @@
         var d = 0;
         switch(this.startValue){
           case "bases": 
-            d = this.closestEquivalentAngle(0, -60)  
+            d = this.closestEquivalentAngle(0, 60)  
             break   
           case "mixtures":
             d = this.closestEquivalentAngle(0, 0)
             break
           case "decoctions":
-            d = this.closestEquivalentAngle(0, -240)
+            d = this.closestEquivalentAngle(0, 120)
             break
           case "substantia":
-            d = this.closestEquivalentAngle(0, -120)
+            d = this.closestEquivalentAngle(0, 240)
             break
         }
 
