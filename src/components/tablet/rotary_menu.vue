@@ -82,6 +82,28 @@
         event.preventDefault();            
         this.stop(event);            
       })
+
+      if(this.startValue){
+        var d = 0;
+        switch(this.startValue){
+          case "bases": 
+            d = this.closestEquivalentAngle(0, -60)  
+            break   
+          case "mixtures":
+            d = this.closestEquivalentAngle(0, 0)
+            break
+          case "decoctions":
+            d = this.closestEquivalentAngle(0, -240)
+            break
+          case "substantia":
+            d = this.closestEquivalentAngle(0, -120)
+            break
+        }
+
+        this.$refs.rotator.style.webkitTransform = "rotate(" + (d) + "deg)";      
+        this.angle = d
+        this.iconAngle = -this.angle    
+      }
     },   
     methods: {
       menuSectionClasses: function(section, idx){
