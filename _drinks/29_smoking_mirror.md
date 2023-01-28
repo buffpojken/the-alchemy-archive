@@ -3,11 +3,9 @@ number: 29
 title: Smoking Mirror
 layout: drink
 spirits: 
-  - key: mescal
+  - key: mezcal
     name: Tier Espadín
     amount: 60 ml
-
-
 ingredients: 
   - 4 stänk Mole Bitters 
   - 15 ml Vanilj Agave
