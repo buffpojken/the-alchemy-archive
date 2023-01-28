@@ -53,6 +53,7 @@ keep_files:
 exclude: 
   - infrastructure
   - tools
+  - tailwind.config.js
 menu:
   sections:
     - key: mixtures

@@ -22,6 +22,7 @@ function setupMenu(win){
       rot.addEventListener('transitionend', () => {
         rot.classList.remove(animationClass);
       });
+      
     init = function() {
       rot.addEventListener((isTouchScreen() ? "touchstart" : "mousedown"), start, false);
       document.addEventListener((isTouchScreen() ? "touchmove" : "mousemove"), function(event){                

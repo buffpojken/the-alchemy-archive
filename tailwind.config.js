@@ -3,26 +3,41 @@ module.exports = {
     './_includes/**/*.html',
     './_layouts/**/*.html',
     './_drinks/*.md',
+    './src/**/*.vue',
     './*.html',
+  ],
+  safelist: [
+    {
+      pattern: /bg-icon-black-*/
+     }
   ],
   theme: {
     extend: {
       fontFamily: {
-        'louvette': 'louvette-banner, serif'
+        'louvette': 'louvette-banner, serif', 
+        'aviano': 'aviano, serif'
       },
       fontSize: {        
         '1_5xl': '1.37rem', 
       },
       backgroundSize: {
-        'icon-mixturer': '62px 71px',
-        'icon-baser': '76px 73px',
-        'icon-dekokter': '89px 89px',
+        'icon-mixtures': '62px 71px',
+        'icon-black-mixtures': '62px 71px',
+        'icon-bases': '76px 73px',
+        'icon-decoctions': '89px 89px',
         'icon-substantia': '61px 70px'
       },
+      colors: {
+        'background': '#151515'
+      },      
+      borderWidth: {
+        '3': '3px'
+      },
       backgroundImage: theme => ({
-        'icon-mixturer': "url(images/icons/icon-mixturer.svg)",
-        'icon-baser': 'url(images/icons/icon-baser.svg)',
-        'icon-dekokter': 'url(images/icons/icon-dekokter.svg)',
+        'icon-mixtures': "url(images/icons/icon-mixturer.svg)",
+        'icon-black-mixtures': "url(images/icons/icon-black-mixtures.svg)",
+        'icon-bases': 'url(images/icons/icon-baser.svg)',
+        'icon-decoctions': 'url(images/icons/icon-dekokter.svg)',
         'icon-substantia': 'url(images/icons/icon-substantia.svg)',
       })
     }

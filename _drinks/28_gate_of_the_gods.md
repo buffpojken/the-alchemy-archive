@@ -19,6 +19,6 @@ ingredients:
 
 Glas: Coupe
 
-1) Rör samtliga ingredienser med is 60 sekunder 
+1) Rör samtliga ingredienser med is 60 sekunder  
 2) Sila i glaset  
 3) Dekorera med mynta

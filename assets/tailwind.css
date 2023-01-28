@@ -75,12 +75,12 @@
 }
 
 .icon-mixturer{
-  @apply bg-icon-mixturer;
+  @apply bg-icon-mixtures;
   background-position: center top 30px;
 }
 
 .icon-baser{
-  @apply bg-icon-baser;
+  @apply bg-icon-bases;
   background-position: center top 30px;
 }
 
@@ -90,8 +90,111 @@
 }
 
 .icon-dekokter{
-  @apply bg-icon-dekokter;
+  @apply bg-icon-decoctions;
   background-position: center top 20px;
 }
 
+@layer utilities{
+  .three-border-wrap{
+    @apply border border-2 border-white relative p-2.5;  
+  }  
 
+  .three-border-wrap:before{
+    content:' '; 
+    position:absolute;
+    border:1px solid white;
+    top:-10px;
+    left:-10px;
+    width:calc(100% + 20px);
+    height:calc(100% + 20px);
+    z-index: -1;
+  }
+
+  .three-border-wrap:after{
+    content:' '; 
+    position:absolute;
+    pointer-events: none;
+    border:2px solid white;
+    top:8px;
+    left:8px;
+    width:calc(100% - 16px);
+    height:calc(100% - 16px);
+    z-index: -1;
+  }
+
+  .faded-circles{
+    @apply border-3 border-white relative;      
+  } 
+
+  .faded-circles:before{
+    content: ' ';
+    position: absolute;
+    background-color:rgba(255,255,255,0.6);
+    width:calc(100% + 20px);
+    height:calc(100% + 20px);
+    border-radius:800px;
+    top:-10px;
+    left:-10px;
+    z-index:-1;
+  }
+
+  .faded-circles:after{
+    content: ' ';
+    position: absolute;
+    background-color:rgba(255,255,255,0.2);
+    width:calc(100% + 40px);
+    height:calc(100% + 40px);
+    border-radius:800px;
+    top:-20px;
+    left:-20px;
+    z-index:-1;
+  }  
+}
+
+/* Slide up transition */
+.slide-up-enter-from {
+    transform: translate3d(0, 100%, 0);
+}
+.slide-up-enter-to {
+    transform: translate3d(0, 0, 0);
+}
+.slide-up-leave-to {
+    transform: translate3d(0, -100%, 0);
+}
+.slide-up-reverse-enter-from {
+    transform: translate3d(0, -100%, 0);
+}
+.slide-up-reverse-enter-to {
+    transform: translate3d(0, 0, 0);
+}
+.slide-up-reverse-leave-from {
+    z-index: 1;
+}
+.slide-up-reverse-leave-to {
+    transform: translate3d(0, 100%, 0);
+    z-index: 1;
+}
+
+/* Slide down transition */
+.slide-down-enter-from {
+    transform: translate3d(0, -100%, 0);
+}
+.slide-down-enter-to {
+    transform: translate3d(0, 0, 0);
+}
+.slide-down-leave-to {
+    transform: translate3d(0, 0%, 0);
+}
+.slide-down-reverse-enter-from {
+    transform: translate3d(0, 0%, 0);
+}
+.slide-down-reverse-enter-to {
+    transform: translate3d(0, 0, 0);
+}
+.slide-down-reverse-leave-from {
+    z-index: 1;
+}
+.slide-down-reverse-leave-to {
+    transform: translate3d(0, -100%, 0);
+    z-index: 1;
+}

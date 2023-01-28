@@ -12,7 +12,9 @@ ingredients:
 ---
 
 
-Glas: Tumbler
+Glas: Tumbler  
 
-1) Ta socker och lägg i glaset, blöt sockret med bittern och mosa med sked. <br>
-2) 
+1) Ta socker och lägg i glaset, blöt sockret med bittern och mosa med sked.  
+2) Häll på bourbon.  
+3) Rör till väl blandat.  
+4) Lägg i en stor isbit, rör till kylt.
