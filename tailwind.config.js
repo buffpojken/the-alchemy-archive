@@ -44,7 +44,9 @@ module.exports = {
         'mixture-list-icon': 'url(images/list-mixing-glas.svg)', 
         'mixture-list-icon-filled': 'url(images/list-mixing-glas-filled.svg)',
         'decoct-list-icon': 'url(images/list-bg-ekolv.svg)', 
-        'decoct-list-icon-filled': 'url(images/list-bg-ekolv-filled.svg)'
+        'decoct-list-icon-filled': 'url(images/list-bg-ekolv-filled.svg)',
+        'base-list-icon': 'url(images/list-bg-bottle.svg)', 
+        'base-list-icon-filled': 'url(images/list-bg-bottle-filled.svg)'
       })
     }
   },
