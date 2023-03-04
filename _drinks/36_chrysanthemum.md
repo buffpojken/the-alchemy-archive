@@ -18,6 +18,6 @@ ingredients:
 
 Glas: Nick & Nora
 
-1) Rör samtliga ingredienser med is till väl kylt.
-2) Häll upp, gärna i ett kylt glas.
-3) Garnera med ett twistat apelsinskal
+1) Rör samtliga ingredienser med is till väl kylt.  
+2) Häll upp, gärna i ett kylt glas.  
+3) Garnera med ett twistat apelsinskal  
