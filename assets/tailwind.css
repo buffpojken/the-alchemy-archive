@@ -199,22 +199,3 @@
     z-index: 1;
 }
 
-.mixture-list-decorator {
-  display: inline-block;
-  box-sizing: border-box;
-  width: 32px;
-  height: 42px;
-  line-height: 65px;
-  text-align: center;
-  font-size: 12px;
-  background-image: url('/assets/images/list-mixing-glas.svg');
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin-right: 12px;
-}
-
-.mixture-list-decorator:hover {
-      background-image: url('/assets/images/list-mixing-glas-filled.svg');
-      color: #000;
-}
-

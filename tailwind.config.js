@@ -25,7 +25,9 @@ module.exports = {
         'icon-black-mixtures': '62px 71px',
         'icon-bases': '76px 73px',
         'icon-decoctions': '89px 89px',
-        'icon-substantia': '61px 70px'
+        'icon-substantia': '61px 70px',
+        'mixture-list-icon': '32px 42px', 
+        'mixture-list-icon-filled': '32px 42px'
       },
       colors: {
         'background': '#151515'
@@ -39,6 +41,8 @@ module.exports = {
         'icon-bases': 'url(images/icons/icon-baser.svg)',
         'icon-decoctions': 'url(images/icons/icon-dekokter.svg)',
         'icon-substantia': 'url(images/icons/icon-substantia.svg)',
+        'mixture-list-icon': 'url(images/list-mixing-glas.svg)', 
+        'mixture-list-icon-filled': 'url(images/list-mixing-glas-filled.svg)'
       })
     }
   },
