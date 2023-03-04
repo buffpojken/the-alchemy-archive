@@ -42,7 +42,9 @@ module.exports = {
         'icon-decoctions': 'url(images/icons/icon-dekokter.svg)',
         'icon-substantia': 'url(images/icons/icon-substantia.svg)',
         'mixture-list-icon': 'url(images/list-mixing-glas.svg)', 
-        'mixture-list-icon-filled': 'url(images/list-mixing-glas-filled.svg)'
+        'mixture-list-icon-filled': 'url(images/list-mixing-glas-filled.svg)',
+        'decoct-list-icon': 'url(images/list-bg-ekolv.svg)', 
+        'decoct-list-icon-filled': 'url(images/list-bg-ekolv-filled.svg)'
       })
     }
   },

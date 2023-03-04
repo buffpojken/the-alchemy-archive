@@ -50,6 +50,8 @@ window.siteData = {
     {% for decoction in site.decoctions %}
       {
         "name": "{{decoction.title}}", 
+        "objectID": "{{decoction.number}}",
+
         "slug": "{{decoction.slug}}", 
         "description": `{{decoction.content}}`,
       }{% unless forloop.last %},{% endunless %}
