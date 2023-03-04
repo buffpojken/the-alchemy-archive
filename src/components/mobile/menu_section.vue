@@ -13,7 +13,7 @@
 
           <div class="menu-section-scroll-container h-full mt-10">
             <ul class="px-3 pb-10">
-              <component :is="$route.meta.key" v-for="item in itemList" :item="item" />
+              <component :is="$route.meta.key" v-for="item in itemList" :item="item" class="text-white font-aviano mb-3.5 last:mb-0 cursor-pointer" />
             </ul>
           </div>
         </div>
