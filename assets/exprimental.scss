@@ -472,8 +472,8 @@
 	right:  -400px;
 	width: 1047px;
 	height: 1047px;
-  justify-content: center;
-  opacity: 0.2;
+  	justify-content: center;
+  	opacity: 0.2;
 
 	div {
 		width: 100%;
@@ -500,13 +500,9 @@
 		background-size: 59%;
 		background-image: url('/assets/images/stars-circle/stars-middle-circle.svg');
 		z-index: 2;
-
 	}
 
 }
-
-
-
 
 
 
@@ -516,11 +512,11 @@
 .moon-container	{
 	height: 100px;
 	width: 100px;
-	background-color: blue;
+	margin-top: -2px;
+	margin-left: -2px;
 	background: url('/assets/images/moon-sprites.png') 0 0 no-repeat;
 	background-size: 100% auto;
-
-  animation: moonwalk 5s steps(23) infinite; /* The Animation */
+	animation: moonwalk 5s steps(23) infinite; /* The Animation */
 }
 
 @keyframes moonwalk {

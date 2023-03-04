@@ -1,6 +1,6 @@
 <template>
-  <li @click="$router.push(`/drinks/`+item.slug)">
-    {{item.name}}
+  <li @click="$router.push(`/drinks/`+item.slug)" class="font-aviano text-2xl pb-3">
+    {{item.objectID}}. {{item.name}}
   </li>
 </template>
 
