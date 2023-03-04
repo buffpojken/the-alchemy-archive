@@ -9,7 +9,7 @@ spirits:
   - key: benedictine
     name: Benedictine
     amount: 22,5 ml
-  - key: Absinth
+  - key: absinth
     name: La fee Absinth
     amount: 3 dashes
 ingredients: 
