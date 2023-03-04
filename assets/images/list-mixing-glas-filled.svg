@@ -1,0 +1,11 @@
+<svg id="mixing-glas-filled" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23" height="36.828" viewBox="0 0 23 36.828">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_505" data-name="Rectangle 505" width="23" height="36.828" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Group_1434" data-name="Group 1434" clip-path="url(#clip-path)">
+    <path id="Path_1467" data-name="Path 1467" d="M23,36.828H2V4.621L.122,1.37A.913.913,0,0,1,.913,0H23ZM3.216,35.61H21.783V1.217H1.44L3.216,4.295Z" transform="translate(0)" fill="#fff"/>
+  </g>
+  <rect id="Rectangle_507" data-name="Rectangle 507" width="16" height="24" transform="translate(4.467 10.822)" fill="#fff"/>
+</svg>
