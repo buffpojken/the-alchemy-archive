@@ -3,7 +3,7 @@
     <div class="flex flex-col h-full relative md:mt-32 md:ml-24 md:mb-24 justify-start md:w-[750px] md:three-border-wrap" v-if="currentItem">
 
       <MqResponsive target="sm-">
-        <MobileItemPageHeader />
+        <MobileItemPageHeader :type="type" />
       </MqResponsive>
       <MqResponsive target="md+">
         <ItemPageHeader :type="type" />
