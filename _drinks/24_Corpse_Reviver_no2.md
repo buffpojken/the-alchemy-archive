@@ -1,7 +1,6 @@
 ---
 number: 24
 title: Corpse Reviver no2
-layout: drink
 spirits: 
   - key: gin
     name: gin

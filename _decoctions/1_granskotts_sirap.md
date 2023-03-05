@@ -1,7 +1,6 @@
 ---
 number: 1
 title: Granskottssirap
-layout: drink
 ingredients: 
   - 4 dl späda granskott
   - 4 dl vatten

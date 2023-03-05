@@ -1,7 +1,6 @@
 ---
 number: 7
 title: Vesper
-layout: drink
 spirits:
   - key: gin
     name: Gin

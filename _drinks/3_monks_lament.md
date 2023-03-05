@@ -1,7 +1,6 @@
 ---
 number: 3
-title: Monks Lament
-layout: drink
+title: Monk's Lament
 spirits:
   - key: rum
     name: Rom

@@ -1,7 +1,6 @@
 ---
 number: 31
 title: The Great Pretender
-layout: drink
 spirits: 
   - key: scotch
     name: Monkey Shoulder 

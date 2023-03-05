@@ -9,7 +9,7 @@ import TabletMenu from './components/tablet/menu.vue'
 
 import ItemView from './sections/item_view.vue'
 
-function getMenuWrapper(){
+async function getMenuWrapper(){
   if(router.$mq.smMinus){
     return MobileMenu    
   }else{
@@ -17,7 +17,7 @@ function getMenuWrapper(){
   }
 }
 
-function getMenuComponent(){
+async function getMenuComponent(){
   if(router.$mq.smMinus){
     return MainMenu    
   }else{
@@ -25,7 +25,7 @@ function getMenuComponent(){
   }
 }
 
-function getMenuSectionComponent(){
+async function getMenuSectionComponent(){
   if(router.$mq.smMinus){
     return SectionMenu    
   }else{
@@ -59,12 +59,6 @@ const routes = [
         component: getMenuSectionComponent, 
         props: true, 
         meta: {key: 'decoctions', animation: 'slide-up'}
-      },
-      {
-        path: '/substantia', 
-        component: getMenuSectionComponent, 
-        props: true, 
-        meta: {key: 'substantia', animation: 'slide-up'}
       }
     ]
   }, 
@@ -77,11 +71,6 @@ const routes = [
     path: '/decoctions/:slug', 
     component: ItemView, 
     props: (route) => {return {type: 'decoctions', slug: route.params.slug}}
-  },
-  {
-    path: '/substantia/:slug', 
-    component: ItemView, 
-    props: (route) => {return {type: 'substantia', slug: route.params.slug}}
   },
   {
     path: '/bases/:slug', 

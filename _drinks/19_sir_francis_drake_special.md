@@ -1,7 +1,6 @@
 ---
 number: 19
 title: Sir Francis Drake Special
-layout: drink
 spirits: 
   - key: gin
     name: Gin

@@ -7,7 +7,6 @@ const store = createStore({
       mixtures: [], 
       bases: [],
       decoctions: [], 
-      substantia: [], 
       currentCocktail: null, 
       currentItem: null,
       menuSections: [
@@ -16,16 +15,16 @@ const store = createStore({
           label: 'Mixturer', 
           icon: 'icon-mixturer'
         }, 
-        {
-          key: 'decoctions', 
-          label: 'Dekokter', 
-          icon: 'icon-dekokter'
-        },
          {
           key: 'bases', 
           label: 'Baser', 
           icon: 'icon-baser'
         }, 
+        {
+          key: 'decoctions', 
+          label: 'Dekokter', 
+          icon: 'icon-dekokter'
+        },
         {
           key: 'mixtures', 
           label: 'Mixturer', 
@@ -49,7 +48,6 @@ const store = createStore({
       ctx.mixtures    = data.drinks
       ctx.bases       = data.bases
       ctx.decoctions  = data.decoctions
-      ctx.substantia  = data.substantia
     }, 
     CURRENT_MIXTURE: function(ctx, slug){
       let idx = ctx.mixtures.findIndex((m) => {return m.slug == slug})
@@ -68,10 +66,6 @@ const store = createStore({
         case 'bases': 
           var idx = ctx.bases.findIndex((m) => {return m.key == slug})
           ctx.currentItem = ctx.bases[idx]
-          break;
-        case 'substantia':
-          var idx = ctx.substantia.findIndex((m) => {return m.slug == slug})
-          ctx.currentItem = ctx.substantia[idx]
           break;
       }
     }

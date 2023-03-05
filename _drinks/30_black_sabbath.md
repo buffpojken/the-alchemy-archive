@@ -1,7 +1,6 @@
 ---
 number: 30
 title: Black Sabbath
-layout: drink
 spirits: 
   - key: rum
     name: Ron Abuelo 12 Años Gran Reserva

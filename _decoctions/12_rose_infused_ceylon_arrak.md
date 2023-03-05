@@ -1,7 +1,6 @@
 ---
 number: 12
 title: Rosen Infuserad Ceylon Arrak
-layout: drink
 ingredients: 
   - 6g torkade kronblad från rosor
   - 300ml Ceylon Arrak

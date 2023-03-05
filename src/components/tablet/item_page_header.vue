@@ -29,9 +29,6 @@
         case 'bases': 
           return 'bg-bases-pageheader-icon'
           break;
-        case 'substantia':
-
-          break; 
         }        
       }
     }

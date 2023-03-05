@@ -1,7 +1,6 @@
 ---
 number: 4
 title: Jordgubbsgastrique 
-layout: drink
 ingredients: 
   - 5g Himmelsört
   - 25ml Vatten

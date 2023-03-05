@@ -1,7 +1,6 @@
 ---
 number: 9
 title: Smoke, Vine and Seed
-layout: drink
 spirits:
   - key: port
     name: Tawny Port

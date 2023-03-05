@@ -1,7 +1,6 @@
 ---
 number: 3
-title: Himmelsörts sirap
-layout: drink
+title: Himmelsörtssirap
 ingredients: 
   - 5g Himmelsört
   - 200g Vatten

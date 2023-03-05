@@ -1,7 +1,6 @@
 ---
 number: 21
 title: Aviation
-layout: drink
 spirits: 
   - key: gin
     name: gin

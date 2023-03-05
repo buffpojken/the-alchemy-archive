@@ -1,7 +1,6 @@
 ---
 number: 29
 title: Smoking Mirror
-layout: drink
 spirits: 
   - key: mezcal
     name: Tier Espadín

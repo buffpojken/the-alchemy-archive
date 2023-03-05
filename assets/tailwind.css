@@ -84,11 +84,6 @@
   background-position: center top 30px;
 }
 
-.icon-substantia{
-  @apply bg-icon-substantia;
-  background-position: center top 30px;
-}
-
 .icon-dekokter{
   @apply bg-icon-decoctions;
   background-position: center top 20px;

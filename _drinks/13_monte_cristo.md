@@ -1,7 +1,6 @@
 ---
 number: 13
 title: Monte Cristo
-layout: drink
 spirits: 
   - key: kahlua
     name: Kahlúa

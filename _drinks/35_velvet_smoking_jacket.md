@@ -1,7 +1,6 @@
 ---
 number: 35
 title: Velvet Smoking Jacket
-layout: drink
 spirits: 
   - key: mezcal
     name: Mezcal

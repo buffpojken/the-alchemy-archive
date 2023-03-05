@@ -1,7 +1,6 @@
 ---
 number: 5
-title: Vanijl Agave 
-layout: drink
+title: Vaniljagavesirap 
 ingredients: 
   - 5 droppar Vanijlextrakt
   - 250ml Agave sirap

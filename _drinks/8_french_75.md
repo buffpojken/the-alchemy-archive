@@ -1,7 +1,6 @@
 ---
 number: 8
 title: French 75
-layout: drink
 spirits:
   - key: gin
     name: Gin

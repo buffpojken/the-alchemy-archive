@@ -1,7 +1,6 @@
 ---
 number: 27
 title: The one who knows
-layout: drink
 spirits: 
   - key: hasselnotsschnapps
     name: Hasselnötssnaps 

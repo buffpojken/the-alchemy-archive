@@ -1,7 +1,6 @@
 ---
 number: 9
-title: Päron och Lavendelsylt
-layout: drink
+title: Päron- och lavendelsylt
 ingredients: 
   - 250g Strösocker
   - 4 Päron
