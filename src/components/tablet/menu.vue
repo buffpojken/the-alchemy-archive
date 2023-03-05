@@ -44,14 +44,12 @@
   import MixtureItem from './../list_items/mixture.vue'
   import BaseItem from './../list_items/base.vue'
   import DecoctionItem from './../list_items/decoction.vue'
-  import SubstantiaItem from './../list_items/substantia.vue'
 
   export default {
     components: {
       'mixtures': MixtureItem, 
       'bases': BaseItem, 
       'decoctions': DecoctionItem, 
-      'substantia': SubstantiaItem, 
       RotaryMenu
     },
     data: function(){

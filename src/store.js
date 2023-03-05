@@ -16,16 +16,16 @@ const store = createStore({
           label: 'Mixturer', 
           icon: 'icon-mixturer'
         }, 
-        {
-          key: 'decoctions', 
-          label: 'Dekokter', 
-          icon: 'icon-dekokter'
-        },
          {
           key: 'bases', 
           label: 'Baser', 
           icon: 'icon-baser'
         }, 
+        {
+          key: 'decoctions', 
+          label: 'Dekokter', 
+          icon: 'icon-dekokter'
+        },
         {
           key: 'mixtures', 
           label: 'Mixturer', 

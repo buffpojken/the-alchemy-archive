@@ -93,9 +93,6 @@
           case "decoctions":
             d = this.closestEquivalentAngle(0, 120)
             break
-          case "substantia":
-            d = this.closestEquivalentAngle(0, 240)
-            break
         }
 
         this.$refs.rotator.style.webkitTransform = "rotate(" + (d) + "deg)";      
@@ -218,10 +215,8 @@
             this.$router.push("/mixtures")
           }else if(component == 2 || component == 6){
             this.$router.push("/bases")
-          }else if(component == 5){
+          }else if(component == 5 || component == 3){
             this.$router.push("/decoctions")
-          }else if(component == 3){
-            this.$router.push("/substantia")
           }
         }
 

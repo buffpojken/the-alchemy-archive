@@ -59,12 +59,6 @@ const routes = [
         component: getMenuSectionComponent, 
         props: true, 
         meta: {key: 'decoctions', animation: 'slide-up'}
-      },
-      {
-        path: '/substantia', 
-        component: getMenuSectionComponent, 
-        props: true, 
-        meta: {key: 'substantia', animation: 'slide-up'}
       }
     ]
   }, 
@@ -77,11 +71,6 @@ const routes = [
     path: '/decoctions/:slug', 
     component: ItemView, 
     props: (route) => {return {type: 'decoctions', slug: route.params.slug}}
-  },
-  {
-    path: '/substantia/:slug', 
-    component: ItemView, 
-    props: (route) => {return {type: 'substantia', slug: route.params.slug}}
   },
   {
     path: '/bases/:slug', 
