@@ -32,7 +32,10 @@ module.exports = {
         'bases-pageheader-icon': '60px 95px',
         'mixture-mobile-pageheader-icon': '30px 52px',
         'decoctions-mobile-pageheader-icon': '30px 52px',
-        'bases-mobile-pageheader-icon': '30px 52px'
+        'bases-mobile-pageheader-icon': '30px 52px',
+        'icon-mobile-back-mixtures': '44px 44px',
+        'icon-mobile-back-bases': '44px 44px',
+        'icon-mobile-back-decoctions': '44px 44px'
       },
       colors: {
         'background': '#151515'
@@ -56,7 +59,11 @@ module.exports = {
         'bases-pageheader-icon': 'url(images/list-bg-bottle-filled.svg)',
         'mixture-mobile-pageheader-icon': 'url(images/list-mixing-glas-filled.svg)',
         'decoctions-mobile-pageheader-icon': 'url(images/list-bg-ekolv-filled.svg)',
-        'bases-mobile-pageheader-icon': 'url(images/list-bg-bottle-filled.svg)'
+        'bases-mobile-pageheader-icon': 'url(images/list-bg-bottle-filled.svg)',
+        'icon-mobile-back-mixtures': "url(images/icons/icon-mixturer.svg)",
+        'icon-mobile-back-bases': 'url(images/icons/icon-baser.svg)',
+        'icon-mobile-back-decoctions': 'url(images/icons/icon-dekokter.svg)'
+
 
       })
     }
