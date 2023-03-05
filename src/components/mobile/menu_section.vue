@@ -29,15 +29,14 @@
   import MixtureItem from './../list_items/mixture.vue'
   import BaseItem from './../list_items/base.vue'
   import DecoctionItem from './../list_items/decoction.vue'
-  import SubstantiaItem from './../list_items/substantia.vue'
 
   export default {
-    components: {'mixtures': MixtureItem, 'bases': BaseItem, 'decoctions': DecoctionItem, 'substantia': SubstantiaItem},
+    components: {'mixtures': MixtureItem, 'bases': BaseItem, 'decoctions': DecoctionItem},
     data: function(){
       return {}
     }, 
     computed: {
-      ...mapState(['mixtures', 'bases', 'decoctions', 'substantia']), 
+      ...mapState(['mixtures', 'bases', 'decoctions']), 
       iconClass: function(){
         if(this.$route.meta.key){
           return `bg-icon-black-${this.$route.meta.key}`
@@ -51,8 +50,6 @@
             return this.bases
           case 'decoctions': 
             return this.decoctions
-          case 'substantia':
-            return this.substantia
           default: 
             return []
         }

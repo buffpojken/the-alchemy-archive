@@ -58,7 +58,7 @@
       }
     }, 
     computed: {
-      ...mapState(['mixtures', 'bases', 'decoctions', 'substantia']), 
+      ...mapState(['mixtures', 'bases', 'decoctions']), 
       routeMetaKey: function(){
         if(this.$route.meta.key){
           return this.$route.meta.key
@@ -79,8 +79,6 @@
             return this.bases
           case 'decoctions': 
             return this.decoctions
-          case 'substantia':
-            return this.substantia
           default: 
             return []
         }

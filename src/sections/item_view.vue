@@ -26,7 +26,6 @@
 
   import MixtureView from './../components/recipe_views/mixtures.vue';
   import DecoctionView from './../components/recipe_views/decoctions.vue';
-  import SubstantiaView from './../components/recipe_views/substantia.vue';
   import BasesView from './../components/recipe_views/bases.vue';
 
   export default {
@@ -38,8 +37,6 @@
         switch(this.type){
           case 'mixtures':
             return MixtureView
-          case 'substantia':
-            return SubstantiaView
           case 'decoctions':
             return DecoctionView
           case 'bases':

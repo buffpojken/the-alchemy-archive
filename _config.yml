@@ -39,10 +39,6 @@ collections:
     output: true
     sort_by: number
     permalink: /:collection/:name:output_ext
-  substantia:
-    output: true
-    sort_by: number
-    permalink: /:collection/:name:output_ext
 plugins:
   - jekyll-postcss
 postcss:
@@ -62,9 +58,6 @@ menu:
     - key: bases
       label: Baser
       icon: icon-baser
-    - key: substantia
-      label: Substantia
-      icon: icon-substantia
     - key: mixtures
       label: Mixturer
       icon: icon-mixturer
