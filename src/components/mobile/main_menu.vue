@@ -15,10 +15,7 @@
           <div class="bg-icon-decoctions w-[89px] h-[89px] bg-no-repeat bg-center mt-2"></div>
           <a href="#" class="text-white font-louvette text-xl">{{t('sections.titles.decoctions')}}</a>
         </li>
-        <li class="mobile-menu-item substantia" @click.prevent="$router.push('/substantia')">
-          <div class="bg-icon-substantia w-[61px] h-[70px] bg-no-repeat bg-center mt-2"></div>
-          <a href="#" class="text-white mt-2 font-louvette text-xl">{{t('sections.titles.substantia')}}</a>
-        </li>
+        
       </ul>
     </nav>
   </div>
