@@ -9,7 +9,7 @@ import TabletMenu from './components/tablet/menu.vue'
 
 import ItemView from './sections/item_view.vue'
 
-function getMenuWrapper(){
+async function getMenuWrapper(){
   if(router.$mq.smMinus){
     return MobileMenu    
   }else{
@@ -17,7 +17,7 @@ function getMenuWrapper(){
   }
 }
 
-function getMenuComponent(){
+async function getMenuComponent(){
   if(router.$mq.smMinus){
     return MainMenu    
   }else{
@@ -25,7 +25,7 @@ function getMenuComponent(){
   }
 }
 
-function getMenuSectionComponent(){
+async function getMenuSectionComponent(){
   if(router.$mq.smMinus){
     return SectionMenu    
   }else{
