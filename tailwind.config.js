@@ -27,7 +27,10 @@ module.exports = {
         'icon-decoctions': '89px 89px',
         'icon-substantia': '61px 70px',
         'mixture-list-icon': '32px 42px', 
-        'mixture-list-icon-filled': '32px 42px'
+        'mixture-list-icon-filled': '32px 42px',
+        'mixture-pageheader-icon': '60px 95px',
+        'decoctions-pageheader-icon': '60px 95px',
+        'bases-pageheader-icon': '60px 95px'
       },
       colors: {
         'background': '#151515'
@@ -46,7 +49,11 @@ module.exports = {
         'decoct-list-icon': 'url(images/list-bg-ekolv.svg)', 
         'decoct-list-icon-filled': 'url(images/list-bg-ekolv-filled.svg)',
         'base-list-icon': 'url(images/list-bg-bottle.svg)', 
-        'base-list-icon-filled': 'url(images/list-bg-bottle-filled.svg)'
+        'base-list-icon-filled': 'url(images/list-bg-bottle-filled.svg)',
+        'mixture-pageheader-icon': 'url(images/list-mixing-glas-filled.svg)',
+        'decoctions-pageheader-icon': 'url(images/list-bg-ekolv-filled.svg)',
+        'bases-pageheader-icon': 'url(images/list-bg-bottle-filled.svg)'
+
       })
     }
   },

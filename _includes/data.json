@@ -37,7 +37,8 @@ window.siteData = {
               {% if item.key == base.key %}
                 {
                   "name": "{{drink.title}}", 
-                  "slug": "{{drink.slug}}"
+                  "slug": "{{drink.slug}}",
+                  "objectID": "{{drink.number}}"
                 },
               {% endif %}
             {% endfor %}
