@@ -1,7 +1,6 @@
 ---
 number: 1
 title: Old Fashioned
-layout: drink
 spirits:
   - key: bourbon
     name: Bourbon

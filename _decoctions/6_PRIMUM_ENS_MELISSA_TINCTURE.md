@@ -1,7 +1,6 @@
 ---
 number: 6
 title: Primum Ens Melissa Tincture
-layout: drink
 ingredients: 
   - 5 Citronmeliss färsk
   - 100ml Vodka

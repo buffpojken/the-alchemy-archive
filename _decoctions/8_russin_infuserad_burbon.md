@@ -1,9 +1,8 @@
 ---
 number: 8
-title: Russin infuserad burbon 
-layout: drink
+title: Russin-infuserad bourbon 
 ingredients: 
-  - 150g Mörka Russin
+  - 150g mörka russin
   - 250ml Burbon
 
 ---

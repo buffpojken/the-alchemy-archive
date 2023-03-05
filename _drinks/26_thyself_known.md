@@ -1,7 +1,6 @@
 ---
 number: 26
 title: Thyself Known
-layout: drink
 spirits: 
   - key: bourbon
     name: Bourbon

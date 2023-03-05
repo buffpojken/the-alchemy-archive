@@ -1,7 +1,6 @@
 ---
 number: 11
 title: Drakbloodsirap
-layout: drink
 ingredients: 
   - 2 5cm kanel stickor
   - 5 kryddnejlika

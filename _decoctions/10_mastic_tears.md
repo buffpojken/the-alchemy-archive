@@ -1,7 +1,6 @@
 ---
 number: 10
 title: Chios Mastic Tears och lagerblads sirap
-layout: drink
 ingredients: 
   - 5g Chios Mastic Tears
   - 2g Malen Kanel

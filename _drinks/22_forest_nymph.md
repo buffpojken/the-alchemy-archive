@@ -1,7 +1,6 @@
 ---
 number: 22
 title: Forest Nymph
-layout: drink
 spirits: 
   - key: gin
     name: gin

@@ -1,7 +1,6 @@
 ---
 number: 28
 title: Gate of the Gods
-layout: drink
 spirits: 
   - key: gin
     name: Devils Botany Gin 

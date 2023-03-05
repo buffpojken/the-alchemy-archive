@@ -1,7 +1,6 @@
 ---
 number: 17
 title: Cosmopolitan
-layout: drink
 spirits: 
   - key: vodka
     name: Vodka

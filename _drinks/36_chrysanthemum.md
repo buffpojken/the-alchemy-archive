@@ -1,7 +1,6 @@
 ---
 number: 36
 title: Chrysanthemum
-layout: drink
 spirits: 
   - key: light_vermouth
     name: Torr ljus vermuth

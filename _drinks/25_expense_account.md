@@ -1,7 +1,6 @@
 ---
 number: 25
 title: Expense Account
-layout: drink
 spirits: 
   - key: rum
     name: Mörk rom

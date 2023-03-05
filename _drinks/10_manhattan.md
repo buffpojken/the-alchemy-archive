@@ -1,7 +1,6 @@
 ---
 number: 10
 title: Manhattan
-layout: drink
 spirits:
   - key: rye
     name: Rye

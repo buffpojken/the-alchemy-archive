@@ -1,7 +1,6 @@
 ---
 number: 6
 title: Little Pink
-layout: drink
 spirits:
   - key: gin
     name: Stockholms Bränneri Pink Gin 

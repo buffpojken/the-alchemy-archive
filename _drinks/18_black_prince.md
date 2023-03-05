@@ -1,7 +1,6 @@
 ---
 number: 18
 title: The Black Prince
-layout: drink
 spirits: 
   - key: rum
     name: Zacapa

@@ -1,7 +1,6 @@
 ---
 number: 15
 title: Black Pearl 
-layout: drink
 spirits: 
   - key: vodka
     name: Purity Vodka

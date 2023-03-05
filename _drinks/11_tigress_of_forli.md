@@ -1,7 +1,6 @@
 ---
 number: 11
 title: Tigress of Forli
-layout: drink
 spirits:
   - key: light_vermouth
     name: ljus vermouth

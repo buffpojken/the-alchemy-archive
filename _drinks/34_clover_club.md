@@ -1,7 +1,6 @@
 ---
 number: 34
 title: Clover Club
-layout: drink
 spirits: 
   - key: gin
     name: Rasberry Gin

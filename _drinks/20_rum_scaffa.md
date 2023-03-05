@@ -1,7 +1,6 @@
 ---
 number: 20
 title: Rum Scaffa
-layout: drink
 spirits: 
   - key: rum
     name: Rom

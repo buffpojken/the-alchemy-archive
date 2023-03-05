@@ -1,7 +1,6 @@
 ---
 number: 7
-title: Rostad äpple sirap 
-layout: drink
+title: Rostad äppelsirap 
 ingredients: 
   - 5g Socker
   - 2g Malen Kanel

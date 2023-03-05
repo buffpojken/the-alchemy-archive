@@ -1,7 +1,6 @@
 ---
 number: 33
 title: The Last Druid
-layout: drink
 spirits: 
   - key: whiskey
     name: Glengoyone 12-Year-Old

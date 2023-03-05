@@ -1,7 +1,6 @@
 ---
 number: 12
 title: Warday's
-layout: drink
 spirits:
   - key: gin
     name: London Dry Gin

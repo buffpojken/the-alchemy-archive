@@ -1,7 +1,6 @@
 ---
 number: 5
 title: Sazerac
-layout: drink
 spirits:
   - key: rye
     name: Rye

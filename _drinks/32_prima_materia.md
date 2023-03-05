@@ -1,7 +1,6 @@
 ---
 number: 32
 title: Prima Materia
-layout: drink
 spirits: 
   - key: gin
     name: Devils Botany Gin

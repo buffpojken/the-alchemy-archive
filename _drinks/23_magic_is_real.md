@@ -1,7 +1,6 @@
 ---
 number: 23
 title: Magic is real
-layout: drink
 spirits: 
   - key: gin
     name: gin (Illusionist)

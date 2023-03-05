@@ -1,7 +1,6 @@
 ---
 number: 16
 title: Penicillin 
-layout: drink
 spirits: 
   - key: blended_whiskey
     name: Blended Wiskey

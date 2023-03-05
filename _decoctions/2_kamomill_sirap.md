@@ -1,7 +1,6 @@
 ---
 number: 2
-title: Kamomill sirap
-layout: drink
+title: Kamomillsirap
 ingredients: 
   - 5g chamomile flowers 
   - 200g Vatten

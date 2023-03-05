@@ -1,7 +1,6 @@
 ---
 number: 4
 title: Flying Dutchman
-layout: drink
 spirits:
   - key: gin
     name: Gin

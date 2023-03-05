@@ -1,7 +1,6 @@
 ---
 number: 14
 title: Bijou 
-layout: drink
 spirits:
   - key: gin
     name: Gin (stockholms bränneri)
