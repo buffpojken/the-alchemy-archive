@@ -4,11 +4,11 @@ title: Prima Materia
 layout: drink
 spirits: 
   - key: gin
-    name: Devils Botany 
+    name: Devils Botany Gin
     amount: 45 ml
   - key: yellow_chartreuse
     name: Yellow Chartreuse
-    amount: 15ml
+    amount: 15 ml
 
 ingredients: 
   - 1 barsked Primum Ens Melissa Tincture
