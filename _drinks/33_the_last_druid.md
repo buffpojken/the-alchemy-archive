@@ -19,6 +19,6 @@ ingredients:
 
 Glas: Coupe
 
-1) Rör samtliga ingredienser med is 60 sekunder 
-2) Lägg i ett maraschinokörsbär i glaset
+1) Rör samtliga ingredienser med is 60 sekunder  
+2) Lägg i ett maraschinokörsbär i glaset  
 3) Sila i glaset  
