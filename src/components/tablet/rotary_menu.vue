@@ -77,8 +77,10 @@
       })
 
       document.addEventListener((this.$store.getters.isTouchScreen ? "touchend" : "mouseup"), (event) => {
-        event.preventDefault();            
-        this.stop(event);            
+        if(this.active){
+          event.preventDefault();            
+          this.stop(event);                      
+        }
       })
 
       if(this.startValue){
