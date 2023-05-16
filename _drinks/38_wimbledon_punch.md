@@ -1,6 +1,6 @@
 ---
 number: 38
-title: Wimbeldon punch
+title: Wimbledon punch
 spirits: 
   - key: gin
     name: Beefeater Gin
@@ -19,9 +19,9 @@ ingredients:
   - 600 ml gammeldags mjölk
 ---
 
-Glas: Tumbler
+Glas: Tumbler  
 
-1) Rör samtliga ingredienser i ett infusionskärl
+1) Rör samtliga ingredienser i ett infusionskärl  
 2) Täck med plats of låt infusera i kylen i 24 timmar  
-3) Filtrera tills klart, det behövs flera filtreringar med olika filter / silar
-4) Buteljera. Servera 14 cl på en stor isbit. 
+3) Filtrera tills klart, det behövs flera filtreringar med olika filter / silar  
+4) Buteljera. Servera 14 cl på en stor isbit.  
