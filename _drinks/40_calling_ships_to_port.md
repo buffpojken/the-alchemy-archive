@@ -10,7 +10,7 @@ spirits:
     amount: 30 ml
   - key: port
     name: Tawny port
-    amount: 30 ml
+    amount: 20 ml
   - key: maraschino
     name: Maraschino
     amount: 5 ml
