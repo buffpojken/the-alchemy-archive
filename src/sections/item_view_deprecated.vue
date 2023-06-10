@@ -1,10 +1,20 @@
 <template>
-  <div class="text-white h-screen w-screen flex flex-row">
+  <div class="text-white h-screen w-screen flex flex-col">
+    <div class="overflow-y-auto">
+      <div class="flex flex-col h-full relative md:mt-32 md:ml-24 md:mb-24 justify-start md:w-[750px] md:three-border-wrap" v-if="currentItem">
 
-    <div class="three-side-three-border-wrap md:w-6/12 w-full my-8 md:mb-0 md:mt-8 md:ml-24">
-      Mungo
+        <MqResponsive target="sm-">
+          <MobileItemPageHeader :type="type" />
+        </MqResponsive>
+        <MqResponsive target="md+">
+          <ItemPageHeader :type="type" />
+        </MqResponsive>
+
+        <h2 class="text-5xl my-6 text-white font-louvette text-center">{{currentItem.name}}</h2>
+        <component :is="recipeViewType" :currentItem="currentItem"/>
+
+      </div>
     </div>
-
   </div>
 </template>
 
@@ -13,13 +23,16 @@
   import {mapState} from 'vuex'
   import {nextTick} from 'vue'
 
+  import MobileItemPageHeader from './../components/mobile/item_page_header.vue';
+  import ItemPageHeader from './../components/tablet/item_page_header.vue';
+
   import MixtureView from './../components/recipe_views/mixtures.vue';
   import DecoctionView from './../components/recipe_views/decoctions.vue';
   import BasesView from './../components/recipe_views/bases.vue';
 
   export default {
     props: ['slug', 'type'],
-    components: {MqResponsive,MixtureView},
+    components: {MobileItemPageHeader, ItemPageHeader,MqResponsive,MixtureView},
     computed: {
       ...mapState(['currentItem']), 
       recipeViewType: function(){
