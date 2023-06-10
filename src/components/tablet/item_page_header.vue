@@ -1,9 +1,10 @@
 <template>
-  <header class="faded-circles flex-none w-[170px] h-[170px] rounded-full border border-white relative mb-[-65px] top-[-95px] mx-auto bg-black flex flex-col justify-center items-center cursor-pointer" @click="$router.push('/'+type)">
-    <div class="main-icon"></div>
-    <h3 class="font-louvette text-2xl text-black bg-no-repeat w-[60px] h-[95px] text-center" :class="itemClasses">
-      {{currentItem.objectID}}
-    </h3>
+  <header class="flex-none w-[100px] h-[100px] rounded-full border-3 border-white relative mb-[-60px] top-[-60px] mx-auto flex flex-col justify-center items-center cursor-pointer z-1 bg-black" @click="$router.push('/'+type)">
+    <div class="w-full h-full bg-no-repeat bg-center" :class="itemClasses">
+      <h3 class="font-louvette text-xl text-black text-center pl-0.5">
+        {{currentItem.objectID}}
+      </h3>      
+    </div>
   </header>
 </template>
 
@@ -21,7 +22,7 @@
       itemClasses: function(){
         switch(this.type) {
         case 'mixtures': 
-          return ['bg-mixture-pageheader-icon', ' mr-3', 'pt-[40px]']
+          return ['bg-mixture-pageheader-icon', 'mr-1', 'pt-[40px]']
           break;
         case 'decoctions': 
           return ['bg-decoctions-pageheader-icon','pt-[50px]' ]

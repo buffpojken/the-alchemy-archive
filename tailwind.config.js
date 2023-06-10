@@ -20,6 +20,13 @@ module.exports = {
       fontSize: {        
         '1_5xl': '1.37rem', 
       },
+      zIndex: {
+        '1': '1', 
+        '2': '2', 
+        '3': '3', 
+        '4': '4', 
+        '5': '5'
+      },
       backgroundSize: {
         'icon-mixtures': '62px 71px',
         'icon-black-mixtures': '62px 71px',
@@ -27,9 +34,9 @@ module.exports = {
         'icon-decoctions': '89px 89px',
         'mixture-list-icon': '32px 42px', 
         'mixture-list-icon-filled': '32px 42px',
-        'mixture-pageheader-icon': '60px 95px',
-        'decoctions-pageheader-icon': '60px 95px',
-        'bases-pageheader-icon': '60px 95px',
+        'mixture-pageheader-icon': '37px 61px',
+        'decoctions-pageheader-icon': '45px 71px',
+        'bases-pageheader-icon': '40px 63px',
         'mixture-mobile-pageheader-icon': '30px 52px',
         'decoctions-mobile-pageheader-icon': '30px 52px',
         'bases-mobile-pageheader-icon': '30px 52px',

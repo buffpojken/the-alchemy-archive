@@ -1,17 +1,13 @@
 <template>
-  <header class="item-page-header flex-none mb-8">
+  <header class="item-page-header flex-none mb-8 relative top-[-95px] mb-[-98px]">
     <div class="cursor-pointer absolute rounded-full w-24 h-24 bg-black top-11 left-[calc(50%-50px)] z-20 border-2 border-white flex flex-col justify-center items-center" @click="$router.push('/'+type)">
-       <h3 class="font-louvette text-l text-black bg-no-repeat w-[30px] h-[52px] text-center" :class="itemClasses">
-        {{currentItem.objectID}} 
+       <h3 class="font-louvette text-l text-black bg-no-repeat w-[30px] h-[52px] text-center pl-0.5" :class="itemClasses">
+        {{currentItem.objectID}}
       </h3>
     </div>
     <div class="cursor-pointer absolute rounded-full w-20 h-20 bg-black -top-4 left-[calc(50%-40px)] z-12 border-2 §border-white flex flex-col justify-center items-center " @click="$router.push('/')"> 
       <h3 class="font-louvette text-l text-black bg-no-repeat bg-center w-20 h-20 " :class="backButtonClasses">
       </h3>
-    </div>
-    <div class="border-holder">
-       
-
     </div>
   </header>
 </template>

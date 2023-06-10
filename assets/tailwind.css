@@ -91,7 +91,7 @@
 
 @layer utilities{
   .three-side-three-border-wrap{
-    @apply border-b border-t border-white relative py-3.5;
+    @apply border-b border-t border-white relative py-3.5 z-0;
   }
 
   .three-side-three-border-wrap:before{
@@ -104,7 +104,8 @@
     height:calc(100% - 10px);
     top:5px;
     left:0px;
-    z-index: 0;
+    z-index: -1;
+    pointer-events: none;
   }
 
   .three-side-three-border-wrap:after{
@@ -117,12 +118,13 @@
     height:calc(100% - 20px);
     top:10px;
     left:0px;
-    z-index:0;
+    z-index:-1;
+    pointer-events: none;
   }
 
   @media screen(md){
     .three-side-three-border-wrap{
-      @apply p-3.5;
+      @apply p-3.5 pb-0;
       border-right-width: 1px;
       border-left-width: 1px;
       border-bottom-width: 0px;

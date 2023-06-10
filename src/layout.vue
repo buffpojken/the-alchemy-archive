@@ -1,6 +1,6 @@
 <template>
   <MqResponsive target="sm-">
-    <div class="overflow-hidden w-screen max-h-screen flex flex-col">
+    <div class="overflow-hidden w-screen h-full flex flex-col">
       <router-view :key="$route.fullpath"></router-view>
     </div>
   </MqResponsive>

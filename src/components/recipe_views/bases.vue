@@ -1,5 +1,5 @@
 <template>
-  <div class="overflow-auto h-full mb-6">
+  <div class="mb-6">
     <h2 class="px-6 font-aviano text-lg">Används i:</h2>
     <ul class="px-6 font-aviano text-lg md:text-2xl mt-6 mb-8">
       <li v-for="(drink, idx) in currentItem.drinks" class="cursor-pointer pb-4 group" @click="$router.push('/drinks/'+drink.slug)">
