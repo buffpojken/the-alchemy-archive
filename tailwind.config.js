@@ -69,9 +69,8 @@ module.exports = {
         'bases-mobile-pageheader-icon': 'url(images/list-bg-bottle-filled.svg)',
         'icon-mobile-back-mixtures': "url(images/icons/icon-mixturer.svg)",
         'icon-mobile-back-bases': 'url(images/icons/icon-baser.svg)',
-        'icon-mobile-back-decoctions': 'url(images/icons/icon-dekokter.svg)'
-
-
+        'icon-mobile-back-decoctions': 'url(images/icons/icon-dekokter.svg)',
+        'list-bg-eye': 'url(images/list-bg-eye.svg)'
       })
     }
   },

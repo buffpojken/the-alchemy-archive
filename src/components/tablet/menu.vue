@@ -1,5 +1,5 @@
 <template>
-  <a href="why.html" class="the-great-eye">&nbsp;</a>
+  <a href="why.html" class="absolute top-12 left-[calc(50%-45px)] w-[90px] h-[90px] bg-list-bg-eye bg-center bg-no-repeat bg-contain">&nbsp;</a>
 
   <div class="stars-container hidden md:flex flex">
     <div class="stars-inner"></div>
@@ -8,7 +8,7 @@
   </div>
 
   <main class="text-white relative w-full md:w-[550px]">
-    <div class="px-12 mt-12 w-full box-border content-enclosure">
+    <div class="px-12 mt-12 w-full box-border content-enclosure h-[calc(100vh-180px)] absolute bottom-5">
       <div class="box-border border w-full content-container h-full">
 
         <div class="content-list-page-decorator-1 move-decorator-1-animate"></div>
