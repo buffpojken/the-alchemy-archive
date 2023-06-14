@@ -26,6 +26,7 @@
   import {mapState} from 'vuex'
 
   var R2D = 180 / Math.PI
+  var D2R = Math.PI / 180
 
 // this.$store.getters.isTouchScreen
 
@@ -44,19 +45,20 @@
 
     }, 
     mounted: async function(){
-      // if(this.startValue){
-      //   var d = 0;
-      //   switch(this.startValue){
-      //     case "bases": 
-      //       d = this.closestEquivalentAngle(0, 60)  
-      //       break   
-      //     case "mixtures":
-      //       d = this.closestEquivalentAngle(0, 0)
-      //       break
-      //     case "decoctions":
-      //       d = this.closestEquivalentAngle(0, 120)
-      //       break
-      //   }
+      if(this.startValue){
+        this._initialAngle = 0;
+        switch(this.startValue){
+          case "bases": 
+            this._initialAngle = this.closestEquivalentAngle(0, 60)  
+            break   
+          case "mixtures":
+            this._initialAngle = this.closestEquivalentAngle(0, 0)
+            break
+          case "decoctions":
+            this._initialAngle = this.closestEquivalentAngle(0, 120)
+            break
+        }
+      }
 
       let images = [{path: '/assets/images/icons/icon-mixturer.svg', w: 0.066, h: 0.076, label: 'Mixturer'}, {path: '/assets/images/icons/icon-dekokter.svg', w: 0.095, h: 0.095, label: 'Dekokter'}, {path: '/assets/images/icons/icon-baser.svg', w: 0.082, h: 0.078, label: 'Baser'}]
       let icons = await Promise.all(images.map(function(img_path){
@@ -72,7 +74,6 @@
       setTimeout(() => {
         this.setup(icons)    
       }, 100)
-
     },   
     methods: {
       setup: function(icons){
@@ -89,7 +90,7 @@
         offX = canvas.offsetLeft;
         offY = canvas.offsetTop;
 
-        let draggedAngle = 0
+        let draggedAngle = (this._initialAngle || 0)
 
         let width = container.offsetWidth
         let height = container.offsetHeight
@@ -111,7 +112,7 @@
         ctx.scale(scale, scale);
 
 
-        let angleSteps = 60*(Math.PI/180)
+        let angleSteps = 60*D2R
         let dist = width*0.388
 
         let focusPoints = []
@@ -153,7 +154,7 @@
           ctx.closePath()
 
           ctx.beginPath()
-          ctx.arc(centerX, centerY, (width/2)*0.82, 0, 2*Math.PI)
+          ctx.arc(centerX, centerY, (width/2)*0.82, 0, 2 * Math.PI)
           ctx.stroke()
           ctx.closePath()
 
@@ -211,21 +212,21 @@
           window.requestAnimationFrame(draw);
         }
 
-        canvas.addEventListener('mousedown', function(event){
+        canvas.addEventListener((_t.$store.getters.isTouchScreen ? "touchstart" : "mousedown"), function(event){
           var clickAngle = _t.getAngle(cX + offX, cY + offY, event.clientX, event.clientY) - draggedAngle;
           var list = function(ev){
 
             dragging = true      
             draggedAngle = (_t.getAngle(cX + offX, cY + offY, ev.clientX, ev.clientY) - clickAngle)
           }
-          canvas.addEventListener('mousemove', list)
+          canvas.addEventListener((_t.$store.getters.isTouchScreen ? "touchmove" : "mousemove"), list)
 
           var complete = function(event){
-            canvas.removeEventListener('mousemove', list)
-            canvas.removeEventListener('mouseup', complete)
+            canvas.removeEventListener((_t.$store.getters.isTouchScreen ? "touchmove" : "mousemove"), list)
+            canvas.removeEventListener((_t.$store.getters.isTouchScreen ? "touchend" : "mouseup"), complete)
             if(dragging){
               dragging = false
-              let _angle = (((draggedAngle*(180/Math.PI)) % 360) + 360) % 360
+              let _angle = (((draggedAngle*R2D) % 360) + 360) % 360
               if(_angle > 180){
                 _angle -= 360
               }
@@ -262,9 +263,11 @@
                 break;
               }
               targetAngle = _t.closestEquivalentAngle(_angle, target)
+              _t.$router.push("/"+section)
+
             }else{
               let mousePos = _t.getMouse(event, canvas)
-              let angle = Math.atan2(mousePos.y - height/2, mousePos.x - width/2)
+              let angle = _t.getAngle(width/2, height/2, mousePos.x, mousePos.y)
               var clickTarget;
               for(var i = 0; i < focusPoints.length; i++){
                 var x1 = focusPoints[i][0] - centerX
@@ -284,15 +287,17 @@
                 }
               }
               if(clickTarget){
-                let targets = [180, 120, 60, 0, -60, -120]
-                targetAngle = draggedAngle + (targets[clickTarget[3]] * (Math.PI / 180.0))
-                console.log(clickTarget)
+                let comparisonAngle = angle * R2D
+                var diff = 0
+                let roundedAngle = _t.roundNearest((angle * R2D), 60)
+                diff = ((roundedAngle >= 0) ? (180 - roundedAngle) : (180 - roundedAngle))*D2R
+                targetAngle = draggedAngle + diff
                 _t.$router.push("/"+clickTarget[2])
                 clickTarget = null
               }              
             }
           }
-          canvas.addEventListener('mouseup', complete)
+          canvas.addEventListener((_t.$store.getters.isTouchScreen ? "touchend" : "mouseup"), complete)
         })
 
         window.requestAnimationFrame(draw);
@@ -303,8 +308,11 @@
       }, 
       closestEquivalentAngle(from, to){
         var delta = ((((to - from) % 360) + 540) % 360) - 180;
-        let angle = (from + delta)*(Math.PI / 180.0)
+        let angle = (from + delta)*D2R
         return (angle == 0 ? angle += 0.01 : angle);
+      },
+      roundNearest: function(value, nearest){
+        return Math.round(value / nearest) * nearest
       },
       getMouse(e, canvas) {
         var element = canvas, offsetX = 0, offsetY = 0, mx, my;
