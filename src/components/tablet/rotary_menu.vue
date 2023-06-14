@@ -7,23 +7,16 @@
         <div class="menu-center-vortex rotate-30 menu-bg"> </div>
 
 
-        <div class="flex flex-col justify-center w-full h-full">
+        <div class="w-full h-full">
 
-          <div class="w-[800px] h-[800px] relative flex-none" id="rotate" ref="rotator">
-            <div class="absolute w-[644px] h-[644px] left-[78px] top-[78px] border-4 box-border rounded-full"></div>
-            <div class="menu-bg menu-outer-hexagon"></div>
-            <div class="menu-outer-star menu-bg"></div>
-            <div v-for="(section, index) in menuSections" class="absolute rounded-full bg-black w-44 border h-44 text-white flex flex-col justify-center items-center text-center menu-item" :class="menuSectionClasses(section, index)" :data-index="index" :data-section="section.key" :style="{'transform': 'rotate('+iconAngle+'deg)'}">
-              <div class="w-full h-full flex flex-col justify-end bg-center bg-no-repeat" :class="section.icon">
-                <h4 class="louvette text-1_5xl mb-6">{{section.label}}</h4>
-              </div>
-            </div>
+          <div class="w-[800px] h-[800px] relative flex-none" id="menu-canvas-container">
+            <canvas id="canvas" width="100%" height="100%" class="w-full h-full"></canvas>
           </div>
 
         </div>
       </div>
       <div class="looking-glass left-[44px] rounded-full absolute z-10 pointer-events-none"></div>
-      <div :class="{'faded': beingDragged}" class="looking-glass-outer left-[36px] rounded-full absolute z-10 pointer-events-none"></div>
+      <div class="looking-glass-outer left-[36px] rounded-full absolute z-10 pointer-events-none"></div>
       <div class="absolute w-[52px] top-1/2 h-1 border bg-white pointer-events-none z-10"></div>
     </div>
   </nav>
@@ -34,6 +27,8 @@
 
   var R2D = 180 / Math.PI
 
+// this.$store.getters.isTouchScreen
+
   export default {
     props: {
       startValue: {
@@ -42,196 +37,295 @@
     },
     data: function(){
       return {
-        beingDragged: false, 
-        angle: 0, 
-        animationClass: false, 
-        active: false, 
-        hasClicked: false, 
-        startAngle: 0, 
-        center: {
-          x: 0,
-          y: 0
-        }, 
-        rotation: 0, 
-        iconAngle: 0
+
       }
     }, 
     computed: {
-      ...mapState(['menuSections'])
+
     }, 
-    mounted: function(){
-      this.$refs.rotator.addEventListener('transitionend', () => {
-        this.$refs.rotator.classList.remove(this.animationClass);
-      });
+    mounted: async function(){
+      // if(this.startValue){
+      //   var d = 0;
+      //   switch(this.startValue){
+      //     case "bases": 
+      //       d = this.closestEquivalentAngle(0, 60)  
+      //       break   
+      //     case "mixtures":
+      //       d = this.closestEquivalentAngle(0, 0)
+      //       break
+      //     case "decoctions":
+      //       d = this.closestEquivalentAngle(0, 120)
+      //       break
+      //   }
 
-      this.$refs.rotator.addEventListener((this.$store.getters.isTouchScreen ? "touchstart" : "mousedown"), this.start, false)
+      let images = [{path: '/assets/images/icons/icon-mixturer.svg', w: 0.066, h: 0.076, label: 'Mixturer'}, {path: '/assets/images/icons/icon-dekokter.svg', w: 0.095, h: 0.095, label: 'Dekokter'}, {path: '/assets/images/icons/icon-baser.svg', w: 0.082, h: 0.078, label: 'Baser'}]
+      let icons = await Promise.all(images.map(function(img_path){
+        return new Promise(function(resolve, reject){
+          let img = new Image()
+          img.onload = function(){
+            resolve(img_path)
+          }
+          img.src = img_path.path
+          img_path.icon = img
+        })
+      }))
+      setTimeout(() => {
+        this.setup(icons)    
+      }, 100)
 
-      document.addEventListener((this.$store.getters.isTouchScreen ? "touchmove" : "mousemove"), (event) => {       
-        if (this.active === true) {
-          this.beingDragged = true
-          event.preventDefault();
-          this.rotate(event);
-        }else if(this.hasClicked){
-          this.active = true
-        }
-      })
-
-      document.addEventListener((this.$store.getters.isTouchScreen ? "touchend" : "mouseup"), (event) => {
-        if(this.active){
-          event.preventDefault();            
-          this.stop(event);                      
-        }
-      })
-
-      if(this.startValue){
-        var d = 0;
-        switch(this.startValue){
-          case "bases": 
-            d = this.closestEquivalentAngle(0, 60)  
-            break   
-          case "mixtures":
-            d = this.closestEquivalentAngle(0, 0)
-            break
-          case "decoctions":
-            d = this.closestEquivalentAngle(0, 120)
-            break
-        }
-
-        this.$refs.rotator.style.webkitTransform = "rotate(" + (d) + "deg)";      
-        this.angle = d
-        this.iconAngle = -this.angle    
-      }
     },   
     methods: {
-      menuSectionClasses: function(section, idx){
-        var klazz = {}
-        klazz['menu-'+(idx+1)] = true
-        return klazz
-      }, 
-      start: function(ev){
-        ev.preventDefault();
-        var bb = this.$refs.rotator.getBoundingClientRect(),
-          t = bb.top,
-          l = bb.left,
-          h = bb.height,
-          w = bb.width,
-          x, y;
-        this.center = {
-          x: l + (w / 2),
-          y: t + (h / 2)
-        };
-        if(ev.clientX){
-          x = ev.clientX - this.center.x;
-          y = ev.clientY - this.center.y;        
-        }else{
-          x = ev.touches[0].clientX - this.center.x
-          y = ev.touches[0].clientY - this.center.y      
-        }
-        this.startAngle = R2D * Math.atan2(y, x);
-        this.hasClicked = true
-        return;
-      }, 
-      rotate: function(ev){
-        ev.preventDefault();
-        if(this.hasCommited){return}
+      setup: function(icons){
+        var _t = this
+        let container = document.getElementById('menu-canvas-container')
+        let canvas = document.getElementById('canvas')
 
-        var x,y;
-        if(ev.clientX){
-          x = ev.clientX - this.center.x
-            y = ev.clientY - this.center.y      
-        }else{
-          x = ev.touches[0].clientX - this.center.x
-          y = ev.touches[0].clientY - this.center.y      
+        var cX, cY;
+        var offX, offY;
+        var dragging = false;
+        var targetAngle;
+        var elapsed = 0;
+
+        offX = canvas.offsetLeft;
+        offY = canvas.offsetTop;
+
+        let draggedAngle = 0
+
+        let width = container.offsetWidth
+        let height = container.offsetHeight
+
+        let rect = canvas.getBoundingClientRect()
+
+        cX = rect.left + (width/2)
+        cY = rect.top + (height/2)
+
+        let centerX = width/2
+        let centerY = height/2
+
+        var scale = window.devicePixelRatio; 
+                    
+        canvas.width = Math.floor(width * scale);
+        canvas.height = Math.floor(height * scale);
+
+        const ctx = canvas.getContext("2d");
+        ctx.scale(scale, scale);
+
+
+        let angleSteps = 60*(Math.PI/180)
+        let dist = width*0.388
+
+        let focusPoints = []
+        let sections = ['mixtures', 'decoctions', 'bases']
+        for(var i = 0; i < 6; i++){
+          focusPoints.push([(centerX + (dist*Math.cos(i*angleSteps))), (centerY + (dist*Math.sin(i*angleSteps))), sections[i % 3], i])
         }
-        
-        var d = R2D * Math.atan2(y, x);
-        this.rotation = d - this.startAngle;
-        this.iconAngle = -(this.angle + this.rotation)
-        return this.$refs.rotator.style.webkitTransform = "rotate(" + (this.angle + this.rotation) + "deg)";
-      }, 
-      stop: function(ev){
-        this.hasClicked = false
-        this.angle += this.rotation;
-        this.hasCommited = true
-        if(this.active){
-          this.defineSection(this.angle)
-          this.iconAngle = -this.angle     
-          setTimeout(() => {
-            this.active = false
-            this.hasCommited = false
-          }, 25)
-        }
-        return
-      }, 
-      defineSection: function(baseAngle){
-        let _angle = ((baseAngle) % 360)
-        this.animationClass = 'transition-transform'
-        this.$refs.rotator.classList.add(this.animationClass);
-        let target = 0
-        let component = null
-        if(_angle < 0){
-          _angle = Math.abs(_angle)
-          if((_angle >= 0 && _angle <= 30) || (_angle >= 330 && _angle <= 360)){
-            target = 0
-            component = 1
-          }else if((_angle >= 30 && _angle <= 90)){
-            target = -60
-            component = 2
-          }else if(_angle >= 90 && _angle <= 150){
-            target = -120
-            component = 3
-          }else if(_angle >= 150 && _angle <= 210){
-            target = -180
-            component = 4
-          }else if(_angle >= 210 && _angle <= 270){
-            target = -240
-            component = 5
-          }else if(_angle >= 270 && _angle <= 330){
-            target = -300
-            component = 6
+
+        function draw(time){
+          ctx.clearRect(0, 0, width, height)        
+          ctx.save()
+
+          if(!dragging && targetAngle && !(targetAngle == 0)){
+            var normalisedAngle = Math.atan2(Math.sin((draggedAngle - targetAngle)), Math.cos((draggedAngle - targetAngle)))
+            if(normalisedAngle == 0){
+              targetAngle = null
+            }else{
+              draggedAngle -= normalisedAngle/10
+            }
           }
-        }else{
-          if((_angle >= 0 && _angle <= 30) || (_angle >= 330 && _angle <= 360)){
-            target = 0
-            component = 1
-          }else if((_angle >= 30 && _angle <= 90)){
-            target = 60
-            component = 2
-          }else if(_angle >= 90 && _angle <= 150){
-            target = 120
-            component = 3
-          }else if(_angle >= 150 && _angle <= 210){
-            target = 180
-            component = 4
-          }else if(_angle >= 210 && _angle <= 270){
-            target = 240
-            component = 5
-          }else if(_angle >= 270 && _angle <= 330){
-            target = 300
-            component = 6
+          ctx.translate(width/2, height/2)
+          ctx.rotate(draggedAngle);
+          ctx.translate(-(width/2), -(height/2))            
+
+          ctx.strokeStyle = "#ffffff"
+
+
+          ctx.lineWidth = 1
+          ctx.beginPath()
+          for(var i = 0; i < focusPoints.length; i++){
+            let point = focusPoints[i]
+            if(i == 0){
+              ctx.moveTo(point[0], point[1])
+            }
+            ctx.lineTo(point[0], point[1])       
           }
+          ctx.lineTo(focusPoints[0][0], focusPoints[0][1])
+          ctx.stroke()
+          ctx.closePath()
+
+          ctx.beginPath()
+          ctx.arc(centerX, centerY, (width/2)*0.82, 0, 2*Math.PI)
+          ctx.stroke()
+          ctx.closePath()
+
+          ctx.setLineDash([1,4])
+          ctx.beginPath()
+          ctx.moveTo(focusPoints[0][0], focusPoints[0][1])
+          ctx.lineTo(focusPoints[2][0], focusPoints[2][1])
+          ctx.lineTo(focusPoints[4][0], focusPoints[4][1])
+          ctx.lineTo(focusPoints[0][0], focusPoints[0][1])
+          ctx.stroke()
+          ctx.closePath()
+
+          ctx.beginPath()
+          ctx.moveTo(focusPoints[1][0], focusPoints[1][1])
+          ctx.lineTo(focusPoints[3][0], focusPoints[3][1])
+          ctx.lineTo(focusPoints[5][0], focusPoints[5][1])
+          ctx.lineTo(focusPoints[1][0], focusPoints[1][1])
+          ctx.stroke()
+          ctx.closePath()
+          ctx.setLineDash([])
+
+          ctx.lineWidth = 2
+          ctx.fillStyle = '#000000'
+          for(var i = 0; i < 6; i++){
+            let point = focusPoints[i]
+            ctx.beginPath();
+            ctx.lineCap = 'round';
+            ctx.arc(point[0], point[1], (width*0.22)/2, 0, 2 * Math.PI);
+            ctx.stroke();
+            ctx.fill()
+            ctx.closePath()
+          }
+
+          ctx.font = `${width*0.0275}px louvette-banner, serif`
+          ctx.fillStyle = '#ffffff'
+          ctx.textAlign = 'center'
+          for(var i = 0; i < 6; i++){
+            let point = focusPoints[i]
+            var icon = icons[i % 3]    
+            var iconWidth = width*icon.w
+            var iconHeight = height*icon.h
+
+            ctx.save()
+            ctx.translate(point[0], point[1])
+            ctx.rotate(-draggedAngle)
+            ctx.drawImage(icon.icon, 0 - iconWidth/2, 0 - (iconHeight/2 + (width*0.03)), iconWidth, iconHeight)
+            ctx.fillText(icon.label, 0, (width*0.05))
+            ctx.restore()
+          }
+
+          ctx.restore()
+
+          elapsed = time
+
+          window.requestAnimationFrame(draw);
         }
 
-        if(component){
-          if(component == 1 || component == 4){
-            this.$router.push("/mixtures")
-          }else if(component == 2 || component == 6){
-            this.$router.push("/bases")
-          }else if(component == 5 || component == 3){
-            this.$router.push("/decoctions")
+        canvas.addEventListener('mousedown', function(event){
+          var clickAngle = _t.getAngle(cX + offX, cY + offY, event.clientX, event.clientY) - draggedAngle;
+          var list = function(ev){
+
+            dragging = true      
+            draggedAngle = (_t.getAngle(cX + offX, cY + offY, ev.clientX, ev.clientY) - clickAngle)
           }
-        }
+          canvas.addEventListener('mousemove', list)
 
-          let d = this.closestEquivalentAngle(baseAngle, target)     
-          this.$refs.rotator.style.webkitTransform = "rotate(" + (d) + "deg)";      
-          this.angle = d
+          var complete = function(event){
+            canvas.removeEventListener('mousemove', list)
+            canvas.removeEventListener('mouseup', complete)
+            if(dragging){
+              dragging = false
+              let _angle = (((draggedAngle*(180/Math.PI)) % 360) + 360) % 360
+              if(_angle > 180){
+                _angle -= 360
+              }
+              var section;
+              var target;
+              switch(true){
+              case (_angle > -30 && _angle < 30):
+                target = 0
+                section = "mixtures"        
+                break
+              case (_angle > 145 && _angle < 180):
+                target = 180
+                section = "mixtures"    
+                break    
+              case (_angle > -180 && _angle < -145):
+                target = -180
+                section = "mixtures"        
+                break;
+              case (_angle > 30 && _angle < 90):
+                target = 60
+                section = "bases"
+                break
+              case (_angle > -145 && _angle < -90):
+                target = -120
+                section = "bases"
+                break;
+              case (_angle > 90 && _angle < 150):
+                target = 120
+                section = "decoctions"
+                break
+              case (_angle > -90 && _angle < -30):
+                target = -60
+                section = "decoctions"
+                break;
+              }
+              targetAngle = _t.closestEquivalentAngle(_angle, target)
+            }else{
+              console.log(draggedAngle)
+              let mousePos = _t.getMouse(event, canvas)
+              let angle = Math.atan2(mousePos.y - height/2, mousePos.x - width/2)
+              var clickTarget;
+              for(var i = 0; i < focusPoints.length; i++){
+//                 double x1 = point.x - center.x;
+// double y1 = point.y - center.y;
 
-          this.beingDragged = false
-          this.iconAngle = -this.angle        
+// double x2 = x1 * Math.cos(angle) - y1 * Math.sin(angle));
+// double y2 = x1 * Math.sin(angle) + y1 * Math.cos(angle));
+
+// point.x = x2 + center.x;
+// point.y = y2 + center.y;
+                var x1 = focusPoints[i][0] - centerX
+                var y1 = focusPoints[i][1] - centerY
+
+                var x2 = x1 * Math.cos(draggedAngle) - y1 * Math.sin(draggedAngle)
+                var y2 = x1 * Math.sin(draggedAngle) + y1 * Math.cos(draggedAngle)
+
+                var rotatedPoint = [x2 + centerX, y2 + centerY]
+
+                var xDist = mousePos.x - rotatedPoint[0];
+                var yDist = mousePos.y - rotatedPoint[1];
+                var distance = Math.sqrt(xDist * xDist + yDist * yDist);
+                if(distance < 75){
+                  clickTarget = focusPoints[i]
+                  break;
+                }
+              }
+              if(clickTarget){
+                let targets = [180, 120, 60, 0, -60, -120]
+                targetAngle = draggedAngle + (targets[clickTarget[3]] * (Math.PI / 180.0))
+                console.log(clickTarget)
+                _t.$router.push("/"+clickTarget[2])
+                clickTarget = null
+              }              
+            }
+          }
+          canvas.addEventListener('mouseup', complete)
+        })
+
+        window.requestAnimationFrame(draw);
       }, 
-      closestEquivalentAngle: function(from, to){
+      getAngle( cX, cY, mX, mY ){
+        var angle = Math.atan2(mY - cY, mX - cX);
+        return angle;
+      }, 
+      closestEquivalentAngle(from, to){
         var delta = ((((to - from) % 360) + 540) % 360) - 180;
-        return from + delta;
+        let angle = (from + delta)*(Math.PI / 180.0)
+        return (angle == 0 ? angle += 0.01 : angle);
+      },
+      getMouse(e, canvas) {
+        var element = canvas, offsetX = 0, offsetY = 0, mx, my;
+        if (element.offsetParent !== undefined) {
+          do {
+            offsetX += element.offsetLeft;
+            offsetY += element.offsetTop;
+          } while ((element = element.offsetParent));
+        }
+        mx = e.pageX - offsetX;
+        my = e.pageY - offsetY;
+        return {x: mx, y: my};
       }
     }
   }
