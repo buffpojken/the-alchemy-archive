@@ -263,19 +263,10 @@
               }
               targetAngle = _t.closestEquivalentAngle(_angle, target)
             }else{
-              console.log(draggedAngle)
               let mousePos = _t.getMouse(event, canvas)
               let angle = Math.atan2(mousePos.y - height/2, mousePos.x - width/2)
               var clickTarget;
               for(var i = 0; i < focusPoints.length; i++){
-//                 double x1 = point.x - center.x;
-// double y1 = point.y - center.y;
-
-// double x2 = x1 * Math.cos(angle) - y1 * Math.sin(angle));
-// double y2 = x1 * Math.sin(angle) + y1 * Math.cos(angle));
-
-// point.x = x2 + center.x;
-// point.y = y2 + center.y;
                 var x1 = focusPoints[i][0] - centerX
                 var y1 = focusPoints[i][1] - centerY
 
