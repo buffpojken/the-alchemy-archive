@@ -5,35 +5,6 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-.menu-1{
-  left: 2px;
-  top: 312px;
-}
-
-.menu-2{
-  left: 156px;
-  top: 43px;
-}
-
-.menu-3{
-  left: 468px;
-  top: 43px;
-}
-
-.menu-4{
-  left:622px;
-  top: 311px;
-}
-
-.menu-5{
-  left: 466px;
-  top: 580px;
-}
-
-.menu-6{
-  left: 157px;
-  top: 580px;
-}
 
 .looking-glass{
   top:  calc(50% - 96px);
@@ -56,25 +27,7 @@
   opacity: 0;
 }
 
-.animation-slow{
-  transition-property: transform;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 900ms;
-}
-
-.animation-medium{
-  transition-property: transform;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 600ms;
-}
-
-.animation-fast{
-  transition-property: transform;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 350ms;
-}
-
-.icon-mixturer{
+/*.icon-mixturer{
   @apply bg-icon-mixtures;
   background-position: center top 30px;
 }
@@ -88,6 +41,7 @@
   @apply bg-icon-decoctions;
   background-position: center top 20px;
 }
+*/
 
 @layer utilities{
   .three-side-three-border-wrap{
@@ -151,60 +105,6 @@
 
 }
 
-@layer utilities{
-  .three-border-wrap{
-    @apply border-3 border-white relative p-2.5;  
-  }  
-
-  .three-border-wrap:before{
-    content:' '; 
-    position:absolute;
-    border:1px solid white;
-    top:-10px;
-    width:calc(100% + 20px);
-    height:calc(100% + 20px);
-    z-index: -1;
-  }
-
-  .three-border-wrap:after{
-    content:' '; 
-    position:absolute;
-    pointer-events: none;
-    border:2px solid white;
-    top:8px;
-    width:calc(100% - 16px);
-    height:calc(100% - 16px);
-    z-index: -1;
-  }
-
-  .faded-circles{
-    @apply border-3 border-white relative;      
-  } 
-
-  .faded-circles:before{
-    content: ' ';
-    position: absolute;
-    background-color:rgba(255,255,255,0.6);
-    width:calc(100% + 20px);
-    height:calc(100% + 20px);
-    border-radius:800px;
-    top:-10px;
-    left:-10px;
-    z-index:-1;
-  }
-
-  .faded-circles:after{
-    content: ' ';
-    position: absolute;
-    background-color:rgba(255,255,255,0.2);
-    width:calc(100% + 40px);
-    height:calc(100% + 40px);
-    border-radius:800px;
-    top:-20px;
-    left:-20px;
-    z-index:-1;
-  }  
-}
 
 /* Slide up transition */
 .slide-up-enter-from {
